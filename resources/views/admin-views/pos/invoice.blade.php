@@ -3,7 +3,7 @@
         <div class="print--invoice">
             @if ($order->store)
             <div class="text-center pt-4 mb-3">
-                <img class="invoice-logo" src="{{ asset('/public/assets/admin/img/invoice-logo.png') }}"
+                <img class="invoice-logo" src="{{ asset('/assets/admin/img/invoice-logo.png') }}"
                     alt="">
                 <div class="top-info">
                     <h2 class="store-name">{{ $order->store->name }}</h2>
@@ -17,9 +17,9 @@
             </div>
         @endif
         <div class="top-info">
-            <img src="{{ asset('/public/assets/admin/img/invoice-star.png') }}" alt="" class="w-100">
+            <img src="{{ asset('/assets/admin/img/invoice-star.png') }}" alt="" class="w-100">
             <div class="text-uppercase text-center">{{ translate('messages.cash_receipt') }}</div>
-            <img src="{{ asset('/public/assets/admin/img/invoice-star.png') }}" alt="" class="w-100">
+            <img src="{{ asset('/assets/admin/img/invoice-star.png') }}" alt="" class="w-100">
         </div>
         <div class="order-info-id text-center">
             <h5>{{ translate('order_id') }} : {{ $order['id'] }}</h5>
@@ -243,9 +243,9 @@
         </div>
             </div>
             <div class="top-info mt-2">
-                <img src="{{ asset('/public/assets/admin/img/invoice-star.png') }}" alt="" class="w-100">
+                <img src="{{ asset('/assets/admin/img/invoice-star.png') }}" alt="" class="w-100">
                 <div class="text-uppercase text-center">{{ translate('THANK YOU') }}</div>
-                <img src="{{ asset('/public/assets/admin/img/invoice-star.png') }}" alt="" class="w-100">
+                <img src="{{ asset('/assets/admin/img/invoice-star.png') }}" alt="" class="w-100">
                 <div class="copyright">
                     &copy; {{ \App\Models\BusinessSetting::where(['key' => 'business_name'])->first()->value }}. <span
                         class="d-none d-sm-inline-block">{{ \App\Models\BusinessSetting::where(['key' => 'footer_text'])->first()->value }}</span>

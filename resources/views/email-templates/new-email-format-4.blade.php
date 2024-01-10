@@ -155,8 +155,8 @@ width: 24px;
             <tr>
                 <td class="main-table-td">
                     <div class="text-center">
-                    <img onerror="this.src='{{ asset('/public/assets/admin/img/blank3.png') }}'" class="mail-img-2"
-                    src="{{ asset('storage/app/public/email_template/') }}/{{ $data['icon']??'' }}" id="iconViewer" alt="">
+                    <img onerror="this.src='{{ asset('/assets/admin/img/blank3.png') }}'" class="mail-img-2"
+                    src="{{ asset('storage/app/email_template/') }}/{{ $data['icon']??'' }}" id="iconViewer" alt="">
                         <h2 id="mail-title" class="mt-2">{{ $title?? translate('Main_Title_or_Subject_of_the_Mail') }}</h2>
                         <div class="mb-1" id="mail-body">{!! $body?? translate('Hi_Sabrina,') !!}</div>
                         <h2 style="font-size: 26px;margin: 0;letter-spacing:4px">
@@ -198,7 +198,7 @@ width: 24px;
                         @if (isset($social_media))
                             @foreach ($social_media as $social)
                                 <a href="{{ $social->link }}" target=”_blank” id="{{ $social->name  }}-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data[$social->name]) && $data[$social->name] == 1)?'':'display:none;' }}">
-                                    <img src="{{asset('/public/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
+                                    <img src="{{asset('/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
                                 </a>
                             @endforeach
                         @endif

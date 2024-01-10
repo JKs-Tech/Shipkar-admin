@@ -10,7 +10,7 @@
         <!-- Page Title -->
         <div class="mb-4 pb-2">
             <h2 class="h1 mb-0 text-capitalize d-flex align-items-center gap-2">
-                <img src="{{asset('/public/assets/admin/img/3rd-party.png')}}" alt="">
+                <img src="{{asset('/assets/admin/img/3rd-party.png')}}" alt="">
                 {{translate('Edit_Offline_Payment_Method')}}
             </h2>
         </div>
@@ -21,7 +21,7 @@
             <div class="card mt-3">
                 <div class="card-header gap-2 flex-wrap">
                     <div class="d-flex align-items-center gap-2">
-                        <img width="20" src="{{asset('/public/assets/admin/img/payment-card.png')}}" alt="">
+                        <img width="20" src="{{asset('/assets/admin/img/payment-card.png')}}" alt="">
                         <h5 class="mb-0">{{ translate('payment_Information') }}</h5>
                     </div>
                     <a href="javascript:"  class="btn btn--primary add-input-fields-group"><i class="tio-add"></i> {{ translate('Add_New_Field') }} </a>
@@ -72,7 +72,7 @@
             <div class="card mt-3">
                 <div class="card-header gap-2 flex-wrap">
                     <div class="d-flex align-items-center gap-2">
-                        <img width="20" src="{{asset('/public/assets/admin/img/payment-card-fill.png')}}" alt="">
+                        <img width="20" src="{{asset('/assets/admin/img/payment-card-fill.png')}}" alt="">
                         <h5 class="mb-0">{{ translate('required_Information_from_Customer') }}</h5>
                     </div>
                     <a href="javascript:"  class="btn btn--primary add-customer-input-fields-group"><i class="tio-add"></i> {{ translate('Add_New_Field') }} </a>

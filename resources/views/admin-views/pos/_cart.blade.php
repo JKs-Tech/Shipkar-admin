@@ -45,7 +45,7 @@
                         <img class="avatar avatar-sm mr-1 onerror-image"
                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                             $cartItem['image'] ?? '',
-                            asset('storage/app/public/product').'/'.$cartItem['image'] ?? '',
+                            asset('storage/app/product').'/'.$cartItem['image'] ?? '',
                             asset('public/assets/admin/img/100x100/2.png'),
                             'product/'
                         ) }}"

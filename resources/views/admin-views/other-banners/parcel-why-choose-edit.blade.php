@@ -125,10 +125,10 @@
                                                 <img
                                                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                     $banner['image'] ?? '',
-                                                    asset('storage/app/public/why_choose').'/'.$banner['image'] ?? '',
-                                                    asset('/public/assets/admin/img/aspect-1.png'),
+                                                    asset('storage/app/why_choose').'/'.$banner['image'] ?? '',
+                                                    asset('/assets/admin/img/aspect-1.png'),
                                                     'why_choose/'
-                                                ) }}" data-onerror-image="{{asset('/public/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
+                                                ) }}" data-onerror-image="{{asset('/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
                                             </div>
                                               <input type="file"  name="image" hidden>
                                         </label>

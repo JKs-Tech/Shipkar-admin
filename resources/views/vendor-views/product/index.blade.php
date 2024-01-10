@@ -308,7 +308,7 @@
                             <!-- Empty Variation -->
                             <div id="empty-variation">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/variation.png')}}" alt="">
+                                    <img src="{{asset('/assets/admin/img/variation.png')}}" alt="">
                                     <div>{{translate('No variation added')}}</div>
                                 </div>
                             </div>

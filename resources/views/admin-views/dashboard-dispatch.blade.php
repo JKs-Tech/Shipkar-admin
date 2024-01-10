@@ -12,7 +12,7 @@
         <div class="page-header">
             <div class="py-2">
                 <div class="d-flex align-items-center">
-                    <img src="{{asset('/public/assets/admin/img/new-img/users.svg')}}" alt="img">
+                    <img src="{{asset('/assets/admin/img/new-img/users.svg')}}" alt="img">
                     <div class="w-0 flex-grow pl-3">
                         <h1 class="page-header-title mb-0">{{translate('Dispatch Overview')}}</h1>
                         <p class="page-header-text m-0">{{translate('Hello, here you can manage your dispatch orders.')}}</p>
@@ -190,7 +190,7 @@
             map.fitBounds(dmbounds);
             for (let i = 0; i < deliveryMan.length; i++) {
                 if (deliveryMan[i].lat) {
-                    let contentString = "<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{ asset('storage/app/public/delivery-man') }}/"+deliveryMan[i].image+"'></div><div style='float:right; padding: 10px;'><b>"+deliveryMan[i].name+"</b><br/> "+deliveryMan[i].location+"</div>";
+                    let contentString = "<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{ asset('storage/app/delivery-man') }}/"+deliveryMan[i].image+"'></div><div style='float:right; padding: 10px;'><b>"+deliveryMan[i].name+"</b><br/> "+deliveryMan[i].location+"</div>";
                     let point = new google.maps.LatLng(deliveryMan[i].lat, deliveryMan[i].lng);
                     dmbounds.extend(point);
                     map.fitBounds(dmbounds);
@@ -204,7 +204,7 @@
                     google.maps.event.addListener(marker, 'click', (function(marker, i) {
                         return function() {
                             infowindow.setContent(
-                                "<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{ asset('storage/app/public/delivery-man') }}/" +
+                                "<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{ asset('storage/app/delivery-man') }}/" +
                                 deliveryMan[i].image +
                                 "'></div><div style='float:right; padding: 10px;'><b>" + deliveryMan[i]
                                 .name + "</b><br/> " + deliveryMan[i].location + "</b><br/> " + 'Assigned Order: ' + deliveryMan[i].assigned_order_count + "</div>"

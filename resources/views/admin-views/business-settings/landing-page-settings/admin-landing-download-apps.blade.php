@@ -65,8 +65,8 @@
                             <input type="checkbox" name="status"
                                    data-id="counter_status"
                                    data-type="toggle"
-                                   data-image-on="{{ asset('/public/assets/admin/img/modal/counter-on.png') }}"
-                                   data-image-off="{{ asset('/public/assets/admin/img/modal/counter-off.png') }}"
+                                   data-image-on="{{ asset('/assets/admin/img/modal/counter-on.png') }}"
+                                   data-image-off="{{ asset('/assets/admin/img/modal/counter-off.png') }}"
                                    data-title-on="{{ translate('By Turning ON Counter Section') }}"
                                    data-title-off="{{ translate('By Turning OFF Counter Section') }}"
                                    data-text-on="<p>{{ translate('Counter Section is enabled. You can now access its features and functionality') }}</p>"
@@ -236,12 +236,12 @@
                                         <img
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $download_user_app_image['value'] ?? '',
-                                            asset('storage/app/public/download_user_app_image').'/'.$download_user_app_image['value'] ?? '',
-                                            asset('/public/assets/admin/img/aspect-1.png'),
+                                            asset('storage/app/download_user_app_image').'/'.$download_user_app_image['value'] ?? '',
+                                            asset('/assets/admin/img/aspect-1.png'),
                                             'download_user_app_image/'
                                         ) }}"
 
-                                        data-onerror-image="{{asset('/public/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
+                                        data-onerror-image="{{asset('/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
                                     </div>
                                       <input type="file"  name="image" hidden>
                                             @if (isset($download_user_app_image['value']))
@@ -272,8 +272,8 @@
                                                        id="play-store-dm-status"
                                                        data-id="play-store-dm-status"
                                                        data-type="toggle"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/play-store-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/play-store-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/play-store-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/play-store-off.png') }}"
                                                        data-title-on="{{ translate('Playstore Button Enabled for Delivery Man') }}"
                                                        data-title-off="{{ translate('Playstore Button Disabled for Delivery Man') }}"
                                                        data-text-on="<p>{{ translate('Playstore button is enabled now everyone can use or see the button') }}</p>"
@@ -306,8 +306,8 @@
                                                        id="apple-dm-status"
                                                        data-id="apple-dm-status"
                                                        data-type="toggle"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/apple-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/apple-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/apple-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/apple-off.png') }}"
                                                        data-title-on="{{ translate('App Store Button Enabled for Delivery Man') }}"
                                                        data-title-off="{{ translate('App Store Button Disabled for Delivery Man') }}"
                                                        data-text-on="<p>{{ translate('App Store button is enabled now everyone can use or see the button') }}</p>"

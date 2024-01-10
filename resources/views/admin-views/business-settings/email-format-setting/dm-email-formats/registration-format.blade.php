@@ -41,8 +41,8 @@
                                 <input type="checkbox" class="status toggle-switch-input dynamic-checkbox"
                                        data-id="mail-status"
                                        data-type="status"
-                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/place-order-on.png'
-                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/place-order-off.png"
+                                       data-image-on='{{asset('/assets/admin/img/modal')}}/place-order-on.png'
+                                       data-image-off="{{asset('/assets/admin/img/modal')}}/place-order-off.png"
                                        data-title-on="{{translate('Want_to_enable_Delivery_Man_Registration_mail?')}}"
                                        data-title-off="{{translate('Want_to_disable_Delivery_Man_Registration_mail?')}}"
                                        data-text-on="<p>{{translate('If_enabled,_Deliverymen_will_receive_an_automated_mail_from_the_system_when_their_registration_is_successful.')}}</p>"

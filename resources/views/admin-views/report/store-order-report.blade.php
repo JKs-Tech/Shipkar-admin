@@ -113,14 +113,14 @@
         <div class="store-report-content mt-11px">
             <div class="left-content">
                 <div class="left-content-card">
-                    <img src="{{ asset('/public/assets/admin/img/report/cart.svg') }}" alt="">
+                    <img src="{{ asset('/assets/admin/img/report/cart.svg') }}" alt="">
                     <div class="info">
                         <h4 class="subtitle">{{ $orders->total() }}</h4>
                         <h6 class="subtext">{{ translate('messages.Total Order') }}</h6>
                     </div>
                 </div>
                 <div class="left-content-card">
-                    <img src="{{ asset('/public/assets/admin/img/report/total-order.svg') }}" alt="">
+                    <img src="{{ asset('/assets/admin/img/report/total-order.svg') }}" alt="">
                     <div class="info">
                         <h4 class="subtitle">{{ \App\CentralLogics\Helpers::number_format_short($total_order_amount) }}
                         </h4>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div class="left-content-card">
-                    <img src="{{ asset('/public/assets/admin/img/report/total-discount.svg') }}" alt="">
+                    <img src="{{ asset('/assets/admin/img/report/total-discount.svg') }}" alt="">
                     <div class="info">
                         <h4 class="subtitle">
                             {{ \App\CentralLogics\Helpers::number_format_short($total_coupon_discount + $total_product_discount) }}
@@ -444,7 +444,7 @@
                 @endif
                 @if (count($orders) === 0)
                     <div class="empty--data">
-                        <img src="{{ asset('/public/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
+                        <img src="{{ asset('/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
                         <h5>
                             {{ translate('no_data_found') }}
                         </h5>
@@ -473,7 +473,7 @@
 
 
     <!-- Apex Charts -->
-    <script src="{{ asset('/public/assets/admin/js/apex-charts/apexcharts.js') }}"></script>
+    <script src="{{ asset('/assets/admin/js/apex-charts/apexcharts.js') }}"></script>
     <!-- Dognut Pie Chart -->
     <script>
         "use strict";

@@ -13,7 +13,7 @@
             width="200"
             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                 $logo ?? '',
-                asset('storage/app/public/restaurant').'/'.$logo ?? '',
+                asset('storage/app/restaurant').'/'.$logo ?? '',
                 asset('public/assets/admin/img/img1.jpg'),
                 'restaurant/'
             ) }}"

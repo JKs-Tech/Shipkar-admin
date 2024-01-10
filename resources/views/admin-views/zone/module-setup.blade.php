@@ -68,7 +68,7 @@
                                 <label class="input-label text-capitalize d-inline-flex alig-items-center"
                                     for="increased_delivery_fee">
                                     <span class="line--limit-1">{{ translate('messages.increase_delivery_charge') }} (%)
-                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.Set_an_additional_delivery_charge_in_percentage_for_any_emergency_situations._This_amount_will_be_added_to_the_delivery_charge.')}}" class="input-label-secondary"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.dm_maximum_order_hint') }}"></span>
+                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.Set_an_additional_delivery_charge_in_percentage_for_any_emergency_situations._This_amount_will_be_added_to_the_delivery_charge.')}}" class="input-label-secondary"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.dm_maximum_order_hint') }}"></span>
                                 </label>
                                 <label class="toggle-switch toggle-switch-sm">
                                     <input type="checkbox" class="toggle-switch-input" name="increased_delivery_fee_status"
@@ -91,7 +91,7 @@
                                 <label class="input-label text-capitalize d-inline-flex alig-items-center"
                                     for="increased_delivery_fee">
                                     <span class="line--limit-1">{{ translate('messages.increase_delivery_charge_message') }}
-                                        <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.Customers_will_see_the_delivery_charge_increased_reason_on_the_website_and_customer_app.')}}" class="input-label-secondary"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.dm_maximum_order_hint') }}"></span>
+                                        <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.Customers_will_see_the_delivery_charge_increased_reason_on_the_website_and_customer_app.')}}" class="input-label-secondary"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.dm_maximum_order_hint') }}"></span>
 
                                 </label>
                             </div>

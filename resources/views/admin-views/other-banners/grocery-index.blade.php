@@ -48,13 +48,13 @@
 
                                              src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $bottom_section_banner->value,
-                                                asset('storage/app/public/promotional_banner') . '/' . $bottom_section_banner->value,
-                                                asset('/public/assets/admin/img/upload-placeholder.png'),
+                                                asset('storage/app/promotional_banner') . '/' . $bottom_section_banner->value,
+                                                asset('/assets/admin/img/upload-placeholder.png'),
                                                 'promotional_banner/'
                                             ) }}"
 
 
-                                             data-onerror-image="{{asset('/public/assets/admin/img/upload-placeholder.png')}}" alt="">
+                                             data-onerror-image="{{asset('/assets/admin/img/upload-placeholder.png')}}" alt="">
                                         </div>
                                         <div class="">
                                             <input type="file" name="image"  hidden>
@@ -62,8 +62,8 @@
                                             <span id="bottom_section_banner" class="remove_image_button dynamic-checkbox"
                                                   data-id="bottom_section_banner"
                                                   data-type="status"
-                                                  data-image-on="{{asset('/public/assets/admin/img/modal')}}/mail-success"
-                                                  data-image-off="{{asset('/public/assets/admin/img/modal')}}/mail-warning"
+                                                  data-image-on="{{asset('/assets/admin/img/modal')}}/mail-success"
+                                                  data-image-off="{{asset('/assets/admin/img/modal')}}/mail-warning"
                                                   data-title-on="{{translate('Important!')}}"
                                                   data-title-off="{{translate('Warning!')}}"
                                                   data-text-on="<p>{{translate('Are_you_sure_you_want_to_remove_this_image')}}</p>"
@@ -113,7 +113,7 @@
                                                 <i class="tio-info-outined"></i>
                                             </div>
                                             <div class="business-notes">
-                                                <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                                                <h6><img src="{{asset('/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                                                 <div>
                                                     {{translate('messages.this_banner_is_only_for_react_web.')}}
                                                 </div>
@@ -131,20 +131,20 @@
                                             <img class="onerror-image"
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $best_reviewed_section_banner->value,
-                                                asset('storage/app/public/promotional_banner') . '/' . $best_reviewed_section_banner->value,
-                                                asset('/public/assets/admin/img/upload-placeholder.png'),
+                                                asset('storage/app/promotional_banner') . '/' . $best_reviewed_section_banner->value,
+                                                asset('/assets/admin/img/upload-placeholder.png'),
                                                'promotional_banner/'
                                             ) }}"
 
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-placeholder.png')}}" alt="">
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-placeholder.png')}}" alt="">
                                         </div>
                                         <input type="file" name="image"  hidden>
                                         @if (isset($best_reviewed_section_banner?->value))
                                         <span id="best_reviewed_section_banner" class="remove_image_button dynamic-checkbox"
                                               data-id="best_reviewed_section_banner"
                                               data-type="status"
-                                              data-image-on="{{asset('/public/assets/admin/img/modal')}}/mail-success"
-                                              data-image-off="{{asset('/public/assets/admin/img/modal')}}/mail-warning"
+                                              data-image-on="{{asset('/assets/admin/img/modal')}}/mail-success"
+                                              data-image-off="{{asset('/assets/admin/img/modal')}}/mail-warning"
                                               data-title-on="{{translate('Important!')}}"
                                               data-title-off="{{translate('Warning!')}}"
                                               data-text-on="<p>{{translate('Are_you_sure_you_want_to_remove_this_image')}}</p>"
@@ -196,7 +196,7 @@
     <script src="{{asset('public/assets/admin')}}/js/view-pages/other-banners.js"></script>
         <script>
             $('#reset_btn').click(function(){
-                $('#viewer').attr('src','{{asset('/public/assets/admin/img/upload-placeholder.png')}}');
+                $('#viewer').attr('src','{{asset('/assets/admin/img/upload-placeholder.png')}}');
             })
         </script>
 @endpush

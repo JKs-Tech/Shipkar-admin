@@ -81,7 +81,7 @@ class StoreSalesReportExport implements  FromView, ShouldAutoSize, WithStyles,Wi
             $drawing = new Drawing();
             $drawing->setName($item->name);
             $drawing->setDescription($item->name);
-            $drawing->setPath(is_file(storage_path('app/public/product/'.$item->image))?storage_path('app/public/product/'.$item->image):public_path('/assets/admin/img/160x160/img2.jpg'));
+            $drawing->setPath(is_file(storage_path('app/product/'.$item->image))?storage_path('app/product/'.$item->image):public_path('/assets/admin/img/160x160/img2.jpg'));
             $drawing->setHeight(25);
             $index+=5;
             $drawing->setCoordinates("B$index");

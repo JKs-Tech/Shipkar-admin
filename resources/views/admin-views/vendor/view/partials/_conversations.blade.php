@@ -8,7 +8,7 @@
 
                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                     $user['image'] ?? '',
-                    asset('storage/app/public/profile').'/'.$user['image'] ?? '',
+                    asset('storage/app/profile').'/'.$user['image'] ?? '',
                     asset('public/assets/admin/img/160x160/img1.jpg'),
                     'profile/'
                 ) }}" 
@@ -34,7 +34,7 @@
                             @foreach (json_decode($con->file) as $img)
                             <br>
                                 <img class="w-100-p"
-                                src="{{asset('storage/app/public/conversation').'/'.$img}}">
+                                src="{{asset('storage/app/conversation').'/'.$img}}">
                                 @endforeach
                             @endif
                         </div>
@@ -50,7 +50,7 @@
                             @foreach (json_decode($con->file) as $img)
                             <br>
                                 <img class="w-100-p"
-                                src="{{asset('storage/app/public/conversation').'/'.$img}}">
+                                src="{{asset('storage/app/conversation').'/'.$img}}">
                                 @endforeach
                             @endif
                         </div>

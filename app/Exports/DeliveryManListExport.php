@@ -99,7 +99,7 @@ class DeliveryManListExport implements  FromView, ShouldAutoSize, WithStyles,Wit
             $drawing = new Drawing();
             $drawing->setName($item->f_name);
             $drawing->setDescription($item->f_name);
-            $drawing->setPath(is_file(storage_path('app/public/delivery-man/'.$item->image))?storage_path('app/public/delivery-man/'.$item->image):public_path('/assets/admin/img/160x160/img2.jpg'));
+            $drawing->setPath(is_file(storage_path('app/delivery-man/'.$item->image))?storage_path('app/delivery-man/'.$item->image):public_path('/assets/admin/img/160x160/img2.jpg'));
             $drawing->setHeight(25);
             $index+=5;
             $drawing->setCoordinates("B$index");

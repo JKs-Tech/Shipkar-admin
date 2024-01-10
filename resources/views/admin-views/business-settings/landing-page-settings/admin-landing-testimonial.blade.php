@@ -156,8 +156,8 @@
                                         </label>
                                         <label class="upload-img-3 m-0 d-block">
                                             <div class="img">
-                                                <img src="{{asset("/public/assets/admin/img/aspect-1.png")}}"
-                                                data-onerror-image="{{asset("/public/assets/admin/img/aspect-1.png")}}" class="img__aspect-1 min-w-187px max-w-187px onerror-image" alt="">
+                                                <img src="{{asset("/assets/admin/img/aspect-1.png")}}"
+                                                data-onerror-image="{{asset("/assets/admin/img/aspect-1.png")}}" class="img__aspect-1 min-w-187px max-w-187px onerror-image" alt="">
                                             </div>
                                             <input type="file"  name="reviewer_image" hidden="">
                                         </label>
@@ -168,7 +168,7 @@
                                         </label>
                                         <label class="upload-img-4 m-0 d-block my-auto">
                                             <div class="img">
-                                                <img src="{{asset("/public/assets/admin/img/aspect-3-1.png")}}" data-onerror-image="{{asset("/public/assets/admin/img/aspect-3-1.png")}}" class="vertical-img max-w-187px onerror-image" alt="">
+                                                <img src="{{asset("/assets/admin/img/aspect-3-1.png")}}" data-onerror-image="{{asset("/assets/admin/img/aspect-3-1.png")}}" class="vertical-img max-w-187px onerror-image" alt="">
                                             </div>
                                             <input type="file" id="image-upload-2" name="company_image" hidden="">
                                         </label>
@@ -223,31 +223,31 @@
                                         <td>
                                             <img   src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $review->reviewer_image ?? '',
-                                                asset('storage/app/public/reviewer_image').'/'.$review->reviewer_image ?? '',
-                                                asset('/public/assets/admin/img/upload-3.png'),
+                                                asset('storage/app/reviewer_image').'/'.$review->reviewer_image ?? '',
+                                                asset('/assets/admin/img/upload-3.png'),
                                                 'reviewer_image/'
                                             ) }}"
 
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
                                         </td>
                                         <td>
                                             <img
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $review->company_image ?? '',
-                                                asset('storage/app/public/reviewer_company_image').'/'.$review->company_image ?? '',
-                                                asset('/public/assets/admin/img/upload-3.png'),
+                                                asset('storage/app/reviewer_company_image').'/'.$review->company_image ?? '',
+                                                asset('/assets/admin/img/upload-3.png'),
                                                 'reviewer_company_image/'
                                             ) }}"
                                            
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
                                         </td>
                                         <td>
                                             <label class="toggle-switch toggle-switch-sm">
                                                 <input type="checkbox"
                                                        data-id="status-{{$review->id}}"
                                                        data-type="status"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/testimonial-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/testimonial-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/testimonial-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/testimonial-off.png') }}"
                                                        data-title-on="{{ translate('By Turning ON ') }} <strong>{{ translate('This review') }}"
                                                        data-title-off="{{ translate('By Turning OFF ') }} <strong>{{ translate('This review') }}"
                                                        data-text-on="<p>{{ translate('This section will be enabled. You can see this section on your landing page.') }}</p>"
@@ -287,7 +287,7 @@
                     </div>
                     @if(count($reviews) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

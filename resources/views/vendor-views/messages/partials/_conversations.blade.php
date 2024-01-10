@@ -5,7 +5,7 @@
             <div class="chat-user-info-img">
                 <img class="avatar-img onerror-image"
                      data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
-                     src="{{\App\CentralLogics\Helpers::onerror_image_helper($user['image'], asset('storage/app/public/profile/').'/'.$user['image'], asset('public/assets/admin/img/160x160/img1.jpg'), 'profile/')}}"
+                     src="{{\App\CentralLogics\Helpers::onerror_image_helper($user['image'], asset('storage/app/profile/').'/'.$user['image'], asset('public/assets/admin/img/160x160/img1.jpg'), 'profile/')}}"
                      alt="Image Description">
             </div>
             <div class="chat-user-info-content">
@@ -27,7 +27,7 @@
                                 @foreach (json_decode($con->file) as $img)
                                     <br>
                                     <img class="w-100"
-                                         src="{{asset('storage/app/public/conversation').'/'.$img}}" alt="iamge">
+                                         src="{{asset('storage/app/conversation').'/'.$img}}" alt="iamge">
                                 @endforeach
                             @endif
                         </div>
@@ -43,7 +43,7 @@
                                 @foreach (json_decode($con->file) as $img)
                                     <br>
                                     <img class="w-100"
-                                         src="{{asset('storage/app/public/conversation').'/'.$img}}" alt="image">
+                                         src="{{asset('storage/app/conversation').'/'.$img}}" alt="image">
                                 @endforeach
                             @endif
                         </div>
@@ -75,11 +75,11 @@
                     <div id="file-upload-filename" class="upload__file-wrap"></div>
                     <div class="upload-btn-grp">
                         <label class="m-0">
-                            <img src="{{asset('/public/assets/admin/img/gallery.png')}}" alt="">
+                            <img src="{{asset('/assets/admin/img/gallery.png')}}" alt="">
                             <input type="file" name="images[]" class="d-none upload_input_images" data-max_length="2"  multiple="" >
                         </label>
                         <label class="m-0 emoji-icon-hidden">
-                            <img src="{{asset('/public/assets/admin/img/emoji.png')}}" alt="">
+                            <img src="{{asset('/assets/admin/img/emoji.png')}}" alt="">
                         </label>
                     </div>
                 </div>

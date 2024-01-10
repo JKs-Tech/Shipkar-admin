@@ -184,7 +184,7 @@
                                             <img class="h--50px onerror-image"
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $notification['image'] ?? '',
-                                                asset('storage/app/public/notification').'/'.$notification['image'],
+                                                asset('storage/app/notification').'/'.$notification['image'],
                                                 asset('public/assets/admin/img/160x160/img2.jpg'),
                                                 'notification/'
                                             ) }}"
@@ -232,7 +232,7 @@
                         </div>
                         @if(count($notifications) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

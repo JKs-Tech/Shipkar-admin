@@ -65,8 +65,8 @@
                                     <input class="form-check-input dynamic-checkbox"
                                            data-id="store_shffle"
                                            data-type="status"
-                                           data-image-on='{{asset('/public/assets/admin/img/modal')}}/counter-on.png'
-                                           data-image-off="{{asset('/public/assets/admin/img/modal')}}/counter-off.png"
+                                           data-image-on='{{asset('/assets/admin/img/modal')}}/counter-on.png'
+                                           data-image-off="{{asset('/assets/admin/img/modal')}}/counter-off.png"
                                            data-title-on="{{translate('Want_to_shuffle_the_store_list?')}}"
                                            data-title-off="{{translate('Want_to_disable_shuffle_store_list?')}}"
                                            data-text-on="<p>{{translate('If_enabled,_store_recommended_section_will_be_shuffled.’')}}</p>"
@@ -75,8 +75,8 @@
                                     <label
                                        data-id="store_shffle"
                                        data-type="status"
-                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/counter-on.png'
-                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/counter-off.png"
+                                       data-image-on='{{asset('/assets/admin/img/modal')}}/counter-on.png'
+                                       data-image-off="{{asset('/assets/admin/img/modal')}}/counter-off.png"
                                        data-title-on="{{translate('Want_to_shuffle_the_store_list?')}}"
                                        data-title-off="{{translate('Want_to_disable_shuffle_store_list?')}}"
                                        data-text-on="<p>{{translate('If_enabled,_store_recommended_section_will_be_shuffled.’')}}</p>"
@@ -135,7 +135,7 @@
                                                 <img class="img--60 circle onerror-image" data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
                                                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                     $store['logo'] ?? '',
-                                                    asset('storage/app/public/store').'/'.$store['logo'] ?? '',
+                                                    asset('storage/app/store').'/'.$store['logo'] ?? '',
                                                     asset('public/assets/admin/img/160x160/img1.jpg'),
                                                     'store/'
                                                 ) }}"  >
@@ -196,7 +196,7 @@
                         </div>
                         @if(count($stores) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

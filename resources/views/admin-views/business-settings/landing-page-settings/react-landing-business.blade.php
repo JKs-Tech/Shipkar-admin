@@ -149,10 +149,10 @@
                                         <img
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $business_image['value'] ?? '',
-                                            asset('storage/app/public/business_image').'/'.$business_image['value'] ?? '',
-                                            asset('/public/assets/admin/img/aspect-1.png'),
+                                            asset('storage/app/business_image').'/'.$business_image['value'] ?? '',
+                                            asset('/assets/admin/img/aspect-1.png'),
                                             'business_image/'
-                                        ) }}" data-onerror-image="{{asset('/public/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
+                                        ) }}" data-onerror-image="{{asset('/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
                                     </div>
                                       <input type="file"  name="image" hidden>
                                          @if (isset($business_image['value']))
@@ -191,8 +191,8 @@
                                                                id="play-store-seller-status"
                                                                data-id="play-store-seller-status"
                                                                data-type="toggle"
-                                                               data-image-on="{{ asset('/public/assets/admin/img/modal/play-store-on.png') }}"
-                                                               data-image-off="{{ asset('/public/assets/admin/img/modal/play-store-off.png') }}"
+                                                               data-image-on="{{ asset('/assets/admin/img/modal/play-store-on.png') }}"
+                                                               data-image-off="{{ asset('/assets/admin/img/modal/play-store-off.png') }}"
                                                                data-title-on="{{ translate('playstore_button_enabled_for_seller') }}"
                                                                data-title-off="{{ translate('playstore_button_disabled_for_seller') }}"
                                                                data-text-on="<p>{{ translate('Playstore_button_is_enabled_now_everyone_can_use_or_see_the_button') }}</p>"
@@ -227,8 +227,8 @@
                                                                id="apple-seller-status"
                                                                data-id="apple-seller-status"
                                                                data-type="toggle"
-                                                               data-image-on="{{ asset('/public/assets/admin/img/modal/apple-on.png') }}"
-                                                               data-image-off="{{ asset('/public/assets/admin/img/modal/apple-off.png') }}"
+                                                               data-image-on="{{ asset('/assets/admin/img/modal/apple-on.png') }}"
+                                                               data-image-off="{{ asset('/assets/admin/img/modal/apple-off.png') }}"
                                                                data-title-on="{{ translate('app_store_button_enabled_for_seller') }}"
                                                                data-title-off="{{ translate('app_store_button_disabled_for_seller') }}"
                                                                data-text-on="<p>{{translate('App Store button is enabled now everyone can use or see the button')}}</p>"
@@ -273,8 +273,8 @@
                                                                id="play-store-dm-status"
                                                                data-id="play-store-dm-status"
                                                                data-type="toggle"
-                                                               data-image-on="{{ asset('/public/assets/admin/img/modal/play-store-on.png') }}"
-                                                               data-image-off="{{ asset('/public/assets/admin/img/modal/play-store-off.png') }}"
+                                                               data-image-on="{{ asset('/assets/admin/img/modal/play-store-on.png') }}"
+                                                               data-image-off="{{ asset('/assets/admin/img/modal/play-store-off.png') }}"
                                                                data-title-on="{{ translate('playstore_button_enabled_for_delivery_man') }}"
                                                                data-title-off="{{ translate('playstore_button_disabled_for_delivery_man') }}"
                                                                data-text-on="{{ translate('Playstore_button_is_enabled_now_everyone_can_use_or_see_the_button') }}"
@@ -309,8 +309,8 @@
                                                                id="apple-dm-status"
                                                                data-id="apple-dm-status"
                                                                data-type="toggle"
-                                                               data-image-on="{{ asset('/public/assets/admin/img/modal/apple-on.png') }}"
-                                                               data-image-off="{{ asset('/public/assets/admin/img/modal/apple-off.png') }}"
+                                                               data-image-on="{{ asset('/assets/admin/img/modal/apple-on.png') }}"
+                                                               data-image-off="{{ asset('/assets/admin/img/modal/apple-off.png') }}"
                                                                data-title-on="{{ translate('app_store_button_enabled_for_delivery_man') }}"
                                                                data-title-off="{{ translate('app_store_button_disabled_for_delivery_man') }}"
                                                                data-text-on="<p>{{ translate('App_Store_button_is_enabled_now_everyone_can_use_or_see_the_button') }}</p>"

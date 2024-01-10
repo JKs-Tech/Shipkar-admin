@@ -72,10 +72,10 @@
 
                                                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                     $review->reviewer_image ?? '',
-                                                    asset('storage/app/public/reviewer_image').'/'.$review->reviewer_image ?? '',
-                                                    asset('/public/assets/admin/img/aspect-1.png'),
+                                                    asset('storage/app/reviewer_image').'/'.$review->reviewer_image ?? '',
+                                                    asset('/assets/admin/img/aspect-1.png'),
                                                     'reviewer_image/'
-                                                ) }}" data-onerror-image="{{asset("/public/assets/admin/img/aspect-1.png")}}" class="img__aspect-1 mw-100 min-w-187px max-w-187px onerror-image" alt="">
+                                                ) }}" data-onerror-image="{{asset("/assets/admin/img/aspect-1.png")}}" class="img__aspect-1 mw-100 min-w-187px max-w-187px onerror-image" alt="">
                                             </div>
                                             <input type="file"  name="reviewer_image" hidden="">
                                              @if (isset($review->reviewer_image))
@@ -99,10 +99,10 @@
 
                                                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                     $review->company_image ?? '',
-                                                    asset('storage/app/public/reviewer_company_image').'/'.$review->company_image ?? '',
-                                                    asset('/public/assets/admin/img/aspect-3-1.png'),
+                                                    asset('storage/app/reviewer_company_image').'/'.$review->company_image ?? '',
+                                                    asset('/assets/admin/img/aspect-3-1.png'),
                                                     'reviewer_company_image/'
-                                                ) }}" data-onerror-image="{{asset("/public/assets/admin/img/aspect-3-1.png")}}" class="vertical-img max-w-187px onerror-image" alt="">
+                                                ) }}" data-onerror-image="{{asset("/assets/admin/img/aspect-3-1.png")}}" class="vertical-img max-w-187px onerror-image" alt="">
                                             </div>
                                             <input type="file" id="image-upload-2" name="company_image" hidden="">
                                             @if (isset($review->company_image))
@@ -152,7 +152,7 @@
                             <div class="mb-3">
                                 <h3 class="modal-title mb-3">{{translate(' Special review')}}</h3>
                             </div>
-                            <img src="{{asset('/public/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
+                            <img src="{{asset('/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                             <div class="max-349 mx-auto mb-20">
                                 <div>
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/modal/this-review-off.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/modal/this-review-off.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('By Turning OFF ')}} <strong>{{translate('This review')}}</strong></h5>
                                     </div>
                                     <div class="text-center">
@@ -182,7 +182,7 @@
                                 </div>
                                 <!-- <div>
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/modal/this-review-on.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/modal/this-review-on.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('By Turning ON ')}} <strong>{{translate('This review')}}</strong></h5>
                                     </div>
                                     <div class="text-center">

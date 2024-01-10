@@ -70,7 +70,7 @@ class DisbursementExport implements  FromView, ShouldAutoSize, WithStyles ,WithH
     public function setImage($workSheet) {
         $logo = \App\Models\BusinessSetting::where(['key' => 'logo'])->first()->value;
         $drawing = new Drawing();
-        $drawing->setPath(is_file(storage_path('app/public/business/'.$logo))?storage_path('app/public/business/'.$logo):public_path('/assets/admin/img/160x160/img2.jpg'));
+        $drawing->setPath(is_file(storage_path('app/business/'.$logo))?storage_path('app/business/'.$logo):public_path('/assets/admin/img/160x160/img2.jpg'));
         $drawing->setWidth(150);
         $drawing->setHeight(62);
         $drawing->setCoordinates("D1");

@@ -49,7 +49,7 @@
                                 <label class="input-label d-flex" for="module_type">{{translate('messages.description')}} ({{ translate('messages.default') }})<span class="form-label-secondary text-danger d-flex"
                                     data-toggle="tooltip" data-placement="right"
                                     data-original-title="{{ translate('messages.Write_a_short_description_of_your_new_business_module_within_100_words_(550_characters)')}}"><img
-                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                         alt="{{ translate('messages.veg_non_veg') }}"></span></label>
                                 <textarea class="ckeditor form-control" name="description[]">{!! $module?->getRawOriginal('description') !!}</textarea>
                             </div>
@@ -81,7 +81,7 @@
                                     <label class="input-label d-flex" for="module_type">{{translate('messages.description')}} ({{strtoupper($lang)}})<span class="form-label-secondary text-danger d-flex"
                                         data-toggle="tooltip" data-placement="right"
                                         data-original-title="{{ translate('messages.Write_a_short_description_of_your_new_business_module_within_100_words_(550_characters)')}}"><img
-                                            src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                            src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                             alt="{{ translate('messages.veg_non_veg') }}"></span></label>
                                     <textarea class="ckeditor form-control" name="description[]">{!! $translate[$lang]['description']??'' !!}</textarea>
                                 </div>
@@ -125,7 +125,7 @@
                                             <small class="text-danger">* ( {{translate('messages.ratio')}} 1:1)</small>
                                         </label>
                                         <div class="text-center my-auto py-3">
-                                            <img class="initial--15 onerror-image" id="viewer" data-onerror-image="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" src="{{\App\CentralLogics\Helpers::onerror_image_helper($module['icon'], asset('storage/app/public/module/').'/'.$module['icon'], asset('public/assets/admin/img/400x400/img2.jpg'), 'module/') }}"
+                                            <img class="initial--15 onerror-image" id="viewer" data-onerror-image="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" src="{{\App\CentralLogics\Helpers::onerror_image_helper($module['icon'], asset('storage/app/module/').'/'.$module['icon'], asset('public/assets/admin/img/400x400/img2.jpg'), 'module/') }}"
                                             alt="image" />
                                         </div>
                                         <div class="custom-file">
@@ -141,7 +141,7 @@
                                             <small class="text-danger">* ( {{translate('messages.ratio')}} 1:1)</small>
                                         </label>
                                         <div class="text-center my-auto py-3">
-                                            <img class="initial--15 onerror-image" id="viewer2" data-onerror-image="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" src="{{\App\CentralLogics\Helpers::onerror_image_helper($module['thumbnail'], asset('storage/app/public/module/').'/'.$module['thumbnail'], asset('public/assets/admin/img/400x400/img2.jpg'), 'module/') }}"
+                                            <img class="initial--15 onerror-image" id="viewer2" data-onerror-image="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" src="{{\App\CentralLogics\Helpers::onerror_image_helper($module['thumbnail'], asset('storage/app/module/').'/'.$module['thumbnail'], asset('public/assets/admin/img/400x400/img2.jpg'), 'module/') }}"
                                             alt="image" />
                                         </div>
                                         <div class="custom-file">
@@ -239,8 +239,8 @@
         });
 
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('storage/app/public/module/'.$module['icon'])}}');
-            $('#viewer2').attr('src','{{asset('storage/app/public/module/'.$module['thumbnail'])}}');
+            $('#viewer').attr('src','{{asset('storage/app/module/'.$module['icon'])}}');
+            $('#viewer2').attr('src','{{asset('storage/app/module/'.$module['thumbnail'])}}');
         })
 </script>
 @endpush

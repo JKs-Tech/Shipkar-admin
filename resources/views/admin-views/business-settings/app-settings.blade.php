@@ -71,7 +71,7 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <h5 class="card-title mb-3">
-                                <img src="{{asset('/public/assets/admin/img/andriod.png')}}" class="mr-2" alt="">
+                                <img src="{{asset('/assets/admin/img/andriod.png')}}" class="mr-2" alt="">
                                 {{ translate('For android') }}
                             </h5>
                             <div class="__bg-F8F9FC-card">
@@ -103,7 +103,7 @@
                         </div>
                         <div class="col-md-6">
                             <h5 class="card-title mb-3">
-                                <img src="{{asset('/public/assets/admin/img/ios.png')}}" class="mr-2" alt="">
+                                <img src="{{asset('/assets/admin/img/ios.png')}}" class="mr-2" alt="">
                                 {{ translate('For iOS') }}
                             </h5>
                             <div class="__bg-F8F9FC-card">
@@ -154,7 +154,7 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <h5 class="card-title mb-3">
-                                <img src="{{asset('/public/assets/admin/img/andriod.png')}}" class="mr-2" alt="">
+                                <img src="{{asset('/assets/admin/img/andriod.png')}}" class="mr-2" alt="">
                                 {{ translate('For android') }}
                             </h5>
                             <div class="__bg-F8F9FC-card">
@@ -185,7 +185,7 @@
                         </div>
                         <div class="col-md-6">
                             <h5 class="card-title mb-3">
-                                <img src="{{asset('/public/assets/admin/img/ios.png')}}" class="mr-2" alt="">
+                                <img src="{{asset('/assets/admin/img/ios.png')}}" class="mr-2" alt="">
                                 {{ translate('For iOS') }}
                             </h5>
                             <div class="__bg-F8F9FC-card">
@@ -236,7 +236,7 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <h5 class="card-title mb-3">
-                                <img src="{{asset('/public/assets/admin/img/andriod.png')}}" class="mr-2" alt="">
+                                <img src="{{asset('/assets/admin/img/andriod.png')}}" class="mr-2" alt="">
                                 {{ translate('For android') }}
                             </h5>
                             <div class="__bg-F8F9FC-card">
@@ -267,7 +267,7 @@
                         </div>
                         <div class="col-md-6">
                             <h5 class="card-title mb-3">
-                                <img src="{{asset('/public/assets/admin/img/ios.png')}}" class="mr-2" alt="">
+                                <img src="{{asset('/assets/admin/img/ios.png')}}" class="mr-2" alt="">
                                 {{ translate('For iOS') }}
                             </h5>
                             <div class="__bg-F8F9FC-card">

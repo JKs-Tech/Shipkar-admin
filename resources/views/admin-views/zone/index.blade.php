@@ -75,7 +75,7 @@
                                         <span class="form-label-secondary text-danger"
                                         data-toggle="tooltip" data-placement="right"
                                         data-original-title="{{ translate('Choose_your_preferred_language_&_set_your_zone_name.') }}"><img
-                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                         alt="{{ translate('messages.veg_non_veg') }}"></span>
                                     </ul>
 
@@ -222,8 +222,8 @@
                                             <input type="checkbox" class="toggle-switch-input dynamic-checkbox"
                                                    data-id="status-{{$zone['id']}}"
                                                    data-type="status"
-                                                   data-image-on='{{asset('/public/assets/admin/img/modal')}}/zone-status-on.png'
-                                                   data-image-off="{{asset('/public/assets/admin/img/modal')}}/zone-status-off.png"
+                                                   data-image-on='{{asset('/assets/admin/img/modal')}}/zone-status-on.png'
+                                                   data-image-off="{{asset('/assets/admin/img/modal')}}/zone-status-off.png"
                                                    data-title-on="{{translate('Want_to_activate_this_Zone?')}}"
                                                    data-title-off="{{translate('Want_to_deactivate_this_Zone?')}}"
                                                    data-text-on="<p>{{translate('If_you_activate_this_zone,_Customers_can_see_all_stores_&_products_available_under_this_Zone_from_the_Customer_App_&_Website.')}}</p>"
@@ -312,7 +312,7 @@
                         </div>
                         @if(count($zones) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>
@@ -336,7 +336,7 @@
                         {{translate("NEXT_IMPORTANT_STEP:_You_need_to_select_‘Payment_Method’_and_add_‘Business_Modules’_with_other_details_from_the_Zone_Settings._If_you_don’t_finish_the_setup,_the_Zone_you_created_won’t_function_properly.")}}
                     </p>
                 </div>
-                <img src="{{asset('/public/assets/admin/img/zone-settings-popup-arrow.gif')}}" alt="admin/img" class="w-100">
+                <img src="{{asset('/assets/admin/img/zone-settings-popup-arrow.gif')}}" alt="admin/img" class="w-100">
                 <div class="mt-3 d-flex flex-wrap align-items-center justify-content-between">
                     <label class="form-check form--check m-0">
                         <input type="checkbox" class="form-check-input rounded redirect-url" data-url="{{route('admin.business-settings.zone.instruction')}}">
@@ -363,7 +363,7 @@
                 </div>
                 <div class="modal-body pt-0">
                     <div class="text-center mb-20">
-                        <img src="{{asset('/public/assets/admin/img/zone-status-on.png')}}" alt="" class="mb-20">
+                        <img src="{{asset('/assets/admin/img/zone-status-on.png')}}" alt="" class="mb-20">
                         <h5 class="modal-title">{{translate('By switching the status to “ON”,  this zone and under all the functionality of this zone will be turned on')}}</h5>
                         <p class="txt">
                             {{translate("In the user app & website all stores & products  already assigned under this zone will show to the customers")}}

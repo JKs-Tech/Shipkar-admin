@@ -50,7 +50,7 @@
             <a class="order--card h-100" href="{{route('vendor.order.list',['delivered'])}}">
                 <div class="d-flex justify-content-between align-items-center">
                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                        <img src="{{asset('/public/assets/admin/img/dashboard/statistics/1.png')}}" alt="dashboard" class="oder--card-icon">
+                        <img src="{{asset('/assets/admin/img/dashboard/statistics/1.png')}}" alt="dashboard" class="oder--card-icon">
                         <span>{{translate('messages.delivered')}}</span>
                     </h6>
                     <span class="card-title text-success">
@@ -64,7 +64,7 @@
             <a class="order--card h-100" href="{{route('vendor.order.list',['refunded'])}}">
                 <div class="d-flex justify-content-between align-items-center">
                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                        <img src="{{asset('/public/assets/admin/img/dashboard/statistics/2.png')}}" alt="dashboard" class="oder--card-icon">
+                        <img src="{{asset('/assets/admin/img/dashboard/statistics/2.png')}}" alt="dashboard" class="oder--card-icon">
                         <span>{{translate('messages.refunded')}}</span>
                     </h6>
                     <span class="card-title text-danger">
@@ -78,7 +78,7 @@
             <a class="order--card h-100" href="{{route('vendor.order.list',['scheduled'])}}">
                 <div class="d-flex justify-content-between align-items-center">
                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                        <img src="{{asset('/public/assets/admin/img/dashboard/statistics/3.png')}}" alt="dashboard" class="oder--card-icon">
+                        <img src="{{asset('/assets/admin/img/dashboard/statistics/3.png')}}" alt="dashboard" class="oder--card-icon">
                         <span>{{translate('messages.scheduled')}}</span>
                     </h6>
                     <span class="card-title text-primary">
@@ -92,7 +92,7 @@
             <a class="order--card h-100" href="{{route('vendor.order.list',['all'])}}">
                 <div class="d-flex justify-content-between align-items-center">
                     <h6 class="card-subtitle d-flex justify-content-between m-0 align-items-center">
-                        <img src="{{asset('/public/assets/admin/img/dashboard/statistics/4.png')}}" alt="dashboard" class="oder--card-icon">
+                        <img src="{{asset('/assets/admin/img/dashboard/statistics/4.png')}}" alt="dashboard" class="oder--card-icon">
                         <span>{{translate('messages.all')}}</span>
                     </h6>
                     <span class="card-title text-info">

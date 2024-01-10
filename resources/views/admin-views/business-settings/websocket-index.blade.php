@@ -39,15 +39,15 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.If_WebSocket_is_enabled,_configure_the_server_accordingly_for_optimal_functionality.')}}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.websocket_toggle') }}"> *
                                                 </span>
                                             </span>
                                             <input type="checkbox"
                                                    data-id="websocket"
                                                    data-type="toggle"
-                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/schedule-on.png') }}"
-                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/schedule-off.png') }}"
+                                                   data-image-on="{{ asset('/assets/admin/img/modal/schedule-on.png') }}"
+                                                   data-image-off="{{ asset('/assets/admin/img/modal/schedule-off.png') }}"
                                                    data-title-on="{{translate('messages.Want_to_enable')}} <strong>{{translate('messages.websocket_?')}}</strong>"
                                                    data-title-off="{{translate('messages.Want_to_disable')}} <strong>{{translate('messages.websocket_?')}}</strong>'"
                                                    data-text-on="<p>{{ translate('messages.If_you_enable_this,_customers_can_choose_websocket_during_checkout.') }}</p>"

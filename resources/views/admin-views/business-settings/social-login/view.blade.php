@@ -30,7 +30,7 @@
                         <div class="card">
                             <div class="card-header card-header-shadow">
                                 <h5 class="card-title align-items-center">
-                                    <img src="{{asset('/public/assets/admin/img')}}/{{$socialLoginService['login_medium']}}.png" class="mr-1 w-20" alt="">
+                                    <img src="{{asset('/assets/admin/img')}}/{{$socialLoginService['login_medium']}}.png" class="mr-1 w-20" alt="">
                                     {{translate('messages.'.$socialLoginService['login_medium'])}}
                                 </h5>
                                 <label class="toggle-switch toggle-switch-sm p-0">
@@ -41,8 +41,8 @@
 
                                            data-id="{{$socialLoginService['login_medium']}}_status"
                                            data-type="toggle"
-                                           data-image-on="{{asset('/public/assets/admin/img/modal')}}/{{$socialLoginService['login_medium']}}-on.png"
-                                           data-image-off="{{asset('/public/assets/admin/img/modal')}}/{{$socialLoginService['login_medium']}}-off.png"
+                                           data-image-on="{{asset('/assets/admin/img/modal')}}/{{$socialLoginService['login_medium']}}-on.png"
+                                           data-image-off="{{asset('/assets/admin/img/modal')}}/{{$socialLoginService['login_medium']}}-off.png"
                                            data-title-on="{{translate('messages.'.$socialLoginService['login_medium'])}} {{translate('Login Turned ON ')}}"
                                            data-title-off="{{translate('messages.'.$socialLoginService['login_medium'])}} {{translate('Login Turned OFF ')}}"
                                            data-text-on="<p>{{translate('messages.'.$socialLoginService['login_medium'])}} {{translate('Login is now enabled. Customers will be able to sign up or log in using their social media accounts.')}}</p>"
@@ -102,7 +102,7 @@
                             @csrf
                                 <div class="card-header card-header-shadow">
                                     <h5 class="card-title align-items-center">
-                                        <img src="{{asset('/public/assets/admin/img/apple.png')}}" class="mr-1 w--20" alt="">
+                                        <img src="{{asset('/assets/admin/img/apple.png')}}" class="mr-1 w--20" alt="">
                                         {{translate('messages.'.$appleLoginService['login_medium'])}}
                                     </h5>
                                     <label class="toggle-switch toggle-switch-sm p-0">
@@ -112,8 +112,8 @@
                                         <input  id="{{$appleLoginService['login_medium']}}_status"
                                                data-id="{{$appleLoginService['login_medium']}}_status"
                                                data-type="toggle"
-                                               data-image-on="{{asset('/public/assets/admin/img/modal')}}/{{$appleLoginService['login_medium']}}-on.png"
-                                               data-image-off="{{asset('/public/assets/admin/img/modal')}}/{{$appleLoginService['login_medium']}}-off.png"
+                                               data-image-on="{{asset('/assets/admin/img/modal')}}/{{$appleLoginService['login_medium']}}-on.png"
+                                               data-image-off="{{asset('/assets/admin/img/modal')}}/{{$appleLoginService['login_medium']}}-off.png"
                                                data-title-on="{{translate('messages.'.$appleLoginService['login_medium'])}} {{translate('Login Turned ON ')}}"
                                                data-title-off="{{translate('messages.'.$appleLoginService['login_medium'])}} {{translate('Login Turned OFF ')}}"
                                                data-text-on="<p>{{translate('messages.'.$appleLoginService['login_medium'])}} {{translate('Login is now enabled. Customers will be able to sign up or log in using their social media accounts.')}}</p>"
@@ -158,7 +158,7 @@
                                         <label
                                             class="form-label">{{translate('messages.service_file')}} {{ $appleLoginService['service_file']?translate('(Already Exists)'):'' }}</label>
                                         <input type="file" accept=".p8" class="form-control" name="service_file"
-                                            value="{{ 'storage/app/public/apple-login/'.$appleLoginService['service_file'] }}">
+                                            value="{{ 'storage/app/apple-login/'.$appleLoginService['service_file'] }}">
                                     </div>
                                     <div class="btn--container justify-content-end">
                                         <button type="reset" class="btn btn--reset mb-2">{{translate('Reset')}}</button>
@@ -184,7 +184,7 @@
                     </div>
                     <div class="modal-body pb-0">
                         <div class="text-center mb-20">
-                            <img src="{{asset('/public/assets/admin/img/modal/google.png')}}" alt="" class="mb-20">
+                            <img src="{{asset('/assets/admin/img/modal/google.png')}}" alt="" class="mb-20">
                             <h5 class="modal-title">{{translate('messages.google_api_setup_instructions')}}</h5>
                         </div>
                         <ol>
@@ -213,7 +213,7 @@
                     </div>
                     <div class="modal-body pb-0"><b></b>
                         <div class="text-center mb-20">
-                            <img src="{{asset('/public/assets/admin/img/modal/facebook.png')}}" alt="" class="mb-20">
+                            <img src="{{asset('/assets/admin/img/modal/facebook.png')}}" alt="" class="mb-20">
                             <h5 class="modal-title">{{translate('messages.facebook_api_set_instruction')}}</h5>
                         </div>
                         <ol>
@@ -255,7 +255,7 @@
                     </div>
                     <div class="modal-body pb-0"><b></b>
                         <div class="text-center mb-20">
-                            <img src="{{asset('/public/assets/admin/img/modal/apple.png')}}" alt="" class="mb-20">
+                            <img src="{{asset('/assets/admin/img/modal/apple.png')}}" alt="" class="mb-20">
                             <h5 class="modal-title">{{translate('messages.apple_api_set_instruction')}}</h5>
                         </div>
                         <ol>

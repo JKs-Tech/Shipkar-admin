@@ -137,7 +137,7 @@
                                         </label>
                                         <label class="upload-img-3 m-0 d-block">
                                             <div class="img">
-                                                <img src="{{asset("/public/assets/admin/img/aspect-1.png")}}" data-onerror-image="{{asset("/public/assets/admin/img/aspect-1.png")}}" class="img__aspect-1 min-w-187px max-w-187px onerror-image" alt="">
+                                                <img src="{{asset("/assets/admin/img/aspect-1.png")}}" data-onerror-image="{{asset("/assets/admin/img/aspect-1.png")}}" class="img__aspect-1 min-w-187px max-w-187px onerror-image" alt="">
                                             </div>
                                             <input type="file"  name="reviewer_image" hidden="">
                                         </label>
@@ -193,11 +193,11 @@
                                             <img
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $review->reviewer_image ?? '',
-                                                asset('storage/app/public/reviewer_image').'/'.$review->reviewer_image ?? '',
-                                                asset('/public/assets/admin/img/upload-3.png'),
+                                                asset('storage/app/reviewer_image').'/'.$review->reviewer_image ?? '',
+                                                asset('/assets/admin/img/upload-3.png'),
                                                 'reviewer_image/'
                                             ) }}" 
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
                                         </td>
 
                                         <td>
@@ -205,8 +205,8 @@
                                                 <input type="checkbox"
                                                        data-id="status-{{ $review->id }}"
                                                        data-type="status"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/this-criteria-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/this-criteria-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/this-criteria-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/this-criteria-off.png') }}"
                                                        data-title-on="{{ translate('by_turning_on_this_review') }} <strong>{{ translate('this_review') }}</strong>"
                                                        data-title-off="{{ translate('by_turning_off_this_review') }} <strong>{{ translate('this_review') }}</strong>"
                                                        data-text-on="<p>{{ translate('this_section_will_be_enabled_you_can_see_this_section_on_your_landing_page') }}</p>"
@@ -249,7 +249,7 @@
                     </div>
                     @if(count($reviews) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

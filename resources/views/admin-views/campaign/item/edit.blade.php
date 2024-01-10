@@ -131,7 +131,7 @@
 
                             <div id="image-viewer-section" class="text-center py-3 my-auto">
                                 <img class="img--120 onerror-image" id="viewer"
-                                src="{{\App\CentralLogics\Helpers::onerror_image_helper($campaign->image, asset('storage/app/public/campaign/').'/'.$campaign->image, asset('public/assets/admin/img/100x100/2.png'), 'campaign/') }}" alt="campaign image" data-onerror-image="{{asset('public/assets/admin/img/100x100/2.png')}}"/>
+                                src="{{\App\CentralLogics\Helpers::onerror_image_helper($campaign->image, asset('storage/app/campaign/').'/'.$campaign->image, asset('public/assets/admin/img/100x100/2.png'), 'campaign/') }}" alt="campaign image" data-onerror-image="{{asset('public/assets/admin/img/100x100/2.png')}}"/>
                             </div>
                             <div class="custom-file">
                                 <input type="file" name="image" id="customFileEg1" class="custom-file-input"
@@ -184,7 +184,7 @@
                                 <div class="col-md-3 col-sm-6" id="addon_input">
                                     <div class="form-group mb-0">
                                         <label class="input-label" for="exampleFormControlSelect1">{{translate('messages.addon')}}<span
-                                                class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.store_required_warning')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.store_required_warning')}}"></span></label>
+                                                class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.store_required_warning')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.store_required_warning')}}"></span></label>
                                         <select name="addon_ids[]" id="add_on" class="form-control js-select2-custom" multiple="multiple">
                                             @foreach(\App\Models\AddOn::orderBy('name')->get() as $addon)
                                                 <option value="{{$addon['id']}}" {{in_array($addon->id,json_decode($campaign['add_ons'],true))?'selected':''}}>{{$addon['name']}}</option>
@@ -206,7 +206,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group mb-0">
                                         <label class="input-label" for="exampleFormControlSelect1">{{translate('messages.sub_category')}}<span
-                                                class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.category_required_warning')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.category_required_warning')}}"></span></label>
+                                                class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.category_required_warning')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.category_required_warning')}}"></span></label>
                                         <select name="sub_category_id" class="js-data-example-ajax form-control" id="sub-categories">
                                             @if(isset($sub_category))
                                             <option value="{{$sub_category['id']}}" >{{$sub_category['name']}}</option>

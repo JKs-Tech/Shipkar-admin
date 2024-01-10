@@ -164,7 +164,7 @@
                                                 <img class="img--square onerror-image"
                                                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                     $photo ?? '',
-                                                    asset('storage/app/public/product').'/'.$photo ?? '',
+                                                    asset('storage/app/product').'/'.$photo ?? '',
                                                     asset('public/assets/admin/img/upload.png'),
                                                     'product/'
                                                 ) }}"
@@ -190,7 +190,7 @@
                                         <img class="img--100 onerror-image" id="viewer"
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $product['image'] ?? '',
-                                            asset('storage/app/public/product').'/'.$product['image'] ?? '',
+                                            asset('storage/app/product').'/'.$product['image'] ?? '',
                                             asset('public/assets/admin/img/upload.png'),
                                             'product/'
                                         ) }}" 
@@ -254,7 +254,7 @@
                                             for="exampleFormControlSelect1">{{ translate('messages.sub_category') }}<span
                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                                 data-original-title="{{ translate('messages.category_required_warning') }}"><img
-                                                    src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                    src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                     alt="{{ translate('messages.category_required_warning') }}"></span></label>
                                         <select name="sub_category_id" class="js-data-example-ajax form-control"
                                             id="sub-categories">
@@ -365,7 +365,7 @@
                                     for="exampleFormControlSelect1">{{ translate('messages.addon') }}<span
                                         class="form-label-secondary" data-toggle="tooltip" data-placement="right"
                                         data-original-title="{{ translate('messages.store_required_warning') }}"><img
-                                            src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                            src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                             alt="{{ translate('messages.store_required_warning') }}"></span></label>
                                 <select name="addon_ids[]" class="form-control js-select2-custom" multiple="multiple"
                                     id="add_on">
@@ -494,7 +494,7 @@
                                 @if (!isset($product->food_variations) || count(json_decode($product->food_variations,true))<1)
                                 <div id="empty-variation">
                                     <div class="text-center">
-                                        <img src="{{ asset('/public/assets/admin/img/variation.png') }}" alt="">
+                                        <img src="{{ asset('/assets/admin/img/variation.png') }}" alt="">
                                         <div>{{ translate('No variation added') }}</div>
                                     </div>
                                 </div>

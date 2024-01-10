@@ -106,10 +106,10 @@
 
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $criteria['image'] ?? '',
-                                                asset('storage/app/public/special_criteria').'/'.$criteria['image'] ?? '',
-                                                asset('/public/assets/admin/img/aspect-1.png'),
+                                                asset('storage/app/special_criteria').'/'.$criteria['image'] ?? '',
+                                                asset('/assets/admin/img/aspect-1.png'),
                                                 'special_criteria/'
-                                            ) }}"  data-onerror-image="{{asset('/public/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
+                                            ) }}"  data-onerror-image="{{asset('/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
                                         </div>
                                           <input type="file"  name="image" hidden>
                                             @if (isset($criteria['image']))

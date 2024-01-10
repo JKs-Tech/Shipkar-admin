@@ -170,9 +170,9 @@ width: 24px;
                     <div class="text-center">
                     <img class="mail-img-2"                 
                     @if ($data && $data['icon'])
-                    src="{{ asset('storage/app/public/email_template/') }}/{{ $data['icon']??'' }}"
+                    src="{{ asset('storage/app/email_template/') }}/{{ $data['icon']??'' }}"
                     @else
-                    src='{{ asset('/public/assets/admin/img/email-template-img.png') }}'
+                    src='{{ asset('/assets/admin/img/email-template-img.png') }}'
                     @endif id="iconViewer" alt="">
                         <h2 id="mail-title" class="mt-2">{{ $title?? translate('Main_Title_or_Subject_of_the_Mail') }}</h2>
                         <div class="mb-2" id="mail-body">{!! $body?? translate('Hi_Sabrina,') !!}</div>
@@ -230,7 +230,7 @@ width: 24px;
                         @if (isset($social_media))
                             @foreach ($social_media as $social)
                                 <a href="{{ $social->link }}" target=”_blank” id="{{ $social->name  }}-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data[$social->name]) && $data[$social->name] == 1)?'':'display:none;' }}">
-                                    <img src="{{asset('/public/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
+                                    <img src="{{asset('/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
                                 </a>
                             @endforeach
                         @endif

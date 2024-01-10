@@ -44,10 +44,10 @@
 
                                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                         $banner->value ?? '',
-                                                        asset('storage/app/public/promotional_banner').'/'.$banner->value ?? '',
-                                                        asset('/public/assets/admin/img/upload-placeholder.png'),
+                                                        asset('storage/app/promotional_banner').'/'.$banner->value ?? '',
+                                                        asset('/assets/admin/img/upload-placeholder.png'),
                                                         'promotional_banner/'
-                                                    ) }}" data-onerror-image="{{asset('/public/assets/admin/img/upload-placeholder.png')}}" alt="">
+                                                    ) }}" data-onerror-image="{{asset('/assets/admin/img/upload-placeholder.png')}}" alt="">
                                                 </div>
                                                     <input type="file" name="image"  hidden>
                                             </label>
@@ -77,7 +77,7 @@
     <script src="{{asset('public/assets/admin')}}/js/view-pages/other-banners.js"></script>
         <script>
             $('#reset_btn').click(function(){
-                $('#viewer').attr('src','{{asset('/public/assets/admin/img/upload-placeholder.png')}}');
+                $('#viewer').attr('src','{{asset('/assets/admin/img/upload-placeholder.png')}}');
             })
         </script>
 @endpush

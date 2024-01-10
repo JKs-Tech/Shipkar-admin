@@ -10,7 +10,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('/public/assets/admin/img/bank.png')}}" class="w--26" alt="">
+                    <img src="{{asset('/assets/admin/img/bank.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                     {{translate('messages.my_bank_info')}}

@@ -19,8 +19,8 @@
                 <input type="checkbox" class="toggle-switch-input dynamic-checkbox"
                        data-id="status-{{$zone['id']}}"
                        data-type="status"
-                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/zone-status-on.png'
-                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/zone-status-off.png"
+                       data-image-on='{{asset('/assets/admin/img/modal')}}/zone-status-on.png'
+                       data-image-off="{{asset('/assets/admin/img/modal')}}/zone-status-off.png"
                        data-title-on="{{translate('Want_to_activate_this_Zone?')}}"
                        data-title-off="{{translate('Want_to_deactivate_this_Zone?')}}"
                        data-text-on="<p>{{translate('If_you_activate_this_zone,_Customers_can_see_all_stores_&_products_available_under_this_Zone_from_the_Customer_App_&_Website.')}}</p>"

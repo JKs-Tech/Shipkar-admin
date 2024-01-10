@@ -41,8 +41,8 @@
                                 <input type="checkbox" class="status toggle-switch-input dynamic-checkbox"
                                        data-id="mail-status"
                                        data-type="status"
-                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/place-order-on.png'
-                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/place-order-off.png"
+                                       data-image-on='{{asset('/assets/admin/img/modal')}}/place-order-on.png'
+                                       data-image-off="{{asset('/assets/admin/img/modal')}}/place-order-off.png"
                                        data-title-on="{{translate('Want_to_enable_Withdraw_deny_mail?')}}"
                                        data-title-off="{{translate('Want_to_disable_Withdraw_deny_mail?')}}"
                                        data-text-on="<p>{{translate('If_enabled,_Stores_will_receive_an_automated_mail_from_the_system_when_the_Admin_Rejects_their_Withdraw_Request.')}}</p>"

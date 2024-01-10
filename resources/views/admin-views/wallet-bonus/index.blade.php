@@ -280,7 +280,7 @@
                         </div>
                         @if(count($bonuses) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>
@@ -305,7 +305,7 @@
                         <div class="item">
                             <div class="mb-20">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/image_127.png')}}" alt="" class="mb-20">
+                                    <img src="{{asset('/assets/admin/img/image_127.png')}}" alt="" class="mb-20">
                                     <h5 class="modal-title">{{translate('Wallet_bonus_is_only_applicable_when_a_customer_add_fund_to_wallet_via_outside_payment_gateway_!')}}</h5>
                                 </div>
                                 <ul>

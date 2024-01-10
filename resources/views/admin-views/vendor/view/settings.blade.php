@@ -28,7 +28,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="form-group mb-0">
                                 <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border border-secondary rounded px-4 form-control" for="item_section">
-                                <span class="pr-2">{{translate('messages.manage_item_setup')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_disabled,_item_management_feature_will_be_hidden_from_store_panel_&_store_app')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.show_hide_food_menu')}}"></span></span>
+                                <span class="pr-2">{{translate('messages.manage_item_setup')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_disabled,_item_management_feature_will_be_hidden_from_store_panel_&_store_app')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.show_hide_food_menu')}}"></span></span>
                                     <input type="checkbox" class="toggle-switch-input redirect-url" data-url="{{route('admin.store.toggle-settings',[$store->id,$store->item_section?0:1, 'item_section'])}}"  name="item_section" id="item_section" {{$store->item_section?'checked':''}}>
                                     <span class="toggle-switch-label text">
                                         <span class="toggle-switch-indicator"></span>
@@ -40,7 +40,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="form-group mb-0">
                                 <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border border-secondary rounded px-4 form-control" for="reviews_section">
-                                <span class="pr-2">{{translate('messages.Show_Reviews_In_Store_Panel')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_store_owners_can_see_customer_feedback_in_the_store_panel_&_store_app.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.show_hide_food_menu')}}"></span> </span>
+                                <span class="pr-2">{{translate('messages.Show_Reviews_In_Store_Panel')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_store_owners_can_see_customer_feedback_in_the_store_panel_&_store_app.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.show_hide_food_menu')}}"></span> </span>
                                     <input type="checkbox" class="toggle-switch-input redirect-url" data-url="{{route('admin.store.toggle-settings',[$store->id,$store->reviews_section?0:1, 'reviews_section'])}}"  name="reviews_section" id="reviews_section" {{$store->reviews_section?'checked':''}}>
                                     <span class="toggle-switch-label text">
                                         <span class="toggle-switch-indicator"></span>
@@ -51,7 +51,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="form-group mb-0">
                                 <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border border-secondary rounded px-4 form-control" for="pos_system">
-                                <span class="pr-2 text-capitalize">{{translate('messages.include_POS_in_store_panel')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Enable_or_Disable_Point_of_Sale_(POS)_in_the_store_panel.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.pos_system_hint')}}"></span></span>
+                                <span class="pr-2 text-capitalize">{{translate('messages.include_POS_in_store_panel')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Enable_or_Disable_Point_of_Sale_(POS)_in_the_store_panel.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.pos_system_hint')}}"></span></span>
                                     <input type="checkbox" class="toggle-switch-input redirect-url" data-url="{{route('admin.store.toggle-settings',[$store->id,$store->pos_system?0:1, 'pos_system'])}}"  id="pos_system" {{$store->pos_system?'checked':''}}>
                                     <span class="toggle-switch-label">
                                         <span class="toggle-switch-indicator"></span>
@@ -63,7 +63,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="form-group mb-0">
                                 <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border border-secondary rounded px-4 form-control" for="schedule_order">
-                                <span class="pr-2">{{translate('messages.scheduled_order')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_store_owner_can_take_scheduled_orders_from_customers.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.scheduled_order_hint')}}"></span></span>
+                                <span class="pr-2">{{translate('messages.scheduled_order')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_store_owner_can_take_scheduled_orders_from_customers.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.scheduled_order_hint')}}"></span></span>
                                     <input type="checkbox" class="toggle-switch-input redirect-url" data-url="{{route('admin.store.toggle-settings',[$store->id,$store->schedule_order?0:1, 'schedule_order'])}}"  id="schedule_order" {{$store->schedule_order?'checked':''}}>
                                     <span class="toggle-switch-label">
                                         <span class="toggle-switch-indicator"></span>
@@ -74,7 +74,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="form-group mb-0">
                                 <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border border-secondary rounded px-4 form-control" for="self_delivery_system">
-                                <span class="pr-2 text-capitalize">{{translate('Store-managed_Delivery')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_this_option_is_enabled,_stores_must_deliver_orders_using_their_own_deliverymen._Plus,_stores_will_get_the_option_to_add_their_own_deliverymen_from_the_store_panel.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.self_delivery_hint')}}"></span></span>
+                                <span class="pr-2 text-capitalize">{{translate('Store-managed_Delivery')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_this_option_is_enabled,_stores_must_deliver_orders_using_their_own_deliverymen._Plus,_stores_will_get_the_option_to_add_their_own_deliverymen_from_the_store_panel.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.self_delivery_hint')}}"></span></span>
                                     <input type="checkbox" class="toggle-switch-input redirect-url" data-url="{{route('admin.store.toggle-settings',[$store->id,$store->self_delivery_system?0:1, 'self_delivery_system'])}}"  id="self_delivery_system" {{$store->self_delivery_system?'checked':''}}>
                                     <span class="toggle-switch-label">
                                         <span class="toggle-switch-indicator"></span>
@@ -85,7 +85,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="form-group mb-0">
                                 <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border border-secondary rounded px-4 form-control" for="delivery">
-                                    <span class="pr-2">{{translate('messages.home_delivery')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_customers_can_make_home_delivery_orders_from_this_store.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.home_delivery_hint')}}"></span></span>
+                                    <span class="pr-2">{{translate('messages.home_delivery')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_customers_can_make_home_delivery_orders_from_this_store.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.home_delivery_hint')}}"></span></span>
                                     <input type="checkbox" name="delivery" class="toggle-switch-input redirect-url" data-url="{{route('admin.store.toggle-settings',[$store->id,$store->delivery?0:1, 'delivery'])}}"  id="delivery" {{$store->delivery?'checked':''}}>
                                     <span class="toggle-switch-label">
                                         <span class="toggle-switch-indicator"></span>
@@ -96,7 +96,7 @@
                         <div class="col-sm-6 col-lg-4">
                             <div class="form-group mb-0">
                                 <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border border-secondary rounded px-4 form-control" for="take_away">
-                                <span class="pr-2 text-capitalize">{{translate('messages.takeaway')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_customers_can_place_takeaway_orders_from_this_store.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.take_away_hint')}}"></span></span>
+                                <span class="pr-2 text-capitalize">{{translate('messages.takeaway')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_customers_can_place_takeaway_orders_from_this_store.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.take_away_hint')}}"></span></span>
                                     <input type="checkbox" class="toggle-switch-input redirect-url" data-url="{{route('admin.store.toggle-settings',[$store->id,$store->take_away?0:1, 'take_away'])}}"  id="take_away" {{$store->take_away?'checked':''}}>
                                     <span class="toggle-switch-label">
                                         <span class="toggle-switch-indicator"></span>
@@ -111,7 +111,7 @@
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="form-group mb-0">
                                         <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border border-secondary rounded px-4 form-control" for="prescription_order">
-                                        <span class="pr-2 text-capitalize">{{translate('messages.prescription_order')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.prescription_order_hint')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.prescription_order_hint')}}"></span></span>
+                                        <span class="pr-2 text-capitalize">{{translate('messages.prescription_order')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('messages.prescription_order_hint')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.prescription_order_hint')}}"></span></span>
                                             <input type="checkbox" class="toggle-switch-input redirect-url" data-url="{{route('admin.store.toggle-settings',[$store->id,$store->prescription_order?0:1, 'prescription_order'])}}"  id="prescription_order" {{$store->prescription_order?'checked':''}}>
                                             <span class="toggle-switch-label">
                                                 <span class="toggle-switch-indicator"></span>
@@ -130,7 +130,7 @@
                                 @if ($toggle_veg_non_veg && config('module.'.$store->module->module_type)['veg_non_veg'])
                                     <div class="col-sm-6 col-lg-4">
                                         <div class="form-group">
-                                            <label class="form-label">{{translate('store_type')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Define_the_food_type_this_store_can_sell.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.scheduled_order_hint')}}"></span></label>
+                                            <label class="form-label">{{translate('store_type')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Define_the_food_type_this_store_can_sell.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.scheduled_order_hint')}}"></span></label>
                                             <div class="resturant-type-group border rounded px-3 d-flex flex-wrap min--h-45px">
                                                 <label class="form-check form--check mr-2 mr-md-4">
                                                     <input class="form-check-input" type="radio" name="veg_non_veg" value="veg" {{$store->veg && !$store->non_veg?'checked':''}}>
@@ -156,17 +156,17 @@
                                 @endif
 
                                 <div class="form-group col-sm-6 col-lg-4">
-                                    <label class="input-label text-capitalize">{{translate('messages.minimum_order_amount')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Specify_the_minimum_order_amount_required_for_customers_when_ordering_from_this_store.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.self_delivery_hint')}}"></span></label>
+                                    <label class="input-label text-capitalize">{{translate('messages.minimum_order_amount')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Specify_the_minimum_order_amount_required_for_customers_when_ordering_from_this_store.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.self_delivery_hint')}}"></span></label>
                                     <input type="number" name="minimum_order" step="0.01" min="0" max="100000" class="form-control" placeholder="100" value="{{$store->minimum_order>0?$store->minimum_order:''}}">
                                 </div>
                                 @if (config('module.'.$store->module->module_type)['order_place_to_schedule_interval'])
                                 <div class="form-group col-sm-6 col-lg-4">
-                                    <label class="input-label text-capitalize" for="maximum_delivery_time">{{translate('messages.minimum_processing_time')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Set_the_total_time_to_process_the_order_after_order_confirmation.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('Set_the_total_time_to_process_the_order_after_order_confirmation.')}}"></span></label>
+                                    <label class="input-label text-capitalize" for="maximum_delivery_time">{{translate('messages.minimum_processing_time')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Set_the_total_time_to_process_the_order_after_order_confirmation.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('Set_the_total_time_to_process_the_order_after_order_confirmation.')}}"></span></label>
                                     <input type="text" name="order_place_to_schedule_interval" class="form-control" value="{{$store->order_place_to_schedule_interval}}">
                                 </div>
                                 @endif
                                 <div class="form-group col-sm-6 col-lg-4">
-                                    <label class="input-label text-capitalize" for="maximum_delivery_time">{{translate('messages.approx_delivery_time')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Set_the_total_time_to_deliver_products.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('Set_the_total_time_to_deliver_products.')}}"></span></label>
+                                    <label class="input-label text-capitalize" for="maximum_delivery_time">{{translate('messages.approx_delivery_time')}}<span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('Set_the_total_time_to_deliver_products.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('Set_the_total_time_to_deliver_products.')}}"></span></label>
                                     <div class="input-group">
                                         <input type="number" name="minimum_delivery_time" class="form-control" placeholder="Min: 10" value="{{explode('-',$store->delivery_time)[0]}}" data-toggle="tooltip" data-placement="top" data-original-title="{{translate('messages.minimum_delivery_time')}}">
                                         <input type="number" name="maximum_delivery_time" class="form-control" placeholder="Max: 20" value="{{explode(' ',explode('-',$store->delivery_time)[1])[0]}}" data-toggle="tooltip" data-placement="top" data-original-title="{{translate('messages.maximum_delivery_time')}}">
@@ -188,7 +188,7 @@
                                 <div class="form-group col-sm-6 col-lg-4">
                                     <div class="form-group">
                                         <label class="d-flex mb-1 justify-content-between switch toggle-switch-sm text-dark text-capitalize" for="comission_status">
-                                            <span>{{translate('messages.admin_commission')}}(%) <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_admin_will_only_receive_the_certain_commission_percentage_he_set_for_this_store._Otherwise,_the_system_default_commission_will_be_applied.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('When_enabled,_admin_will_only_receive_the_certain_commission_percentage_he_set_for_this_store._Otherwise,_the_system_default_commission_will_be_applied.')}}"></span></span>
+                                            <span>{{translate('messages.admin_commission')}}(%) <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('When_enabled,_admin_will_only_receive_the_certain_commission_percentage_he_set_for_this_store._Otherwise,_the_system_default_commission_will_be_applied.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('When_enabled,_admin_will_only_receive_the_certain_commission_percentage_he_set_for_this_store._Otherwise,_the_system_default_commission_will_be_applied.')}}"></span></span>
                                             <input type="checkbox" class="toggle-switch-input" name="comission_status" id="comission_status" value="1" {{isset($store->comission)?'checked':''}}>
                                             <span class="toggle-switch-label">
                                                 <span class="toggle-switch-indicator"></span>

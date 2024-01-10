@@ -96,7 +96,7 @@
                                         <img class="avatar avatar-lg mr-3 onerror-image"
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $review->item['image'] ?? '',
-                                            asset('storage/app/public/product').'/'.$review->item['image'] ?? '',
+                                            asset('storage/app/product').'/'.$review->item['image'] ?? '',
                                             asset('public/assets/admin/img/160x160/img2.jpg'),
                                             'product/'
                                         ) }}" 
@@ -154,7 +154,7 @@
                 </div>
                 @if(count($reviews) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

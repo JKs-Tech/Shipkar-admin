@@ -140,7 +140,7 @@
                                 </label>
                                 <div class="text-center py-3 my-auto">
                                     <img class="initial--4 onerror-image" id="viewer"
-                                    src="{{\App\CentralLogics\Helpers::onerror_image_helper($campaign->image, asset('storage/app/public/campaign/').'/'.$campaign->image, asset('public/assets/admin/img/900x400/img1.jpg'), 'campaign/') }}"
+                                    src="{{\App\CentralLogics\Helpers::onerror_image_helper($campaign->image, asset('storage/app/campaign/').'/'.$campaign->image, asset('public/assets/admin/img/900x400/img1.jpg'), 'campaign/') }}"
                                          data-onerror-image="{{ asset('public/assets/admin/img/900x400/img1.jpg') }}" alt="campaign image"/>
                                 </div>
                                 <div class="custom-file">
@@ -207,7 +207,7 @@
         });
 
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('storage/app/public/campaign')}}/{{$campaign->image}}');
+            $('#viewer').attr('src','{{asset('storage/app/campaign')}}/{{$campaign->image}}');
         })
     </script>
 @endpush

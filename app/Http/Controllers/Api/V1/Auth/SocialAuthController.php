@@ -379,7 +379,7 @@ class SocialAuthController extends Controller
                 $aud = 'https://appleid.apple.com';
                 $iat = strtotime('now');
                 $exp = strtotime('+60days');
-                $keyContent = file_get_contents('storage/app/public/apple-login/'.$apple_login->service_file);
+                $keyContent = file_get_contents('storage/app/apple-login/'.$apple_login->service_file);
             
                 $token = JWT::encode([
                     'iss' => $teamId,

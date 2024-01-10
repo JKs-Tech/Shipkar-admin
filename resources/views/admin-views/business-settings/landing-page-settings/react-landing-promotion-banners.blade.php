@@ -48,7 +48,7 @@
 
                                     <label class="upload-img-3 d-block max-w-640">
                                         <div class="img">
-                                            <img src="{{asset("/public/assets/admin/img/upload-4.png")}}" data-onerror-image="{{asset("/public/assets/admin/img/upload-4.png")}}" class="vertical-img w-100 mw-100 onerror-image" alt="">
+                                            <img src="{{asset("/assets/admin/img/upload-4.png")}}" data-onerror-image="{{asset("/assets/admin/img/upload-4.png")}}" class="vertical-img w-100 mw-100 onerror-image" alt="">
                                         </div>
                                         <input type="file"  name="image" hidden="">
                                     </label>
@@ -85,11 +85,11 @@
                                             <img
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $banner['img'] ?? '',
-                                                asset('storage/app/public/promotional_banner').'/'.$banner['img'] ?? '',
-                                                asset('/public/assets/admin/img/upload-3.png'),
+                                                asset('storage/app/promotional_banner').'/'.$banner['img'] ?? '',
+                                                asset('/assets/admin/img/upload-3.png'),
                                                 'promotional_banner/'
                                             ) }}" 
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-3.png')}}" class="__size-105 mw-100 onerror-image" alt="">
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-3.png')}}" class="__size-105 mw-100 onerror-image" alt="">
                                         </td>
                                         <td>
                                             <div class="btn--container justify-content-center">
@@ -114,7 +114,7 @@
                     </div>
                     @if(count($banners) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

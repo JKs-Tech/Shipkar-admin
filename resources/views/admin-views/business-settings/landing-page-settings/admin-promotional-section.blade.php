@@ -106,7 +106,7 @@
                                 </label>
                                 <label class="upload-img-3 m-0 d-block">
                                     <div class="img">
-                                        <img src="{{asset('/public/assets/admin/img/upload-4.png')}}" data-onerror-image="{{asset('/public/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
+                                        <img src="{{asset('/assets/admin/img/upload-4.png')}}" data-onerror-image="{{asset('/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
                                     </div>
                                         <input type="file" name="image"  hidden>
                                 </label>
@@ -167,19 +167,19 @@
                                         <img
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $banner->image ?? '',
-                                            asset('storage/app/public/promotional_banner').'/'.$banner->image ?? '',
-                                            asset('/public/assets/admin/img/upload-3.png'),
+                                            asset('storage/app/promotional_banner').'/'.$banner->image ?? '',
+                                            asset('/assets/admin/img/upload-3.png'),
                                             'promotional_banner/'
                                         ) }}"
-                                        data-onerror-image="{{asset('/public/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
+                                        data-onerror-image="{{asset('/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
                                     </td>
                                     <td>
                                         <label class="toggle-switch toggle-switch-sm">
                                             <input type="checkbox"
                                                    data-id="status-{{$banner->id}}"
                                                    data-type="status"
-                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/promotional-on.png') }}"
-                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/promotional-off.png') }}"
+                                                   data-image-on="{{ asset('/assets/admin/img/modal/promotional-on.png') }}"
+                                                   data-image-off="{{ asset('/assets/admin/img/modal/promotional-off.png') }}"
                                                    data-title-on="{{ translate('By Turning ON Promotional Banner Section') }}"
                                                    data-title-off="{{ translate('By Turning OFF Promotional Banner Section') }}"
                                                    data-text-on="<p>{{ translate('Promotional banner will be enabled. You will be able to see promotional activity') }}</p>"
@@ -219,7 +219,7 @@
                 </div>
                 @if(count($banners) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

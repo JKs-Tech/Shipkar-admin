@@ -10,7 +10,7 @@
         <!-- Page Title -->
         <div class="mb-4 pb-2">
             <h2 class="h1 mb-0 text-capitalize d-flex align-items-center gap-2">
-                <img src="{{asset('/public/assets/admin/img/3rd-party.png')}}" alt="">
+                <img src="{{asset('/assets/admin/img/3rd-party.png')}}" alt="">
                 {{translate('Offline_Payment_Method_Setup')}}
             </h2>
         </div>
@@ -101,8 +101,8 @@
                                                     <input type="checkbox"
                                                            data-id="status-{{$method->id}}"
                                                            data-type="status"
-                                                           data-image-on="{{asset('/public/assets/admin/img/modal/wallet-on.png')}}"
-                                                           data-image-off=" {{asset('/public/assets/admin/img/modal/wallet-off.png')}}"
+                                                           data-image-on="{{asset('/assets/admin/img/modal/wallet-on.png')}}"
+                                                           data-image-off=" {{asset('/assets/admin/img/modal/wallet-off.png')}}"
                                                            data-title-on="{{translate('Want_to_enable_this_offline_payment_method?')}}"
                                                            data-title-off="{{translate('Want_to_disable_this_offline_payment_method?')}}"
                                                            data-text-on="<p>{{translate('It_will_be_available_on_the_user_views.')}}</p>"
@@ -154,7 +154,7 @@
                                 </div>
                             @else
                             <div class="empty--data">
-                                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                                 <h5>
                                     {{translate('no_data_found')}}
                                 </h5>

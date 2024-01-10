@@ -97,7 +97,7 @@
                             <img class="onerror-image" data-onerror-image="{{asset('public/assets/admin/img/100x100/1.png')}}"
                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                 $store->logo ?? '',
-                                asset('storage/app/public/store').'/'.$store->logo ?? '',
+                                asset('storage/app/store').'/'.$store->logo ?? '',
                                 asset('public/assets/admin/img/100x100/1.png'),
                                 'store/'
                             ) }}"
@@ -148,7 +148,7 @@
 
                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                 $store->vendor->image ?? '',
-                                asset('storage/app/public/vendor').'/'.$store->vendor->image ?? '',
+                                asset('storage/app/vendor').'/'.$store->vendor->image ?? '',
                                 asset('public/assets/admin/img/160x160/img1.jpg'),
                                 'vendor/'
                             ) }}"

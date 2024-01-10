@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{{ asset('public/assets/landing/css/main.css') }}"/>
 
     @php($icon = \App\Models\BusinessSetting::where(['key' => 'icon'])->first()->value ?? '')
-    <link rel="icon" type="image/x-icon" href="{{ asset('storage/app/public/business/' . $icon ?? asset('public/assets/landing/img/favicon.svg')) }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('storage/app/business/' . $icon ?? asset('public/assets/landing/img/favicon.svg')) }}">
     @stack('css_or_js')
     @php($backgroundChange = \App\Models\BusinessSetting::where(['key' => 'backgroundChange'])->first())
     @php($backgroundChange = isset($backgroundChange) && $backgroundChange->value ? json_decode($backgroundChange->value,true):'')
@@ -56,7 +56,7 @@
 
                     src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                         $fav,
-                        asset('storage/app/public/business/').'/'. $fav,
+                        asset('storage/app/business/').'/'. $fav,
                         asset('public/assets/admin/img/160x160/img2.jpg'),
                         'business/'
                     ) }}"
@@ -210,7 +210,7 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a class="logo">
-                                <img  class="onerror-image"  data-onerror-image="{{ asset('public/assets/admin/img/160x160/img2.jpg') }}" src="{{ \App\CentralLogics\Helpers::onerror_image_helper($logo, asset('storage/app/public/business/') .'/'. $logo, asset('public/assets/admin/img/upload-img.png') , 'business/') }}" alt="image">
+                                <img  class="onerror-image"  data-onerror-image="{{ asset('public/assets/admin/img/160x160/img2.jpg') }}" src="{{ \App\CentralLogics\Helpers::onerror_image_helper($logo, asset('storage/app/business/') .'/'. $logo, asset('public/assets/admin/img/upload-img.png') , 'business/') }}" alt="image">
                             </a>
                         </div>
                         <div class="txt">

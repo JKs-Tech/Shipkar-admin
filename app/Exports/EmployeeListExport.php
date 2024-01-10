@@ -90,7 +90,7 @@ class EmployeeListExport implements  FromView, ShouldAutoSize, WithStyles,WithCo
             $drawing = new Drawing();
             $drawing->setName($item->f_name);
             $drawing->setDescription($item->f_name);
-            $drawing->setPath(is_file(storage_path('app/public/admin/'.$item->image))?storage_path('app/public/admin/'.$item->image):public_path('/assets/admin/img/160x160/img2.jpg'));
+            $drawing->setPath(is_file(storage_path('app/admin/'.$item->image))?storage_path('app/admin/'.$item->image):public_path('/assets/admin/img/160x160/img2.jpg'));
             $drawing->setHeight(25);
             $index+=5;
             $drawing->setCoordinates("B$index");

@@ -71,12 +71,12 @@
                                         <img
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $fixed_promotional_banner['value'] ?? '',
-                                            asset('storage/app/public/promotional_banner').'/'.$fixed_promotional_banner['value'] ?? '',
-                                            asset('/public/assets/admin/img/upload-4.png'),
+                                            asset('storage/app/promotional_banner').'/'.$fixed_promotional_banner['value'] ?? '',
+                                            asset('/assets/admin/img/upload-4.png'),
                                             'promotional_banner/'
                                         ) }}"
 
-                                        data-onerror-image="{{asset('/public/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
+                                        data-onerror-image="{{asset('/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
                                     </div>
                                         <input type="file" name="fixed_promotional_banner"  hidden>
                                            @if (isset($fixed_promotional_banner['value']))

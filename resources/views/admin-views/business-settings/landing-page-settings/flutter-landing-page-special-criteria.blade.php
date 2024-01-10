@@ -93,7 +93,7 @@
                                     </div>
                                     <label class="upload-img-3 m-0">
                                         <div class="img">
-                                            <img src="{{asset('/public/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px">
+                                            <img src="{{asset('/assets/admin/img/aspect-1.png')}}" alt="" class="img__aspect-1 min-w-187px max-w-187px">
                                         </div>
                                           <input type="file"  name="image" hidden>
                                     </label>
@@ -140,19 +140,19 @@
                                             <img
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $criteria->image ?? '',
-                                                asset('storage/app/public/special_criteria').'/'.$criteria->image ?? '',
-                                                asset('/public/assets/admin/img/upload-3.png'),
+                                                asset('storage/app/special_criteria').'/'.$criteria->image ?? '',
+                                                asset('/assets/admin/img/upload-3.png'),
                                                 'special_criteria/'
                                             ) }}" 
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
                                         </td>
                                         <td>
                                             <label class="toggle-switch toggle-switch-sm">
                                                 <input type="checkbox"
                                                        data-id="status-{{$criteria->id}}"
                                                        data-type="status"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/this-criteria-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/this-criteria-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/this-criteria-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/this-criteria-off.png') }}"
                                                        data-title-on="{{ translate('messages.want_to_enable') }} <strong>{{ translate('this_feature?') }}"
                                                        data-title-off="{{ translate('messages.want_to_disable') }} <strong>{{ translate('this_feature?') }}"
                                                        data-text-on="<p>{{ translate('If_yes,_it_will_be_available_on_the_landing_page.') }}</p>"
@@ -194,7 +194,7 @@
                     </div>
                     @if(count($criterias) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

@@ -77,7 +77,7 @@ class PushNotificationExport implements  FromView, ShouldAutoSize, WithStyles ,W
             $drawing = new Drawing();
             $drawing->setName($item->title);
             $drawing->setDescription($item->title);
-            $drawing->setPath(is_file(storage_path('app/public/notification/'.$item->image))?storage_path('app/public/notification/'.$item->image):public_path('/assets/admin/img/160x160/img2.jpg'));
+            $drawing->setPath(is_file(storage_path('app/notification/'.$item->image))?storage_path('app/notification/'.$item->image):public_path('/assets/admin/img/160x160/img2.jpg'));
             $drawing->setHeight(25);
             $index+=4;
             $drawing->setCoordinates("E$index");

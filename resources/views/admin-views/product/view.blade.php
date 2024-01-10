@@ -34,7 +34,7 @@
                                     <img class="avatar avatar-xxl avatar-4by3 mr-4 onerror-image"
                                     src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                         $product['image'] ?? '',
-                                        asset('storage/app/public/product').'/'.$product['image'] ?? '',
+                                        asset('storage/app/product').'/'.$product['image'] ?? '',
                                         asset('public/assets/admin/img/160x160/img2.jpg'),
                                         'product/'
                                     ) }}"
@@ -242,7 +242,7 @@
 
                                     src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                         $product->store->logo ?? '',
-                                        asset('storage/app/public/store').'/'.$product->store->logo ?? '',
+                                        asset('storage/app/store').'/'.$product->store->logo ?? '',
                                         asset('public/assets/admin/img/160x160/img1.jpg'),
                                         'store/'
                                     ) }}"
@@ -478,7 +478,7 @@
                                             
                                                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                     $review->customer->image ?? '',
-                                                    asset('storage/app/public/profile').'/'.$review->customer->image ?? '',
+                                                    asset('storage/app/profile').'/'.$review->customer->image ?? '',
                                                     asset('public/assets/admin/img/160x160/img1.jpg'),
                                                     'profile/'
                                                 ) }}"
@@ -545,7 +545,7 @@
             </div>
             @if (count($reviews) === 0)
                 <div class="empty--data">
-                    <img src="{{ asset('/public/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
+                    <img src="{{ asset('/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
                     <h5>
                         {{ translate('no_data_found') }}
                     </h5>

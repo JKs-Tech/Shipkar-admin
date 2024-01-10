@@ -50,7 +50,7 @@
                                 @if ($review->item)
                                 <a class="media align-items-center" href="{{route('vendor.item.view',[$review->item['id']])}}">
                                     <img class="avatar avatar-lg mr-3 onerror-image"  data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}"
-                                    src="{{\App\CentralLogics\Helpers::onerror_image_helper($review->item['image'], asset('storage/app/public/product/').'/'.$review->item['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'product/') }}"
+                                    src="{{\App\CentralLogics\Helpers::onerror_image_helper($review->item['image'], asset('storage/app/product/').'/'.$review->item['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'product/') }}"
                                        alt="{{$review->item->name}} image">
                                     <div class="media-body">
                                         <h5 class="text-hover-primary mb-0">{{Str::limit($review->item['name'],10)}}</h5>
@@ -67,7 +67,7 @@
                                     <div class="avatar avatar-circle">
                                         <img class="avatar-img onerror-image" width="75" height="75"
                                             data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
-                                            src="{{\App\CentralLogics\Helpers::onerror_image_helper($review->customer->image, asset('storage/app/public/profile/').'/'.$review->customer->image, asset('public/assets/admin/img/160x160/img1.jpg'), 'profile/') }}"
+                                            src="{{\App\CentralLogics\Helpers::onerror_image_helper($review->customer->image, asset('storage/app/profile/').'/'.$review->customer->image, asset('public/assets/admin/img/160x160/img1.jpg'), 'profile/') }}"
                                             alt="Image Description">
                                     </div>
                                     <div class="ml-3">
@@ -114,7 +114,7 @@
                 </table>
                 @if(count($reviews) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

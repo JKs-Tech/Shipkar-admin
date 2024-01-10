@@ -26,7 +26,7 @@
 
                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                     $item->store['logo'] ?? '',
-                    asset('storage/app/public/store').'/'.$item->store['logo'] ?? '',
+                    asset('storage/app/store').'/'.$item->store['logo'] ?? '',
                     asset('public/assets/admin/img/100x100/1.png'),
                     'store/'
                 ) }}"

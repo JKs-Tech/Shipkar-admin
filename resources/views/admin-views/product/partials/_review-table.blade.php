@@ -8,7 +8,7 @@
               
                 src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                     $review->item['image'] ?? '',
-                    asset('storage/app/public/product').'/'.$review->item['image'] ?? '',
+                    asset('storage/app/product').'/'.$review->item['image'] ?? '',
                     asset('public/assets/admin/img/160x160/img2.jpg'),
                     'product/'
                 ) }}"

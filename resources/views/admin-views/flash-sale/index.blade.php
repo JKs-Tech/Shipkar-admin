@@ -198,8 +198,8 @@
                                             <input type="checkbox" class="toggle-switch-input dynamic-checkbox" {{$flash_sale->is_publish?'checked':''}}
                                                     data-id="is_publish-{{$flash_sale['id']}}"
                                                    data-type="status"
-                                                   data-image-on='{{asset('/public/assets/admin/img/modal')}}/zone-is_publish-on.png'
-                                                   data-image-off="{{asset('/public/assets/admin/img/modal')}}/zone-is_publish-off.png"
+                                                   data-image-on='{{asset('/assets/admin/img/modal')}}/zone-is_publish-on.png'
+                                                   data-image-off="{{asset('/assets/admin/img/modal')}}/zone-is_publish-off.png"
                                                    data-title-on="{{translate('Want_to_publish_this_flash_sale?')}}"
                                                    data-title-off="{{translate('Want_to_hide_this_flash_sale?')}}"
                                                    data-text-on="<p>{{translate('If_you_publish_this_flash_sale,_Customers_can_see_all_stores_&_products_available_under_this_flash_sale_from_the_Customer_App_&_Website._other_flash_sales_will_be_turned_off.')}}</p>"
@@ -238,7 +238,7 @@
                         </div>
                         @if(count($flash_sales) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

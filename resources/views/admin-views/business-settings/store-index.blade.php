@@ -73,15 +73,15 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.A_store_can_send_a_registration_request_through_their_store_or_customer.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.store_self_registration') }}"> *
                                                 </span>
                                             </span>
                                             <input type="checkbox"
                                                    data-id="store_self_registration1"
                                                    data-type="toggle"
-                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/store-self-reg-on.png') }}"
-                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/store-self-reg-off.png') }}"
+                                                   data-image-on="{{ asset('/assets/admin/img/modal/store-self-reg-on.png') }}"
+                                                   data-image-off="{{ asset('/assets/admin/img/modal/store-self-reg-off.png') }}"
                                                    data-title-on=""
                                                    data-title-off=""
                                                    data-text-on="<p>{{ translate('messages.If_you_enable_this,_Stores_can_do_self-registration_from_the_store_or_customer_app_or_website.') }}</p>"
@@ -109,7 +109,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.If_enabled,can_create_duplicate_products.')}}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.Product_Gallery') }}"> *
                                                 </span>
                                             </span>
@@ -117,8 +117,8 @@
 
                                                    data-id="product_gallery"
                                                    data-type="toggle"
-                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/store-reg-on.png') }}"
-                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/store-reg-off.png') }}"
+                                                   data-image-on="{{ asset('/assets/admin/img/modal/store-reg-on.png') }}"
+                                                   data-image-off="{{ asset('/assets/admin/img/modal/store-reg-off.png') }}"
                                                    data-title-on="<strong>{{translate('messages.Want_to_enable_product_gallery?')}}</strong>"
                                                    data-title-off="<strong>{{translate('messages.Want_to_disable_product_gallery?')}}</strong>"
                                                    data-text-on="<p>{{ translate('messages.If_you_enable_this,can_create_duplicate_products') }}</p>"
@@ -145,7 +145,7 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.If_enabled,can_create_duplicate_products.')}}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.access_all_products') }}"> *
                                                 </span>
                                             </span>
@@ -153,8 +153,8 @@
 
                                                    data-id="access_all_products"
                                                    data-type="toggle"
-                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/store-reg-on.png') }}"
-                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/store-reg-off.png') }}"
+                                                   data-image-on="{{ asset('/assets/admin/img/modal/store-reg-on.png') }}"
+                                                   data-image-off="{{ asset('/assets/admin/img/modal/store-reg-off.png') }}"
                                                    data-title-on="<strong>{{translate('messages.Want_to_enable_access_all_products?')}}</strong>"
                                                    data-title-off="<strong>{{translate('messages.Want_to_disable_access_all_products?')}}</strong>"
                                                    data-text-on="<p>{{ translate('messages.If_you_enable_this,_Stores_can_access_all_products_of_other_available_stores') }}</p>"
@@ -181,15 +181,15 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                     data-toggle="tooltip" data-placement="right"
                                                     data-original-title="{{ translate('messages.If_enabled,_this_option_to_require_admin_approval_for_products_to_be_displayed_on_the_user_side.')}}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.customer_verification_toggle') }}"> *
                                                 </span>
                                             </span>
                                             <input type="checkbox"
                                                    data-id="product_approval"
                                                    data-type="toggle"
-                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/store-reg-on.png') }}"
-                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/store-reg-off.png') }}"
+                                                   data-image-on="{{ asset('/assets/admin/img/modal/store-reg-on.png') }}"
+                                                   data-image-off="{{ asset('/assets/admin/img/modal/store-reg-off.png') }}"
                                                    data-title-on="<strong>{{translate('messages.Want_to_enable_product_approval?')}}</strong>"
                                                    data-title-off="<strong>{{translate('messages.Want_to_disable_product_approval?')}}</strong>"
                                                    data-text-on="<p>{{ translate('messages.If_you_enable_this,_option_to_require_admin_approval_for_products_to_be_displayed_on_the_user_side') }}</p>"
@@ -246,15 +246,15 @@
                                                 <span class="form-label-secondary text-danger d-flex"
                                                       data-toggle="tooltip" data-placement="right"
                                                       data-original-title="{{ translate('If_enabled,_stores_will_be_automatically_suspended_by_the_system_when_their_‘Cash_in_Hand’_limit_is_exceeded.') }}"><img
-                                                        src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                        src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                         alt="{{ translate('messages.cash_in_hand_overflow') }}"> *
                                                 </span>
                                             </span>
                                         <input type="checkbox"
                                                data-id="cash_in_hand_overflow"
                                                data-type="toggle"
-                                               data-image-on="{{ asset('/public/assets/admin/img/modal/show-earning-in-apps-on.png') }}"
-                                               data-image-off="{{ asset('/public/assets/admin/img/modal/show-earning-in-apps-off.png') }}"
+                                               data-image-on="{{ asset('/assets/admin/img/modal/show-earning-in-apps-on.png') }}"
+                                               data-image-off="{{ asset('/assets/admin/img/modal/show-earning-in-apps-off.png') }}"
                                                data-title-on="{{translate('Want_to_enable')}} <strong>{{translate('Cash_In_Hand_Overflow')}}</strong>"
                                                data-title-off="{{translate('Want_to_disable')}} <strong>{{translate('Cash_In_Hand_Overflow')}}</strong> "
                                                data-text-on="<p>{{ translate('If_enabled,_stores_have_to_provide_collected_cash_by_them_self') }}</p>"
@@ -286,7 +286,7 @@
                                         <span class="form-label-secondary"
                                               data-toggle="tooltip" data-placement="right"
                                               data-original-title="{{ translate('Enter_the_maximum_cash_amount_stores_can_hold._If_this_number_exceeds,_stores_will_be_suspended_and_not_receive_any_orders.') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.dm_cancel_order_hint') }}"></span>
                                     </label>
                                     <input type="number" name="cash_in_hand_overflow_store_amount" class="form-control"
@@ -309,7 +309,7 @@
                                         <span class="form-label-secondary"
                                               data-toggle="tooltip" data-placement="right"
                                               data-original-title="{{ translate('Enter_the_minimum_cash_amount_stores_can_pay') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.dm_cancel_order_hint') }}"></span>
                                     </label>
                                     <input type="number" name="min_amount_to_pay_store" class="form-control"

@@ -71,7 +71,7 @@
                                 <div class="text-center py-3 my-auto">
                                     <img class="img--100 " id="viewer"
                                         @if(isset($category))
-                                        src="{{asset('storage/app/public/category')}}/{{$category['image']}}"
+                                        src="{{asset('storage/app/category')}}/{{$category['image']}}"
                                         @else
                                         src="{{asset('public/assets/admin/img/900x400/img1.jpg')}}"
                                         @endif
@@ -237,7 +237,7 @@
             </div>
             @if(count($categories) === 0)
             <div class="empty--data">
-                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                 <h5>
                     {{translate('no_data_found')}}
                 </h5>

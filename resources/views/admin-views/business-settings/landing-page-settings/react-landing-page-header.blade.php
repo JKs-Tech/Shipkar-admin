@@ -176,10 +176,10 @@
                                         <img
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $header_icon['value'] ?? '',
-                                            asset('storage/app/public/header_icon').'/'.$header_icon['value'] ?? '',
-                                            asset('/public/assets/admin/img/aspect-1.png'),
+                                            asset('storage/app/header_icon').'/'.$header_icon['value'] ?? '',
+                                            asset('/assets/admin/img/aspect-1.png'),
                                             'header_icon/'
-                                        ) }}" data-onerror-image="{{asset('/public/assets/admin/img/aspect-1.png')}}" class="img__aspect-1 mw-100 min-w-135px onerror-image" alt="">
+                                        ) }}" data-onerror-image="{{asset('/assets/admin/img/aspect-1.png')}}" class="img__aspect-1 mw-100 min-w-135px onerror-image" alt="">
                                     </div>
                                     <input type="file"  name="image" hidden>
                                        @if (isset($header_icon['value']))
@@ -199,7 +199,7 @@
                                 <label class="upload-img-3 m-0">
                                     <div class="position-relative">
                                     <div class="img">
-                                        <img src="{{asset('storage/app/public/header_banner')}}/{{ $header_banner['value']??'' }}" onerror='this.src="{{asset('/public/assets/admin/img/aspect-1.png')}}"' class="img__aspect-1 mw-100 min-w-135px" alt="">
+                                        <img src="{{asset('storage/app/header_banner')}}/{{ $header_banner['value']??'' }}" onerror='this.src="{{asset('/assets/admin/img/aspect-1.png')}}"' class="img__aspect-1 mw-100 min-w-135px" alt="">
                                     </div>
                                         <input type="file" name="banner_image"  hidden>
                                            @if (isset($header_banner['value']))

@@ -16,12 +16,12 @@
             <img class="img-responsive initial--30 onerror-image"
             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                 $product['image'] ?? '',
-                asset('storage/app/public/product').'/'.$product['image'] ?? '',
+                asset('storage/app/product').'/'.$product['image'] ?? '',
                 asset('public/assets/admin/img/160x160/img2.jpg'),
                 'product/'
             ) }}" 
                 data-onerror-image="{{ asset('public/assets/admin/img/160x160/img2.jpg') }}"
-                data-zoom="{{ asset('storage/app/public/product') }}/{{ $product['image'] }}" alt="Product image"
+                data-zoom="{{ asset('storage/app/product') }}/{{ $product['image'] }}" alt="Product image"
                 width="">
             <div class="cz-image-zoom-pane"></div>
         </div>

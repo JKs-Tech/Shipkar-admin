@@ -13,7 +13,7 @@
             <!-- Page Title -->
             <div class="mb-3">
                 <h2 class="h1 mb-0 text-capitalize d-flex align-items-center gap-2">
-                    <img width="20" src="{{asset('/public/assets/back-end/img/message.png')}}" alt="">
+                    <img width="20" src="{{asset('/assets/back-end/img/message.png')}}" alt="">
                     {{translate('messages.Message_View')}}
                 </h2>
             </div>

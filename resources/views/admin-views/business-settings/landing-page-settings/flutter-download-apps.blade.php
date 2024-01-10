@@ -166,10 +166,10 @@
 
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $download_user_app_image['value'] ?? '',
-                                            asset('storage/app/public/download_user_app_image').'/'.$download_user_app_image['value'] ?? '',
-                                            asset('/public/assets/admin/img/upload-4.png'),
+                                            asset('storage/app/download_user_app_image').'/'.$download_user_app_image['value'] ?? '',
+                                            asset('/assets/admin/img/upload-4.png'),
                                             'download_user_app_image/'
-                                        ) }}" data-onerror-image="{{asset('/public/assets/admin/img/upload-4.png')}}" alt="" class="vertical-img mw-100 vertical onerror-image">
+                                        ) }}" data-onerror-image="{{asset('/assets/admin/img/upload-4.png')}}" alt="" class="vertical-img mw-100 vertical onerror-image">
                                     </div>
                                       <input type="file"  name="image" hidden>
                                       @if (isset($download_user_app_image['value']))
@@ -207,8 +207,8 @@
                                                        id="play-store-dm-status"
                                                        data-id="play-store-dm-status"
                                                        data-type="toggle"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/play-store-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/play-store-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/play-store-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/play-store-off.png') }}"
                                                        data-title-on="{{ translate('Want_to_enable_the_Play_Store_button_for_User_App?') }}"
                                                        data-title-off="{{ translate('Want_to_disable_the_Play_Store_button_for_User_App?') }}"
                                                        data-text-on="<p>{{ translate('If_enabled,_the_User_app_download_button_will_be_visible_on_the_Landing_page.') }}</p>"
@@ -244,8 +244,8 @@
                                                        id="apple-dm-status"
                                                        data-id="apple-dm-status"
                                                        data-type="toggle"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/apple-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/apple-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/apple-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/apple-off.png') }}"
                                                        data-title-on="{{ translate('want_to_enable_the_app_store_button_for_user_app?') }}"
                                                        data-title-off="{{ translate('want_to_disable_the_app_store_button_for_user_app?') }}"
                                                        data-text-on="<p>{{ translate('if_enabled,_the_user_app_download_button_will_be_visible_on_the_landing_page.') }}</p>"

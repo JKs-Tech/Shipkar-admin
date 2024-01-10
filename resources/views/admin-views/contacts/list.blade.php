@@ -12,7 +12,7 @@
             <!-- Page Title -->
             <div class="mb-3">
                 <h2 class="h1 mb-0 text-capitalize d-flex align-items-center gap-2">
-                    <img width="20" src="{{asset('/public/assets/back-end/img/message.png')}}" alt="">
+                    <img width="20" src="{{asset('/assets/back-end/img/message.png')}}" alt="">
                     {{translate('messages.all_message_lists')}}
                 </h2>
             </div>
@@ -115,7 +115,7 @@
                         </div>
                         @if(count($contacts) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('messages.no_data_found')}}
                             </h5>

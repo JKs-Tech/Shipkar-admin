@@ -103,7 +103,7 @@ class PaymentController extends Controller
 
         $additional_data = [
             'business_name' => BusinessSetting::where(['key'=>'business_name'])->first()?->value,
-            'business_logo' => asset('storage/app/public/business') . '/' .BusinessSetting::where(['key' => 'logo'])->first()?->value
+            'business_logo' => asset('storage/app/business') . '/' .BusinessSetting::where(['key' => 'logo'])->first()?->value
         ];
 
         $payment_info = new PaymentInfo(

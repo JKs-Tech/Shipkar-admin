@@ -77,7 +77,7 @@ class NotificationController extends Controller
 
         if($request->has('image'))
         {
-            $notification->image = url('/').'/storage/app/public/notification/'.$image_name;
+            $notification->image = url('/').'/storage/app/notification/'.$image_name;
         }
 
         try {
@@ -133,7 +133,7 @@ class NotificationController extends Controller
 
         if($notification->image)
         {
-            $notification->image = url('/').'/storage/app/public/notification/'.$image_name;
+            $notification->image = url('/').'/storage/app/notification/'.$image_name;
         }
 
         try {

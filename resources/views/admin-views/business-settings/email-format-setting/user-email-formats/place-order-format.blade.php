@@ -39,8 +39,8 @@
                                 <input type="checkbox" class="status toggle-switch-input dynamic-checkbox"
                                        data-id="mail-status"
                                        data-type="status"
-                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/place-order-on.png'
-                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/place-order-off.png"
+                                       data-image-on='{{asset('/assets/admin/img/modal')}}/place-order-on.png'
+                                       data-image-off="{{asset('/assets/admin/img/modal')}}/place-order-off.png"
                                        data-title-on="{{translate('Want_to_enable_Place_Order_mail?')}}"
                                        data-title-off="{{translate('Want_to_disable_Place_Order_mail?')}}"
                                        data-text-on="<p>{{translate('If_enabled,_customers_will_get_an_automatic_confirmation_mail_for_successful_Order_Placement_with_an_invoice')}}</p>"

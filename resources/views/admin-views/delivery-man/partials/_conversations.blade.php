@@ -4,7 +4,7 @@
         <div class="chat-user-info w-100 d-flex align-items-center">
             <div class="chat-user-info-img">
                 <img class="avatar-img onerror-image"
-                src="{{\App\CentralLogics\Helpers::onerror_image_helper($user['image'], asset('storage/app/public/profile/').'/'.$user['image'], asset('public/assets/admin/img/160x160/img1.jpg'), 'profile/') }}"
+                src="{{\App\CentralLogics\Helpers::onerror_image_helper($user['image'], asset('storage/app/profile/').'/'.$user['image'], asset('public/assets/admin/img/160x160/img1.jpg'), 'profile/') }}"
                     data-onerror-image="{{asset('public/assets/admin')}}/img/160x160/img1.jpg"
                     alt="Image Description">
             </div>
@@ -26,7 +26,7 @@
                             @if($con->file!=null)
                             @foreach (json_decode($con->file) as $img)
                             <br>
-                                <img class="w-100" src="{{asset('storage/app/public/conversation').'/'.$img}}">
+                                <img class="w-100" src="{{asset('storage/app/conversation').'/'.$img}}">
                                 @endforeach
                             @endif
                         </div>
@@ -41,7 +41,7 @@
                             @if($con->file!=null)
                             @foreach (json_decode($con->file) as $img)
                             <br>
-                                <img class="w-100" src="{{asset('storage/app/public/conversation').'/'.$img}}">
+                                <img class="w-100" src="{{asset('storage/app/conversation').'/'.$img}}">
                                 @endforeach
                             @endif
                         </div>

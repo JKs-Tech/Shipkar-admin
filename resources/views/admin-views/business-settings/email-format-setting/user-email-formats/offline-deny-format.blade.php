@@ -40,8 +40,8 @@
                                 <input type="checkbox" class="status toggle-switch-input dynamic-checkbox"
                                        data-id="mail-status"
                                        data-type="status"
-                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/place-order-on.png'
-                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/place-order-off.png"
+                                       data-image-on='{{asset('/assets/admin/img/modal')}}/place-order-on.png'
+                                       data-image-off="{{asset('/assets/admin/img/modal')}}/place-order-off.png"
                                        data-title-on="{{translate('Want_to_enable_Offline_payment_deny_mail?')}}"
                                        data-title-off="{{translate('Want_to_disable_Offline_payment_deny_mail?')}}"
                                        data-text-on="<p>{{translate('If_enabled,_Users_will_receive_a_confirmation_email_when_the_Admin_rejects_their_Offline_payment.')}}</p>"

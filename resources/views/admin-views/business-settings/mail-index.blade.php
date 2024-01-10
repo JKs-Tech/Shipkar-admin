@@ -26,13 +26,13 @@
                     <ul class="nav nav-tabs nav--tabs border-0 gap-2">
                         <li class="nav-item mr-2 mr-md-4">
                             <a href="{{route('admin.business-settings.third-party.mail-config')}}" class="nav-link pb-2 px-0 pb-sm-3 active">
-                                <img src="{{asset('/public/assets/admin/img/mail-config.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/mail-config.png')}}" alt="">
                                 <span>{{translate('Mail Config')}}</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('admin.business-settings.third-party.test')}}" class="nav-link pb-2 px-0 pb-sm-3">
-                                <img src="{{asset('/public/assets/admin/img/test-mail.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/test-mail.png')}}" alt="">
                                 <span>{{translate('Send Test Mail')}}</span>
                             </a>
                         </li>
@@ -67,8 +67,8 @@
 
                                            data-id="mail-config-disable"
                                            data-type="status"
-                                           data-image-on="{{ asset('/public/assets/admin/img/modal/mail-success.png') }}"
-                                           data-image-off="{{ asset('/public/assets/admin/img/modal/mail-warning.png') }}"
+                                           data-image-on="{{ asset('/assets/admin/img/modal/mail-success.png') }}"
+                                           data-image-off="{{ asset('/assets/admin/img/modal/mail-warning.png') }}"
                                            data-title-on="{{ translate('Important!') }}"
                                            data-title-off="{{ translate('Warning!') }}"
                                            data-text-on="<p>{{ translate('Enabling mail configuration services will allow the system to send emails. Please ensure that you have correctly configured the SMTP settings to avoid potential issues with email delivery.') }}</p>"
@@ -174,7 +174,7 @@
                 </div>
                 <div class="modal-body pt-0">
                     <div class="text-center mb-20">
-                        <img src="{{asset('/public/assets/admin/img/sent-mail-box.png')}}" alt="" class="mb-20">
+                        <img src="{{asset('/assets/admin/img/sent-mail-box.png')}}" alt="" class="mb-20">
                         <h5 class="modal-title">{{translate('Congratulations! Your SMTP mail has been setup successfully!')}}</h5>
                         <p class="txt">
                             {{translate("Go to test mail to check that its work perfectly or not!")}}
@@ -182,7 +182,7 @@
                     </div>
                     <div class="btn--container justify-content-center">
                         <a href="{{route('admin.business-settings.third-party.test')}}" class="btn btn--primary min-w-120">
-                            <img src="{{asset('/public/assets/admin/img/paper-plane.png')}}" alt=""> {{translate('Send Test Mail')}}
+                            <img src="{{asset('/assets/admin/img/paper-plane.png')}}" alt=""> {{translate('Send Test Mail')}}
                         </a>
                     </div>
                 </div>
@@ -201,7 +201,7 @@
                 </div>
                 <div class="modal-body pt-0">
                     <div class="text-center mb-20">
-                        <img src="{{asset('/public/assets/admin/img/mail-config/save-data.png')}}" alt="" class="mb-20">
+                        <img src="{{asset('/assets/admin/img/mail-config/save-data.png')}}" alt="" class="mb-20">
                         <h5 class="modal-title">{{translate('Send a Test Mail to Your Email ? ')}}</h5>
                         <p class="txt">
                             {{translate("A test mail will be send to your email to confirm it works perfectly.")}}
@@ -231,7 +231,7 @@
                         <div class="item">
                             <div class="mb-20">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/mail-config/slide-1.png')}}" alt="" class="mb-20">
+                                    <img src="{{asset('/assets/admin/img/mail-config/slide-1.png')}}" alt="" class="mb-20">
                                     <h5 class="modal-title">{{translate('Find SMTP Server Details')}}</h5>
                                 </div>
                                 <ul>
@@ -247,7 +247,7 @@
                         <div class="item">
                             <div class="mb-20">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/mail-config/slide-2.png')}}" alt="" class="mb-20">
+                                    <img src="{{asset('/assets/admin/img/mail-config/slide-2.png')}}" alt="" class="mb-20">
                                     <h5 class="modal-title">{{translate('Configure SMTP Settings')}}</h5>
                                 </div>
                                 <ul>
@@ -266,7 +266,7 @@
                         <div class="item">
                             <div class="mb-20">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/mail-config/slide-3.png')}}" alt="" class="mb-20">
+                                    <img src="{{asset('/assets/admin/img/mail-config/slide-3.png')}}" alt="" class="mb-20">
                                     <h5 class="modal-title">{{translate('Test SMTP Connection')}}</h5>
                                 </div>
                                 <ul>
@@ -288,7 +288,7 @@
                         <div class="item">
                             <div class="mw-353px mb-20 mx-auto">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/mail-config/slide-4.png')}}" alt="" class="mb-20">
+                                    <img src="{{asset('/assets/admin/img/mail-config/slide-4.png')}}" alt="" class="mb-20">
                                     <h5 class="modal-title">{{translate('Enable Mail Configuration')}}</h5>
                                 </div>
                                 <ul class="px-3">

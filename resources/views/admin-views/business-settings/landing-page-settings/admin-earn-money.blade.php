@@ -182,13 +182,13 @@
                                     <div class="img">
                                         <img  src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $earning_seller_image['value'] ?? '',
-                                            asset('storage/app/public/earning').'/'.$earning_seller_image['value'] ?? '',
-                                            asset('/public/assets/admin/img/upload-4.png'),
+                                            asset('storage/app/earning').'/'.$earning_seller_image['value'] ?? '',
+                                            asset('/assets/admin/img/upload-4.png'),
                                             'earning/'
                                         ) }}"
 
 
-                                        data-onerror-image="{{asset('/public/assets/admin/img/upload-4.png')}}"
+                                        data-onerror-image="{{asset('/assets/admin/img/upload-4.png')}}"
                                         class="vertical-img mw-100 vertical onerror-image" alt="">
 
                                     </div>
@@ -221,8 +221,8 @@
                                                 <input type="checkbox" name="playstore_url_status"
                                                        data-id="play-store-seller-status"
                                                        data-type="toggle"
-                                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/play-store-on.png'
-                                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/play-store-off.png"
+                                                       data-image-on='{{asset('/assets/admin/img/modal')}}/play-store-on.png'
+                                                       data-image-off="{{asset('/assets/admin/img/modal')}}/play-store-off.png"
                                                        data-title-on="{{translate('Want_to_enable_the_Play_Store_button_for_Store_App?')}}"
                                                        data-title-off="{{translate('Want_to_disable_the_Play_Store_button_for_Store_App?')}}"
                                                        data-text-on="<p>{{translate('If_enabled,_the_Store_app_download_button_will_be_visible_on_the_Landing_page.')}}</p>"
@@ -256,8 +256,8 @@
 
                                                        data-id="apple-seller-status"
                                                        data-type="toggle"
-                                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/apple-on.png'
-                                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/apple-off.png"
+                                                       data-image-on='{{asset('/assets/admin/img/modal')}}/apple-on.png'
+                                                       data-image-off="{{asset('/assets/admin/img/modal')}}/apple-off.png"
                                                        data-title-on="{{translate('Want_to_enable_the_App_Store_button_for_Store_App?')}}"
                                                        data-title-off="{{translate('Want_to_disable_the_App_Store_button_for_Store_App')}}"
                                                        data-text-on="<p>{{translate('If_enabled,_the_Store_app_download_button_will_be_visible_on_the_Landing_page.')}}</p>"
@@ -312,12 +312,12 @@
 
                                         <img src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $earning_delivery_image['value'] ?? '',
-                                            asset('storage/app/public/earning/').'/'.$earning_delivery_image['value'],
-                                            asset('/public/assets/admin/img/upload-4.png'),
+                                            asset('storage/app/earning/').'/'.$earning_delivery_image['value'],
+                                            asset('/assets/admin/img/upload-4.png'),
                                             'earning/'
                                         ) }}"
 
-                                        data-onerror-image="{{asset('/public/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
+                                        data-onerror-image="{{asset('/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
                                     </div>
                                         <input type="file" name="earning_delivery_image"  hidden>
                                             @if (isset($earning_delivery_image['value']))
@@ -348,8 +348,8 @@
                                                 <input type="checkbox" name="playstore_url_status"
                                                        data-id="play-store-dm-status"
                                                        data-type="toggle"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/play-store-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/play-store-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/play-store-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/play-store-off.png') }}"
                                                        data-title-on="{{ translate('Want_to_enable_the_Play_Store_button_for_Deliveryman_App?') }}"
                                                        data-title-off="{{ translate('Want_to_disable_the_Play_Store_button_for_Deliveryman_App?') }}"
                                                        data-text-on="<p>{{ translate('If_enabled,_the_Deliveryman_app_download_button_will_be_visible_on_the_Landing_page.') }}</p>"
@@ -386,8 +386,8 @@
                                                 <input type="checkbox" name="apple_store_url_status"
                                                        data-id="apple-dm-status"
                                                        data-type="toggle"
-                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/apple-on.png') }}"
-                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/apple-off.png') }}"
+                                                       data-image-on="{{ asset('/assets/admin/img/modal/apple-on.png') }}"
+                                                       data-image-off="{{ asset('/assets/admin/img/modal/apple-off.png') }}"
                                                        data-title-on="{{ translate('Want_to_enable_the_App_Store_button_for_Deliveryman_App?') }}"
                                                        data-title-off="{{ translate('Want_to_disable_the_App_Store_button_for_Deliveryman_App?') }}"
                                                        data-text-on="<p>{{ translate('If_enabled,_the_Deliveryman_app_download_button_will_be_visible_on_the_Landing_page.') }}</p>"

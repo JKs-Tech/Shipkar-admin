@@ -82,9 +82,9 @@ class ItemController extends Controller
             $item_data= Item::withoutGlobalScope(StoreScope::class)->select(['image','images'])->findOrfail($request->item_id);
 
             if(!$request->has('image')){
-                $oldPath = storage_path("app/public/product/{$item_data->image}");
+                $oldPath = storage_path("app/product/{$item_data->image}");
                 $newFileName =\Carbon\Carbon::now()->toDateString() . "-" . uniqid() . ".png" ;
-                $newPath = storage_path("app/public/product/{$newFileName}");
+                $newPath = storage_path("app/product/{$newFileName}");
                 if (File::exists($oldPath)) {
                     File::copy($oldPath, $newPath);
                 }
@@ -93,9 +93,9 @@ class ItemController extends Controller
             $uniqueValues = array_diff($item_data->images, explode(",", $request->removedImageKeys));
 
             foreach($uniqueValues as$key=> $value){
-                $oldPath = storage_path("app/public/product/{$value}");
+                $oldPath = storage_path("app/product/{$value}");
                 $newFileName =\Carbon\Carbon::now()->toDateString() . "-" . uniqid() . ".png" ;
-                $newPath = storage_path("app/public/product/{$newFileName}");
+                $newPath = storage_path("app/product/{$newFileName}");
                 if (File::exists($oldPath)) {
                     File::copy($oldPath, $newPath);
                 }

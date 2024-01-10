@@ -8,10 +8,10 @@
                 @php($store_data=\App\CentralLogics\Helpers::get_store_data())
                 <a class="navbar-brand" href="{{route('vendor.dashboard')}}" aria-label="Front">
                     <img class="navbar-brand-logo initial--36  onerror-image"  data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}"
-                         src="{{\App\CentralLogics\Helpers::onerror_image_helper($store_data->logo, asset('storage/app/public/store/').'/'.$store_data->logo, asset('public/assets/admin/img/160x160/img2.jpg'), 'store/') }}"
+                         src="{{\App\CentralLogics\Helpers::onerror_image_helper($store_data->logo, asset('storage/app/store/').'/'.$store_data->logo, asset('public/assets/admin/img/160x160/img2.jpg'), 'store/') }}"
  alt="Logo">
                     <img class="navbar-brand-logo-mini initial--36 onerror-image"  data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}"
-                         src="{{\App\CentralLogics\Helpers::onerror_image_helper($store_data->logo, asset('storage/app/public/store/').'/'.$store_data->logo, asset('public/assets/admin/img/160x160/img2.jpg'), 'store/') }}"
+                         src="{{\App\CentralLogics\Helpers::onerror_image_helper($store_data->logo, asset('storage/app/store/').'/'.$store_data->logo, asset('public/assets/admin/img/160x160/img2.jpg'), 'store/') }}"
  alt="Logo">
                 </a>
                 <!-- End Logo -->

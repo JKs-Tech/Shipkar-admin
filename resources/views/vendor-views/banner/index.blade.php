@@ -35,7 +35,7 @@
                                             <i class="tio-info-outined"></i>
                                         </div>
                                         <div class="business-notes">
-                                            <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                                            <h6><img src="{{asset('/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                                             <div>
                                                 {{translate('messages.Customer_will_see_there_banners_in_your_store_details_page_in_website_and_user_apps.')}}
                                             </div>
@@ -60,7 +60,7 @@
                                             </h3>
                                     <label class="upload-img-3 m-0 d-block">
                                         <div class="img">
-                                            <img src="{{asset('/public/assets/admin/img/upload-4.png')}}" id="viewer"  class="vertical-img mw-100 vertical" alt="">
+                                            <img src="{{asset('/assets/admin/img/upload-4.png')}}" id="viewer"  class="vertical-img mw-100 vertical" alt="">
                                         </div>
                                             <input type="file" name="image"  hidden>
                                     </label>
@@ -131,8 +131,8 @@
                                     <td><h5 class="text-hover-primary mb-0">{{Str::limit($banner['title'], 25, '...')}}</h5></td>
                                     <td>
                                         <span class="media align-items-center">
-                                            <img class="img--ratio-3 w-auto h--50px rounded mr-2 onerror-image" src="{{\App\CentralLogics\Helpers::onerror_image_helper($banner['image'], asset('storage/app/public/banner/').'/'.$banner['image'], asset('/public/assets/admin/img/900x400/img1.jpg'), 'banner/') }}"
-                                                 data-onerror-image="{{asset('/public/assets/admin/img/900x400/img1.jpg')}}"
+                                            <img class="img--ratio-3 w-auto h--50px rounded mr-2 onerror-image" src="{{\App\CentralLogics\Helpers::onerror_image_helper($banner['image'], asset('storage/app/banner/').'/'.$banner['image'], asset('/assets/admin/img/900x400/img1.jpg'), 'banner/') }}"
+                                                 data-onerror-image="{{asset('/assets/admin/img/900x400/img1.jpg')}}"
                                                   alt="{{$banner->name}} image">
                                         </span>
                                     </td>
@@ -176,7 +176,7 @@
                         </div>
                         @if(count($banners) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                            <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>
@@ -196,7 +196,7 @@
         <script>
             "use strict";
             $('#reset_btn').click(function(){
-                $('#viewer').attr('src','{{asset('/public/assets/admin/img/upload-4.png')}}');
+                $('#viewer').attr('src','{{asset('/assets/admin/img/upload-4.png')}}');
             })
         </script>
 

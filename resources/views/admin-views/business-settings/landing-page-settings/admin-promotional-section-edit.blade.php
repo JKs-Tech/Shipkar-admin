@@ -124,11 +124,11 @@
                                             <img
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $banner['image'] ?? '',
-                                                asset('storage/app/public/promotional_banner').'/'.$banner['image'] ?? '',
-                                                asset('/public/assets/admin/img/upload-4.png'),
+                                                asset('storage/app/promotional_banner').'/'.$banner['image'] ?? '',
+                                                asset('/assets/admin/img/upload-4.png'),
                                                 'promotional_banner/'
                                             ) }}" 
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-4.png')}}" class="vertical-img mw-100 vertical onerror-image" alt="">
                                         </div>
                                             <input type="file" name="image"  hidden>
                                     </label>

@@ -78,7 +78,7 @@
                     <h5 class="subtitle">
                         {{translate('messages.cash_in_hand')}}
                     </h5>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/withdraw-amount.png')}}" alt="transactions">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/withdraw-amount.png')}}" alt="transactions">
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
                     <h5 class="subtitle">
                         {{translate('messages.total_earning')}}
                     </h5>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                 </div>
             </div>
 
@@ -115,7 +115,7 @@
                             <h5 class="subtitle">
                                 {{translate('messages.Withdraw_Able_Balance')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                         </div>
                     </div>
                 @elseif($balance < 0)
@@ -127,7 +127,7 @@
                             <h5 class="subtitle">
                                 {{translate('messages.Payable_Balance')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                         </div>
                     </div>
 
@@ -140,7 +140,7 @@
                             <h5 class="subtitle">
                                 {{translate('messages.Balance')}}
                             </h5>
-                            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                            <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                         </div>
                     </div>
 
@@ -155,7 +155,7 @@
                         <h5 class="subtitle">
                             {{translate('messages.Total_withdrawn')}}
                         </h5>
-                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                     </div>
                 </div>
 
@@ -167,7 +167,7 @@
                         <h5 class="subtitle">
                             {{translate('messages.Pending_withdraw')}}
                         </h5>
-                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                     </div>
                 </div>
 
@@ -246,7 +246,7 @@
                         <div class="d-flex align-items-center justify-content-center">
                             <img class="avatar avatar-xxl avatar-4by3 mr-4 img--120 onerror-image"
                                  data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
-                                 src="{{\App\CentralLogics\Helpers::onerror_image_helper($deliveryMan['image'], asset('storage/app/public/delivery-man/').'/'.$deliveryMan['image'], asset('public/assets/admin/img/160x160/img1.jpg'), 'delivery-man/') }}"
+                                 src="{{\App\CentralLogics\Helpers::onerror_image_helper($deliveryMan['image'], asset('storage/app/delivery-man/').'/'.$deliveryMan['image'], asset('public/assets/admin/img/160x160/img1.jpg'), 'delivery-man/') }}"
                                  alt="Image Description">
                             <div class="d-block">
                                 <div class="rating--review">
@@ -433,8 +433,8 @@
                                 <button class="btn w-100" data-toggle="modal"
                                     data-target="#image-{{ $key }}">
                                     <div class="gallary-card">
-                                        <img data-onerror-image="{{ asset('/public/assets/admin/img/900x400/img1.jpg') }}"
-                                        src="{{\App\CentralLogics\Helpers::onerror_image_helper($img, asset('storage/app/public/delivery-man/').'/'.$img, asset('public/assets/admin/img/900x400/img1.jpg'), 'delivery-man/') }}" class="w-100 onerror-image">
+                                        <img data-onerror-image="{{ asset('/assets/admin/img/900x400/img1.jpg') }}"
+                                        src="{{\App\CentralLogics\Helpers::onerror_image_helper($img, asset('storage/app/delivery-man/').'/'.$img, asset('public/assets/admin/img/900x400/img1.jpg'), 'delivery-man/') }}" class="w-100 onerror-image">
                                     </div>
                                 </button>
                                 <div class="modal fade" id="image-{{ $key }}" tabindex="-1" role="dialog"
@@ -449,8 +449,8 @@
                                                     class="sr-only">{{ translate('messages.Close') }}</span></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img data-onerror-image="{{ asset('/public/assets/admin/img/900x400/img1.jpg') }}"
-                                            src="{{\App\CentralLogics\Helpers::onerror_image_helper($img, asset('storage/app/public/delivery-man/').'/'.$img, asset('public/assets/admin/img/900x400/img1.jpg'), 'delivery-man/') }}"
+                                            <img data-onerror-image="{{ asset('/assets/admin/img/900x400/img1.jpg') }}"
+                                            src="{{\App\CentralLogics\Helpers::onerror_image_helper($img, asset('storage/app/delivery-man/').'/'.$img, asset('public/assets/admin/img/900x400/img1.jpg'), 'delivery-man/') }}"
 
                                                 class="w-100 onerror-image">
                                         </div>
@@ -543,7 +543,7 @@
                                         href="{{route('admin.customer.view',[$review['user_id']])}}">
                                             <div class="avatar avatar-circle">
                                                 <img class="avatar-img" width="75" height="75"
-                                                    src="{{asset('storage/app/public/profile/')}}/{{$review->customer?$review->customer->image:''}}"
+                                                    src="{{asset('storage/app/profile/')}}/{{$review->customer?$review->customer->image:''}}"
                                                     alt="Image Description">
                                             </div>
                                             <div class="ml-3">
@@ -590,7 +590,7 @@
                 </div>
                 @if(count($reviews) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

@@ -141,11 +141,11 @@
 
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $banner_image?->value ?? '',
-                                                asset('storage/app/public/promotional_banner').'/'.$banner_image?->value ?? '',
-                                                asset('/public/assets/admin/img/upload-placeholder.png'),
+                                                asset('storage/app/promotional_banner').'/'.$banner_image?->value ?? '',
+                                                asset('/assets/admin/img/upload-placeholder.png'),
                                                 'promotional_banner/'
                                             ) }}"
-                                            data-onerror-image="{{ asset('/public/assets/admin/img/upload-placeholder.png') }}" alt="">
+                                            data-onerror-image="{{ asset('/assets/admin/img/upload-placeholder.png') }}" alt="">
                                         </div>
 
                                         <div class="">
@@ -155,8 +155,8 @@
                                             <span id="banner_image" class="remove_image_button dynamic-checkbox"
                                                   data-id="banner_image"
                                                   data-type="status"
-                                                  data-image-on="{{asset('/public/assets/admin/img/modal')}}/mail-success"
-                                                  data-image-off="{{asset('/public/assets/admin/img/modal')}}/mail-warning"
+                                                  data-image-on="{{asset('/assets/admin/img/modal')}}/mail-success"
+                                                  data-image-off="{{asset('/assets/admin/img/modal')}}/mail-warning"
                                                   data-title-on="{{translate('Important!')}}"
                                                   data-title-off="{{translate('Warning!')}}"
                                                   data-text-on="<p>{{translate('Are_you_sure_you_want_to_remove_this_image')}}</p>"
@@ -189,7 +189,7 @@
                                                             <div class="mt-5 card px-3 py-2 d--none" id="progress-bar">
                                                                 <div class="d-flex flex-wrap align-items-center gap-3">
                                                                     <div class="">
-                                                                        <img width="24" src="{{asset('/public/assets/admin/img/zip.png')}}" alt="">
+                                                                        <img width="24" src="{{asset('/assets/admin/img/zip.png')}}" alt="">
                                                                     </div>
                                                                     <div class="flex-grow-1 text-start">
                                                                         <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
@@ -216,7 +216,7 @@
                                                             <h4 class="mb-3  ml-4 text-capitalize d-flex align-items-center">{{translate('Video')}}</h4>
                                                             @php($extention =explode('.', $banner_video_content?->value))
                                                             <video width="320" height="140" controls>
-                                                                <source src="{{asset('storage/app/public/promotional_banner/video')}}/{{$banner_video_content?->value}}" type="video/{{ data_get($extention,1,'mp4') }}">
+                                                                <source src="{{asset('storage/app/promotional_banner/video')}}/{{$banner_video_content?->value}}" type="video/{{ data_get($extention,1,'mp4') }}">
                                                             </video>
                                                         </div>
                                                         @endif

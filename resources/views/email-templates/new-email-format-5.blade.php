@@ -99,9 +99,9 @@ width: 24px;
             <td style="padding:30px 30px 0">
                 <img class="mail-img-2"
                 @if ($data && $data['icon'])
-                src="{{ asset('storage/app/public/email_template/') }}/{{ $data['icon']??'' }}"
+                src="{{ asset('storage/app/email_template/') }}/{{ $data['icon']??'' }}"
                 @else
-                src='{{ asset('/public/assets/admin/img/email-template-img.png') }}'
+                src='{{ asset('/assets/admin/img/email-template-img.png') }}'
                 @endif
                 id="iconViewer" alt="">
                 <h3 style="font-size:17px;font-weight:500" class="mt-2" id="mail-title">{{ $title?? translate('Main_Title_or_Subject_of_the_Mail') }}</h3>
@@ -131,10 +131,10 @@ width: 24px;
                 <span class="d-block" style="margin-bottom:20px">{{ $company_name }}</span>
 
                 @if ($data?->logo)
-                <img style="width:100px;display:block;margin:10px auto" src="{{ asset('storage/app/public/email_template/') }}/{{ $data['logo']??'' }}" alt="public/img">
+                <img style="width:100px;display:block;margin:10px auto" src="{{ asset('storage/app/email_template/') }}/{{ $data['logo']??'' }}" alt="public/img">
                 @else
                 @php($store_logo = \App\Models\BusinessSetting::where(['key' => 'logo'])->first()->value)
-                <img style="width:100px;display:block;margin:10px auto" src='{{ asset('storage/app/public/business/' . $store_logo) }}'alt="public/img">
+                <img style="width:100px;display:block;margin:10px auto" src='{{ asset('storage/app/business/' . $store_logo) }}'alt="public/img">
                 @endif
                 <span class="privacy">
                     @php($landing_data =\App\Models\DataSetting::where('type', 'admin_landing_page')->whereIn('key', ['shipping_policy_status','refund_policy_status','cancellation_policy_status'])->pluck('value','key')->toArray())
@@ -152,7 +152,7 @@ width: 24px;
                     @if (isset($social_media))
                         @foreach ($social_media as $social)
                             <a href="{{ $social->link }}" target=”_blank” id="{{ $social->name  }}-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data[$social->name]) && $data[$social->name] == 1)?'':'display:none;' }}">
-                                <img src="{{asset('/public/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
+                                <img src="{{asset('/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
                             </a>
                         @endforeach
                     @endif

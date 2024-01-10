@@ -31,13 +31,13 @@
                     <ul class="nav nav-tabs nav--tabs border-0 gap-2">
                         <li class="nav-item mr-2 mr-md-4">
                             <a href="{{ route('admin.business-settings.fcm-index') }}" class="nav-link pb-2 px-0 pb-sm-3 active" data-slide="1">
-                                <img src="{{asset('/public/assets/admin/img/notify.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/notify.png')}}" alt="">
                                 <span>{{translate('Push Notification')}}</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('admin.business-settings.fcm-config') }}" class="nav-link pb-2 px-0 pb-sm-3" data-slide="2">
-                                <img src="{{asset('/public/assets/admin/img/firebase2.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/firebase2.png')}}" alt="">
                                 <span>{{translate('Firebase Configuration')}}</span>
                             </a>
                         </li>
@@ -130,8 +130,8 @@
                                                             <input type="checkbox"
                                                                    data-id="pending_status"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('pending Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('pending Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is pending.') }}</p>"
@@ -183,8 +183,8 @@
                                                             <input type="checkbox"
                                                                    data-id="confirm_status"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('confirmation Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('confirmation Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is confirmed.') }}</p>"
@@ -238,8 +238,8 @@
                                                             <input type="checkbox"
                                                                    data-id="processing_status"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('processing Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('processing Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is processing.') }}</p>"
@@ -289,8 +289,8 @@
                                                             <input type="checkbox"
                                                                    data-id="order_handover_message_status"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('Order Handover Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('Order Handover Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is handovered.') }}</p>"
@@ -345,8 +345,8 @@
                                                             <input type="checkbox"
                                                                    data-id="out_for_delivery"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('Out For Delivery Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('Out For Delivery Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is out for delivery.') }}</p>"
@@ -395,8 +395,8 @@
                                                             <input type="checkbox"
                                                                    data-id="delivered_status"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('delivered Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('delivered Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is delivered.') }}</p>"
@@ -446,8 +446,8 @@
                                                             <input type="checkbox"
                                                                    data-id="delivery_boy_assign"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('Delivery Man Assigned Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('Delivery Man Assigned Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is assigned to a delivery man.') }}</p>"
@@ -499,8 +499,8 @@
                                                             <input type="checkbox"
                                                                    data-id="delivery_boy_delivered"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('Delivery Man Delivered Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('Delivery Man Delivered Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is delivered by a delivery man.') }}</p>"
@@ -554,8 +554,8 @@
                                                                    name="order_cancled_message_status"
                                                                    data-id="order_cancled_message"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('canceled Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('canceled Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the order is canceled.') }}</p>"
@@ -606,8 +606,8 @@
                                                                 <input type="checkbox"
                                                                        data-id="order_refunded_message"
                                                                        data-type="toggle"
-                                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                       data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                       data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                        data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('Order Refund Message') }}</strong>"
                                                                        data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('Order Refund Message') }}</strong>"
                                                                        data-text-on="<p>{{ translate('User will get a clear message to know that the order is refunded.') }}</p>"
@@ -657,8 +657,8 @@
                                                                 <input type="checkbox"
                                                                        data-id="refund_request_canceled"
                                                                        data-type="toggle"
-                                                                       data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                       data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                       data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                       data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                        data-title-on="{{ translate('By Turning ON Order') }} <strong>{{ translate('Refund Request Cancel Message') }}</strong>"
                                                                        data-title-off="{{ translate('By Turning OFF Order') }} <strong>{{ translate('Refund Request Cancel Message') }}</strong>"
                                                                        data-text-on="<p>{{ translate('User will get a clear message to know that the order\'s refund request is canceled.') }}</p>"
@@ -712,8 +712,8 @@
 
                                                                    data-id="offline_order_accept_message"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Offline Order') }} <strong>{{ translate('accept Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Offline Order') }} <strong>{{ translate('accept Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the offline order is accepted.') }}</p>"
@@ -765,8 +765,8 @@
                                                             <input type="checkbox"
                                                                    data-id="offline_order_deny_message"
                                                                    data-type="toggle"
-                                                                   data-image-on="{{ asset('/public/assets/admin/img/modal/pending-order-on.png') }}"
-                                                                   data-image-off="{{ asset('/public/assets/admin/img/modal/pending-order-off.png') }}"
+                                                                   data-image-on="{{ asset('/assets/admin/img/modal/pending-order-on.png') }}"
+                                                                   data-image-off="{{ asset('/assets/admin/img/modal/pending-order-off.png') }}"
                                                                    data-title-on="{{ translate('By Turning ON Offline Order') }} <strong>{{ translate('deny Message') }}</strong>"
                                                                    data-title-off="{{ translate('By Turning OFF Offline Order') }} <strong>{{ translate('deny Message') }}</strong>"
                                                                    data-text-on="<p>{{ translate('User will get a clear message to know that the offline order is denied.') }}</p>"
@@ -820,7 +820,7 @@
                             <div class="item">
                                 <div class="mb-20">
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/email-templates/3.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/email-templates/3.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('Write_a_message_in_the_Notification_Body')}}</h5>
                                     </div>
                                     <p>
@@ -842,7 +842,7 @@
                             <div class="item">
                                 <div class="mb-20">
                                     <div class="text-center">
-                                        <img src="{{asset('/public/assets/admin/img/firebase/slide-4.png')}}" alt="" class="mb-20">
+                                        <img src="{{asset('/assets/admin/img/firebase/slide-4.png')}}" alt="" class="mb-20">
                                         <h5 class="modal-title">{{translate('Please Visit the Docs to Set FCM on Mobile Apps')}}</h5>
                                     </div>
                                     <div class="text-center">

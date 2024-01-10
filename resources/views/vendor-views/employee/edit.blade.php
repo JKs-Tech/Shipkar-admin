@@ -65,7 +65,7 @@
                                 <div class="text-center mb-auto">
                                     <img class="store-banner onerror-image" id="viewer"
                                          data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
-                                         src="{{\App\CentralLogics\Helpers::onerror_image_helper($e['image'], asset('storage/app/public/vendor').'/'.$e['image'], asset('public/assets/admin/img/160x160/img1.jpg'), 'vendor/') }}"
+                                         src="{{\App\CentralLogics\Helpers::onerror_image_helper($e['image'], asset('storage/app/vendor').'/'.$e['image'], asset('public/assets/admin/img/160x160/img1.jpg'), 'vendor/') }}"
                                          alt="Employee thumbnail"/>
                                 </div>
 
@@ -99,7 +99,7 @@
                                     <div class="col-md-4">
                                         <div class="js-form-message form-group mb-0">
                                             <label class="input-label" for="signupSrPassword">{{translate('messages.password')}}<span class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
+        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
 
                                             <div class="input-group input-group-merge">
                                                 <input type="password" class="js-toggle-password form-control" name="password" id="signupSrPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"
@@ -164,7 +164,7 @@
             <script>
                 "use strict";
                 $('#reset_btn').click(function(){
-                    $('#viewer').attr('src','{{asset('storage/app/public/vendor')}}/{{$e['image']}}');
+                    $('#viewer').attr('src','{{asset('storage/app/vendor')}}/{{$e['image']}}');
                 })
             </script>
 @endpush

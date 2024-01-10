@@ -149,12 +149,12 @@
                                         <div class="img">
                                             <img class="onerror-image" src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $feature->image ?? '',
-                                                asset('storage/app/public/admin_feature').'/'.$feature->image ?? '',
-                                                asset('/public/assets/admin/img/upload-3.png'),
+                                                asset('storage/app/admin_feature').'/'.$feature->image ?? '',
+                                                asset('/assets/admin/img/upload-3.png'),
                                                 'admin_feature/'
                                             ) }}"
 
-                                            data-onerror-image="{{asset('/public/assets/admin/img/upload-3.png')}}" alt="">
+                                            data-onerror-image="{{asset('/assets/admin/img/upload-3.png')}}" alt="">
                                         </div>
                                             <input type="file" name="image"  hidden>
                                             @if (isset($feature->image))

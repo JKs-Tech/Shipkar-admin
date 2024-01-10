@@ -40,8 +40,8 @@
                                 <input type="checkbox" class="status toggle-switch-input dynamic-checkbox"
                                        data-id="mail-status"
                                        data-type="status"
-                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/place-order-on.png'
-                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/place-order-off.png"
+                                       data-image-on='{{asset('/assets/admin/img/modal')}}/place-order-on.png'
+                                       data-image-off="{{asset('/assets/admin/img/modal')}}/place-order-off.png"
                                        data-title-on="{{translate('Want_to_enable_cash_collect_mail?')}}"
                                        data-title-off="{{translate('Want_to_disable_cash_collect_mail?')}}"
                                        data-text-on="<p>{{translate('If_enabled,_the_Deliveryman_will_receive_an_email_after_the_Admin/Store_collects_cash_from_him.')}}</p>"

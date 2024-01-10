@@ -12,7 +12,7 @@
         <div class="mb-3">
             <div class="page-title-wrap d-flex justify-content-between flex-wrap align-items-center gap-3 mb-3">
                 <h2 class="h1 mb-0 text-capitalize d-flex align-items-center gap-2">
-                    {{-- <img width="20" src="{{asset('/public/assets/back-end/img/withdraw-icon.png')}}" alt=""> --}}
+                    {{-- <img width="20" src="{{asset('/assets/back-end/img/withdraw-icon.png')}}" alt=""> --}}
                     {{ translate('messages.wallet_method_list')}}
                 </h2>
                 <a href="{{route('admin.transactions.withdraw-method.create')}}" class="btn btn--primary">+ {{ translate('messages.Add_method')}}</a>
@@ -124,7 +124,7 @@
                         </table>
                         @if(count($withdrawal_methods)==0)
                             <div class="empty--data">
-                                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

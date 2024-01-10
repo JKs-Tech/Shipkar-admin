@@ -31,7 +31,7 @@
                             <div class="card-header d-flex  justify-content-between">
                                 <div class="d-flex align-items-center gap-2">
 
-                                    <img width="25" src="{{asset('/public/assets/admin/img/payment-card.png')}}" alt="">
+                                    <img width="25" src="{{asset('/assets/admin/img/payment-card.png')}}" alt="">
                                     <h4 class="page-title mt-2">{{translate('payment_information')}}</h4>
                                 </div>
                                 <button class="btn btn--primary" id="add-more-field-payment">
@@ -63,7 +63,7 @@
                         <div class="card">
                             <div class="card-header d-flex flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="d-flex align-items-center gap-2">
-                                <img width="25" src="{{asset('/public/assets/admin/img/payment-card-fill.png')}}" alt="">
+                                <img width="25" src="{{asset('/assets/admin/img/payment-card-fill.png')}}" alt="">
                                 <h4 class="page-title mt-2">{{translate('Required Information from Customer')}}</h4>
                                 </div>
                                 <button class="btn btn--primary" id="add-more-field-customer">

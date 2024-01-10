@@ -13,7 +13,7 @@
     <div class="page-header">
         <h1 class="page-header-title">
             <span class="page-header-icon">
-                <img src="{{asset('/public/assets/admin/img/report/new/disburstment.png')}}" class="w--22" alt="">
+                <img src="{{asset('/assets/admin/img/report/new/disburstment.png')}}" class="w--22" alt="">
             </span>
             <span>{{ translate('Disbursement_Details') }}</span>
         </h1>
@@ -291,7 +291,7 @@
                 @if (count($disbursement_delivery_mans) === 0)
 
                     <div class="empty--data">
-                         <img src="{{ asset('/public/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
+                         <img src="{{ asset('/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>

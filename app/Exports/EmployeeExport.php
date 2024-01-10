@@ -50,7 +50,7 @@ class EmployeeExport implements FromCollection, WithHeadings, WithMapping, Shoul
             $drawing = new Drawing();
             $drawing->setName($employee->f_name);
             $drawing->setDescription($employee->f_name);
-            $drawing->setPath(is_file(storage_path('app/public/delivery-man/'.$employee->image))?storage_path('app/public/delivery-man/'.$employee->image):public_path('/assets/admin/img/logo2.png'));
+            $drawing->setPath(is_file(storage_path('app/delivery-man/'.$employee->image))?storage_path('app/delivery-man/'.$employee->image):public_path('/assets/admin/img/logo2.png'));
             $drawing->setHeight(40);
             $index+=2;
             $drawing->setCoordinates("C$index");

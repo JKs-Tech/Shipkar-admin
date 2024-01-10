@@ -54,13 +54,13 @@
                                 </button>
                                 <div class="btn-items">
                                     <a href="#" title="{{translate('View Image')}}" data-toggle="tooltip" data-placement="left">
-                                        <img src="{{asset('/public/assets/admin/img/download/view.png')}}" data-toggle="modal" data-target="#imagemodal{{$key}}" alt="">
+                                        <img src="{{asset('/assets/admin/img/download/view.png')}}" data-toggle="modal" data-target="#imagemodal{{$key}}" alt="">
                                     </a>
                                     <a href="#" title="{{translate('Copy Link')}}" class="copy-test" data-toggle="tooltip" data-placement="left" data-file-path="{{$file['db_path']}}">
-                                        <img src="{{asset('/public/assets/admin/img/download/link.png')}}" alt="">
+                                        <img src="{{asset('/assets/admin/img/download/link.png')}}" alt="">
                                     </a>
                                     <a title="{{translate('Download')}}" data-toggle="tooltip" data-placement="left" href="{{route('admin.business-settings.file-manager.download', base64_encode($file['path']))}}">
-                                        <img src="{{asset('/public/assets/admin/img/download/download.png')}}" alt="">
+                                        <img src="{{asset('/assets/admin/img/download/download.png')}}" alt="">
                                     </a>
                                     <form action="{{route('admin.business-settings.file-manager.destroy',base64_encode($file['path']))}}" method="post"  class="form-submit-warning">
                                         @csrf
@@ -144,7 +144,7 @@
                     <div class="text-center mb-3">
                         <h3 class="modal-title mb-3">{{translate('Check how the settings works')}}</h3>
                     </div>
-                    <img src="{{asset('/public/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
+                    <img src="{{asset('/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
                     <div class="mt-3 d-flex flex-wrap align-items-center justify-content-end">
                         <div class="btn--container justify-content-end">
                             <button id="reset_btn" type="reset" class="btn btn--reset" data-dismiss="modal">{{translate("Close")}}</button>

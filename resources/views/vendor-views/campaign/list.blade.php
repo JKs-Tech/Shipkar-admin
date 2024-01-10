@@ -66,7 +66,7 @@
                             </td>
                             <td>
                                 <div class="overflow-hidden">
-                                    <img class="img--vertical max--200 mw--200onerror-image" src="{{\App\CentralLogics\Helpers::onerror_image_helper($campaign['image'], asset('storage/app/public/campaign').'/'.$campaign['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'campaign/') }}"
+                                    <img class="img--vertical max--200 mw--200onerror-image" src="{{\App\CentralLogics\Helpers::onerror_image_helper($campaign['image'], asset('storage/app/campaign').'/'.$campaign['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'campaign/') }}"
                                          data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}"  alt="image">
                                 </div>
                             </td>
@@ -147,7 +147,7 @@
                 </table>
                 @if(count($campaigns) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

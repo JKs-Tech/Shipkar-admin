@@ -2,7 +2,7 @@
 
 @section('title','Update restaurant info')
 @push('css_or_js')
-    <link rel="stylesheet" href="{{asset('/public/assets/admin/css/intlTelInput.css')}}" />
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/intlTelInput.css')}}" />
 @endpush
 
 @section('content')
@@ -144,7 +144,7 @@
                                         data-onerror-image="{{ asset('public/assets/admin/img/upload.png') }}"
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $store->logo ?? '',
-                                            asset('storage/app/public/store').'/'.$store->logo ?? '',
+                                            asset('storage/app/store').'/'.$store->logo ?? '',
                                             asset('public/assets/admin/img/upload.png'),
                                             'store/'
                                         ) }}" 
@@ -165,7 +165,7 @@
                                         data-onerror-image="{{ asset('public/assets/admin/img/upload-img.png') }}"
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $store->cover_photo ?? '',
-                                            asset('storage/app/public/store/cover').'/'.$store->cover_photo ?? '',
+                                            asset('storage/app/store/cover').'/'.$store->cover_photo ?? '',
                                             asset('public/assets/admin/img/upload-img.png'),
                                             'store/cover/'
                                         ) }}"
@@ -238,7 +238,7 @@
                                     <div class="form-group">
                                         <label class="input-label" for="choice_zones">{{translate('messages.zone')}}<span
                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{translate('messages.select_zone_for_map')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.select_zone_for_map')}}"></span></label>
+        data-original-title="{{translate('messages.select_zone_for_map')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.select_zone_for_map')}}"></span></label>
                                         <select name="zone_id" id="choice_zones" data-placeholder="{{translate('messages.select_zone')}}"
                                                 class="form-control js-select2-custom get_zone_data">
                                             @foreach(\App\Models\Zone::active()->get() as $zone)
@@ -255,7 +255,7 @@
                                     <div class="form-group">
                                         <label class="input-label" for="latitude">{{translate('messages.latitude')}}<span
                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{translate('messages.store_lat_lng_warning')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.store_lat_lng_warning')}}"></span></label>
+        data-original-title="{{translate('messages.store_lat_lng_warning')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.store_lat_lng_warning')}}"></span></label>
                                         <input type="text" id="latitude"
                                                 name="latitude" class="form-control"
                                                 placeholder="{{ translate('messages.Ex:') }} -94.22213" value="{{$store->latitude}}" required readonly>
@@ -263,7 +263,7 @@
                                     <div class="form-group mb-5">
                                         <label class="input-label" for="longitude">{{translate('messages.longitude')}}<span
                                                 class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{translate('messages.store_lat_lng_warning')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.store_lat_lng_warning')}}"></span></label>
+        data-original-title="{{translate('messages.store_lat_lng_warning')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.store_lat_lng_warning')}}"></span></label>
                                         <input type="text"
                                                 name="longitude" class="form-control"
                                                 placeholder="{{ translate('messages.Ex:') }} 103.344322" id="longitude" value="{{$store->longitude}}" required readonly>
@@ -333,7 +333,7 @@
                                 <div class="col-md-4 col-sm-6">
                                     <div class="js-form-message form-group mb-0">
                                         <label class="input-label" for="signupSrPassword">{{ translate('password') }}<span class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-                                 data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
+                                 data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
 
                                         <div class="input-group input-group-merge">
                                             <input type="password" class="js-toggle-password form-control" name="password" id="signupSrPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"

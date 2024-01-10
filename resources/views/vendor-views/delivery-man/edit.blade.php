@@ -3,9 +3,9 @@
 @section('title',translate('Update delivery-man'))
 
 @push('css_or_js')
-    <link rel="stylesheet" href="{{asset('/public/assets/admin/css/intlTelInput.css')}}" />
-    <link rel="shortcut icon" href="{{asset('/public/assets/admin/img/flags.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('/public/assets/admin/img/flags@2x.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/intlTelInput.css')}}" />
+    <link rel="shortcut icon" href="{{asset('/assets/admin/img/flags.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('/assets/admin/img/flags@2x.png')}}" type="image/x-icon">
 @endpush
 
 @section('content')
@@ -95,8 +95,8 @@
                                             <img class="img--120" 
                                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                 $img,
-                                                asset('storage/app/public/delivery-man') . '/' .$img,
-                                                asset('/public/assets/admin/img/160x160/img1.jpg'),
+                                                asset('storage/app/delivery-man') . '/' .$img,
+                                                asset('/assets/admin/img/160x160/img1.jpg'),
                                                 'delivery-man/'
                                             ) }}"  alt="image">
                                         </div>
@@ -119,8 +119,8 @@
 
                                     src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                         $delivery_man['image'],
-                                        asset('storage/app/public/delivery-man') . '/' .$delivery_man['image'],
-                                        asset('/public/assets/admin/img/160x160/img1.jpg'),
+                                        asset('storage/app/delivery-man') . '/' .$delivery_man['image'],
+                                        asset('/assets/admin/img/160x160/img1.jpg'),
                                         'delivery-man/'
                                     ) }}" alt="delivery-man image"/>
                                 </div>
@@ -153,7 +153,7 @@
                                 <div class="col-md-4 col-12">
                                     <div class="js-form-message form-group mb-0">
                                         <label class="input-label" for="signupSrPassword">{{translate('messages.password')}}<span class="form-label-secondary" data-toggle="tooltip" data-placement="right"
-        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
+        data-original-title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"><img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"></span></label>
 
                                         <div class="input-group input-group-merge">
                                             <input type="password" class="js-toggle-password form-control" name="password" id="signupSrPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="{{ translate('messages.Must_contain_at_least_one_number_and_one_uppercase_and_lowercase_letter_and_symbol,_and_at_least_8_or_more_characters') }}"
@@ -214,15 +214,15 @@
 
 @push('script_2')
 
-<script src="{{asset('/public/assets/admin/js/intlTelInput.js')}}"></script>
-<script src="{{asset('/public/assets/admin/js/intlTelInput-jquery.min.js')}}"></script>
+<script src="{{asset('/assets/admin/js/intlTelInput.js')}}"></script>
+<script src="{{asset('/assets/admin/js/intlTelInput-jquery.min.js')}}"></script>
 <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 <script type="text/javascript">
     "use strict";
 
         @php($country=\App\Models\BusinessSetting::where('key','country')->first())
         let phone = $("#phone").intlTelInput({
-            utilsScript: "{{asset('/public/assets/admin/js/utils.js')}}",
+            utilsScript: "{{asset('/assets/admin/js/utils.js')}}",
             nationalMode: true,
             autoHideDialCode: true,
             autoPlaceholder: "ON",

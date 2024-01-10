@@ -71,7 +71,7 @@
                                 </label>
                                 <div class="text-center py-3 my-auto">
                                     <img class="img--vertical onerror-image" id="viewer"
-                                    src="{{\App\CentralLogics\Helpers::onerror_image_helper($notification['image'], asset('storage/app/public/notification/').'/'.$notification['image'], asset('public/assets/admin/img/900x400/img1.jpg'), 'notification/') }}"
+                                    src="{{\App\CentralLogics\Helpers::onerror_image_helper($notification['image'], asset('storage/app/notification/').'/'.$notification['image'], asset('public/assets/admin/img/900x400/img1.jpg'), 'notification/') }}"
                                     data-onerror-image="{{asset('public/assets/admin/img/900x400/img1.jpg')}}" alt="image"/>
                                 </div>
                                 <div class="custom-file">
@@ -100,7 +100,7 @@
         "use strict";
             $('#reset_btn').click(function(){
                 $('#zone').val("{{$notification->zone_id}}").trigger('change');
-                $('#viewer').attr('src', "{{asset('storage/app/public/notification')}}/{{$notification['image']}}");
+                $('#viewer').attr('src', "{{asset('storage/app/notification')}}/{{$notification['image']}}");
             })
         </script>
 @endpush

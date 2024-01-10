@@ -46,9 +46,9 @@
                         <span class="form-label-secondary text-danger d-flex"
                               data-toggle="tooltip" data-placement="right"
                               data-original-title="{{ translate('The_total_amount_you’ve_received_from_the_customer_in_cash_(Cash_on_Delivery)')}}"><img
-                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                 alt="{{ translate('messages.Take_Picture_For_Completing_Delivery') }}"> </span>
-                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/image_total89.png')}}" alt="public">
+                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/image_total89.png')}}" alt="public">
 
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                 <div class="resturant-card shadow--card-2">
                     <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->balance > 0 ? $wallet->balance: 0 )}}</h4>
                     <span class="subtitle">{{translate('messages.withdraw_able_balance')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/image_w_balance.png')}}" alt="public">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/image_w_balance.png')}}" alt="public">
                 </div>
             </div>
             <!-- Pending Requests Card Example -->
@@ -171,7 +171,7 @@
                 <div class="resturant-card  bg--3" >
                     <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->pending_withdraw)}}</h4>
                     <span class="subtitle">{{translate('messages.pending_withdraw')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/image_pending.png')}}" alt="public">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/image_pending.png')}}" alt="public">
                 </div>
             </div>
 
@@ -180,7 +180,7 @@
                 <div class="resturant-card  bg--2">
                     <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->total_withdrawn)}}</h4>
                     <span class="subtitle">{{translate('messages.Total_Withdrawn')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/image_withdaw.png')}}" alt="public">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/image_withdaw.png')}}" alt="public">
                 </div>
             </div>
 
@@ -190,7 +190,7 @@
                 <div class="resturant-card  bg--1">
                     <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->total_earning)}}</h4>
                     <span class="subtitle">{{translate('messages.total_earning')}}</span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/image_total89.png')}}" alt="public">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/image_total89.png')}}" alt="public">
                 </div>
             </div>
         </div>

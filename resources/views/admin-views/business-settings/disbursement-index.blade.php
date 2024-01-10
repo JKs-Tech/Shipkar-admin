@@ -45,7 +45,7 @@
                                         <span class="form-label-secondary"
                                               data-toggle="tooltip" data-placement="right"
                                               data-original-title="{{ translate('Choose_Manual_or_Automated_Disbursement_Requests._In_Automated_mode,_withdrawal_requests_for_disbursement_are_generated_automatically;_in_Manual_mode,_stores_need_to_request_withdrawals_manually.') }}"><img
-                                                src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                 alt="{{ translate('messages.Disbursement_Request_Type') }}"></span>
                                     </label>
                                     <div class="restaurant-type-group border">

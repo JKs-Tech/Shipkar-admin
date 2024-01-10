@@ -86,7 +86,7 @@
                                 </label>
                                 <div class="text-center py-3 my-auto">
                                     <img class="img--100 onerror-image" id="viewer"
-                                    src="{{\App\CentralLogics\Helpers::onerror_image_helper($category['image'], asset('storage/app/public/category/').'/'.$category['image'], asset('public/assets/admin/img/900x400/img1.jpg'), 'category/') }}"
+                                    src="{{\App\CentralLogics\Helpers::onerror_image_helper($category['image'], asset('storage/app/category/').'/'.$category['image'], asset('public/assets/admin/img/900x400/img1.jpg'), 'category/') }}"
                                         data-onerror-image="{{asset('public/assets/admin/img/900x400/img1.jpg')}}"
                                         alt=""/>
                                 </div>
@@ -117,7 +117,7 @@
         "use strict";
         $('#reset_btn').click(function(){
             $('#module_id').val("{{ $category->module_id }}").trigger('change');
-            $('#viewer').attr('src', "{{asset('storage/app/public/category')}}/{{$category['image']}}");
+            $('#viewer').attr('src', "{{asset('storage/app/category')}}/{{$category['image']}}");
         })
     </script>
 @endpush

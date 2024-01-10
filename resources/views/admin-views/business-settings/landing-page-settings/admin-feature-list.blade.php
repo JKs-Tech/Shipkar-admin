@@ -269,8 +269,8 @@
                                     </label>
                                     <label class="upload-img-3 m-0">
                                         <div class="img">
-                                            <img src="{{ asset('/public/assets/admin/img/aspect-1.png') }}"
-                                            data-onerror-image="{{ asset('/public/assets/admin/img/aspect-1.png') }}"
+                                            <img src="{{ asset('/assets/admin/img/aspect-1.png') }}"
+                                            data-onerror-image="{{ asset('/assets/admin/img/aspect-1.png') }}"
                                                 alt="image" class="img__aspect-1 min-w-187px max-w-187px onerror-image">
                                         </div>
                                         <input type="file" name="image" hidden>
@@ -332,12 +332,12 @@
                         <td>
                             <img  src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                 $feature->image ?? '',
-                                asset('storage/app/public/admin_feature').'/'.$feature->image ?? '',
-                                asset('/public/assets/admin/img/upload-3.png'),
+                                asset('storage/app/admin_feature').'/'.$feature->image ?? '',
+                                asset('/assets/admin/img/upload-3.png'),
                                 'admin_feature/'
                             ) }}"
 
-                                class="__size-105 onerror-image"  data-onerror-image="{{ asset('/public/assets/admin/img/upload-3.png') }}" alt="image">
+                                class="__size-105 onerror-image"  data-onerror-image="{{ asset('/assets/admin/img/upload-3.png') }}" alt="image">
                         </td>
                         <td>
                             <label class="toggle-switch toggle-switch-sm">
@@ -345,8 +345,8 @@
 
                                     data-id="status-{{ $feature->id }}"
                                     data-type="toggle"
-                                    data-image-on="{{ asset('/public/assets/admin/img/modal/feature-list-on.png') }}"
-                                    data-image-off="{{ asset('/public/assets/admin/img/modal/feature-list-off.png') }}"
+                                    data-image-on="{{ asset('/assets/admin/img/modal/feature-list-on.png') }}"
+                                    data-image-off="{{ asset('/assets/admin/img/modal/feature-list-off.png') }}"
                                     data-title-on="{{ translate('By Turning ON ') }} <strong>{{ translate('Feature List Section') }}"
                                     data-title-off="{{ translate('By Turning OFF ') }} <strong>{{ translate('Feature List Section') }}"
                                     data-text-on="<p>{{ translate('Feature list is enabled. You can now access its features and functionality') }}</p>"
@@ -395,7 +395,7 @@
                 </div>
                 @if (count($features) === 0)
                     <div class="empty--data">
-                        <img src="{{ asset('/public/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
+                        <img src="{{ asset('/assets/admin/svg/illustrations/sorry.svg') }}" alt="public">
                         <h5>
                             {{ translate('no_data_found') }}
                         </h5>

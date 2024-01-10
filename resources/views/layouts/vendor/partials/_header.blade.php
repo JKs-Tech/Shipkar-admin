@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="avatar avatar-sm avatar-circle">
                                         <img class="avatar-img  onerror-image"  data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
-                                        src="{{\App\CentralLogics\Helpers::onerror_image_helper(\App\CentralLogics\Helpers::get_loggedin_user()->image, asset('storage/app/public/vendor/').'/'.\App\CentralLogics\Helpers::get_loggedin_user()->image, asset('public/assets/admin/img/160x160/img1.jpg'), 'vendor/') }}"
+                                        src="{{\App\CentralLogics\Helpers::onerror_image_helper(\App\CentralLogics\Helpers::get_loggedin_user()->image, asset('storage/app/vendor/').'/'.\App\CentralLogics\Helpers::get_loggedin_user()->image, asset('public/assets/admin/img/160x160/img1.jpg'), 'vendor/') }}"
                                             alt="Image Description">
                                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                                     </div>
@@ -102,7 +102,7 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img  onerror-image"  data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}"
-                                            src="{{\App\CentralLogics\Helpers::onerror_image_helper(\App\CentralLogics\Helpers::get_loggedin_user()->image, asset('storage/app/public/vendor/').'/'.\App\CentralLogics\Helpers::get_loggedin_user()->image, asset('public/assets/admin/img/160x160/img1.jpg'), 'vendor/') }}"
+                                            src="{{\App\CentralLogics\Helpers::onerror_image_helper(\App\CentralLogics\Helpers::get_loggedin_user()->image, asset('storage/app/vendor/').'/'.\App\CentralLogics\Helpers::get_loggedin_user()->image, asset('public/assets/admin/img/160x160/img1.jpg'), 'vendor/') }}"
                                                  alt="Owner image">
                                         </div>
                                         <div class="media-body">
@@ -147,7 +147,7 @@ $val= (string) ($cash_in_hand_overflow_store_amount - (($cash_in_hand_overflow_s
 
 @if ($Payable_Balance == 1 &&  $cash_in_hand_overflow &&  $wallet?->balance < 0 &&  $val <=  abs($wallet?->collected_cash)  )
     <div class="alert __alert-2 alert-warning m-0 py-1 px-2" role="alert">
-        <img class="rounded mr-1"  width="25" src="{{ asset('/public/assets/admin/img/header_warning.png') }}" alt="">
+        <img class="rounded mr-1"  width="25" src="{{ asset('/assets/admin/img/header_warning.png') }}" alt="">
         <div class="cont">
             <h4 class="m-0">{{ translate('Attention_Please') }} </h4>
             {{ translate('The_Cash_in_Hand_amount_is_about_to_exceed_the_limit._Please_pay_the_due_amount._If_the_limit_exceeds,_your_account_will_be_suspended.') }}
@@ -157,7 +157,7 @@ $val= (string) ($cash_in_hand_overflow_store_amount - (($cash_in_hand_overflow_s
 
 @if ($Payable_Balance == 1 &&  $cash_in_hand_overflow &&  $wallet?->balance < 0 &&  $cash_in_hand_overflow_store_amount < $wallet?->collected_cash)
     <div class="alert __alert-2 alert-warning m-0 py-1 px-2" role="alert">
-        <img class="mr-1"  width="25" src="{{ asset('/public/assets/admin/img/header_warning.png') }}" alt="">
+        <img class="mr-1"  width="25" src="{{ asset('/assets/admin/img/header_warning.png') }}" alt="">
         <div class="cont">
             <h4 class="m-0">{{ translate('Attention_Please') }} </h4>{{ translate('The_Cash_in_Hand_amount_limit_is_exceeded._Your_account_is_now_suspended._Please_pay_the_due_amount_to_receive_new_order_requests_again.') }}<a href="{{ route('vendor.wallet.index') }}" class="alert-link"> &nbsp; {{ translate('Pay_the_due') }}</a>
         </div>

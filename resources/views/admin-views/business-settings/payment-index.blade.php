@@ -13,7 +13,7 @@
         <div class="page-header">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('/public/assets/admin/img/payment.png')}}" class="w--22" alt="">
+                    <img src="{{asset('/assets/admin/img/payment.png')}}" class="w--22" alt="">
                 </span>
                 <span>
                     {{translate('messages.payment_gateway_setup')}}
@@ -24,7 +24,7 @@
                 <div class="blinkings trx_top active">
                     <i class="tio-info-outined"></i>
                     <div class="business-notes">
-                        <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                        <h6><img src="{{asset('/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                         <div>
                             {{translate('Without configuring this section functionality will not work properly. Thus the whole system will not work as it planned')}}
                         </div>
@@ -36,7 +36,7 @@
         <div class="card border-0">
             <div class="card-header card-header-shadow">
                 <h5 class="card-title align-items-center">
-                    <img src="{{asset('/public/assets/admin/img/payment-method.png')}}" class="mr-1" alt="">
+                    <img src="{{asset('/assets/admin/img/payment-method.png')}}" class="mr-1" alt="">
                     {{translate('Payment Method')}}
                 </h5>
             </div>
@@ -59,8 +59,8 @@
                                     type="checkbox" id="cash_on_delivery_status"
                                     data-id="cash_on_delivery_status"
                                     data-type="status"
-                                    data-image-on="{{ asset('/public/assets/admin/img/modal/digital-payment-on.png') }}"
-                                    data-image-off="{{ asset('/public/assets/admin/img/modal/digital-payment-off.png') }}"
+                                    data-image-on="{{ asset('/assets/admin/img/modal/digital-payment-on.png') }}"
+                                    data-image-off="{{ asset('/assets/admin/img/modal/digital-payment-off.png') }}"
                                     data-title-on="{{ translate('By Turning ON Cash On Delivery Option') }}"
                                     data-title-off="{{ translate('By Turning OFF Cash On Delivery Option') }}"
                                     data-text-on="<p>{{ translate('Customers will not be able to select COD as a payment method during checkout. Please review your settings and enable COD if you wish to offer this payment option to customers.') }}</p>"
@@ -89,8 +89,8 @@
                                 <input  type="checkbox" id="digital_payment_status"
                                        data-id="digital_payment_status"
                                        data-type="status"
-                                       data-image-on="{{ asset('/public/assets/admin/img/modal/digital-payment-on.png') }}"
-                                       data-image-off="{{ asset('/public/assets/admin/img/modal/digital-payment-off.png') }}"
+                                       data-image-on="{{ asset('/assets/admin/img/modal/digital-payment-on.png') }}"
+                                       data-image-off="{{ asset('/assets/admin/img/modal/digital-payment-off.png') }}"
                                        data-title-on="{{ translate('By Turning ON Digital Payment Option') }}"
                                        data-title-off="{{ translate('By Turning OFF Digital Payment Option') }}"
                                        data-text-on="<p>{{ translate('Customers will not be able to select digital payment as a payment method during checkout. Please review your settings and enable digital payment if you wish to offer this payment option to customers.') }}</p>"
@@ -119,8 +119,8 @@
                                 <input  type="checkbox" id="offline_payment_status"
                                         data-id="offline_payment_status"
                                         data-type="status"
-                                        data-image-on="{{ asset('/public/assets/admin/img/modal/digital-payment-on.png') }}"
-                                        data-image-off="{{ asset('/public/assets/admin/img/modal/digital-payment-off.png') }}"
+                                        data-image-on="{{ asset('/assets/admin/img/modal/digital-payment-on.png') }}"
+                                        data-image-off="{{ asset('/assets/admin/img/modal/digital-payment-off.png') }}"
                                         data-title-on="{{ translate('By Turning ON Offline Payment Option') }}"
                                         data-title-off="{{ translate('By Turning OFF Offline Payment Option') }}"
                                         data-text-on="<p>{{ translate('Customers will not be able to select Offline Payment as a payment method during checkout. Please review your settings and enable Offline Payment if you wish to offer this payment option to customers.') }}</p>"
@@ -181,18 +181,18 @@
                             <div class="card-body">
                                 <div class="payment--gateway-img">
                                     <img  id="{{$payment->key_name}}-image-preview" class="__height-80 onerror-image"
-                                    data-onerror-image="{{asset('/public/assets/admin/img/payment/placeholder.png')}}"
+                                    data-onerror-image="{{asset('/assets/admin/img/payment/placeholder.png')}}"
 
                                 @if ($additional_data != null)
                                     src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                         $additional_data?->gateway_image,
-                                        asset('storage/app/public/payment_modules/gateway_image').'/'.$additional_data?->gateway_image,
-                                        asset('/public/assets/admin/img/payment/placeholder.png'),
+                                        asset('storage/app/payment_modules/gateway_image').'/'.$additional_data?->gateway_image,
+                                        asset('/assets/admin/img/payment/placeholder.png'),
                                         'payment_modules/gateway_image/'
                                     ) }}"
 
                                 @else
-                                src="{{asset('/public/assets/admin/img/payment/placeholder.png')}}"
+                                src="{{asset('/assets/admin/img/payment/placeholder.png')}}"
                                 @endif
 
 

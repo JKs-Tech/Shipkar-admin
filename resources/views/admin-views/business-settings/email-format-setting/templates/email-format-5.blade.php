@@ -4,12 +4,12 @@ $company_name = App\Models\BusinessSetting::where('key', 'business_name')->first
 <table class="email-template-table-style">
     <tr>
         <td class="email-template-table-td-style">
-            <img class="mail-img-2 onerror-image" data-onerror-image="{{ asset('/public/assets/admin/img/blank3.png') }}"
+            <img class="mail-img-2 onerror-image" data-onerror-image="{{ asset('/assets/admin/img/blank3.png') }}"
 
             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                 data_get($data, 'icon' , null),
-                asset('storage/app/public/email_template').'/'.data_get($data, 'icon' , null) ,
-                asset('/public/assets/admin/img/blank3.png'),
+                asset('storage/app/email_template').'/'.data_get($data, 'icon' , null) ,
+                asset('/assets/admin/img/blank3.png'),
                 'email_template/'
             ) }}"
 
@@ -30,12 +30,12 @@ $company_name = App\Models\BusinessSetting::where('key', 'business_name')->first
             <span class="d-block">{{ translate('Thanks_&_Regards') }},</span>
             <span class="d-block" class="email-template-table-td-span-4">{{ $company_name }}</span>
             @php($store_logo = \App\Models\BusinessSetting::where(['key' => 'logo'])->first()->value)
-            <img class="email-template-img onerror-image" data-onerror-image="{{ asset('storage/app/public/business/' . $store_logo) }}"
+            <img class="email-template-img onerror-image" data-onerror-image="{{ asset('storage/app/business/' . $store_logo) }}"
 
             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                 data_get($data, 'logo' , null),
-                asset('storage/app/public/email_template').'/'.data_get($data, 'logo' , null),
-                asset('storage/app/public/business/' . $store_logo),
+                asset('storage/app/email_template').'/'.data_get($data, 'logo' , null),
+                asset('storage/app/business/' . $store_logo),
                 'email_template/'
             ) }}"
 
@@ -50,19 +50,19 @@ $company_name = App\Models\BusinessSetting::where('key', 'business_name')->first
 
             <span class="social email-template-social-span">
                 <a href="" id="facebook-check" class="email-template-social-media" style="{{ (isset($data['facebook']) && $data['facebook'] == 1)?'':'display:none;' }}">
-                    <img src="{{asset('/public/assets/admin/img/img/facebook.png')}}" alt="">
+                    <img src="{{asset('/assets/admin/img/img/facebook.png')}}" alt="">
                 </a>
                 <a href="" id="instagram-check" class="email-template-social-media" style="{{ (isset($data['instagram']) && $data['instagram'] == 1)?'':'display:none;' }}">
-                    <img src="{{asset('/public/assets/admin/img/img/instagram.png')}}" alt="">
+                    <img src="{{asset('/assets/admin/img/img/instagram.png')}}" alt="">
                 </a>
                 <a href="" id="twitter-check" class="email-template-social-media" style="{{ (isset($data['twitter']) && $data['twitter'] == 1)?'':'display:none;' }}">
-                    <img src="{{asset('/public/assets/admin/img/img/twitter.png')}}" alt="">
+                    <img src="{{asset('/assets/admin/img/img/twitter.png')}}" alt="">
                 </a>
                 <a href="" id="linkedin-check" class="email-template-social-media" style="{{ (isset($data['linkedin']) && $data['linkedin'] == 1)?'':'display:none;' }}">
-                    <img src="{{asset('/public/assets/admin/img/img/linkedin.png')}}" alt="">
+                    <img src="{{asset('/assets/admin/img/img/linkedin.png')}}" alt="">
                 </a>
                 <a href="" id="pinterest-check" class="email-template-social-media" style="{{ (isset($data['pinterest']) && $data['pinterest'] == 1)?'':'display:none;' }}">
-                    <img src="{{asset('/public/assets/admin/img/img/pinterest.png')}}" alt="">
+                    <img src="{{asset('/assets/admin/img/img/pinterest.png')}}" alt="">
                 </a>
             </span>
             <span class="copyright" id="mail-copyright">

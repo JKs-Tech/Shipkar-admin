@@ -29,7 +29,7 @@
 
                     src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                         $item['image'] ?? '',
-                        asset('storage/app/public/product').'/'.$item['image'] ?? '',
+                        asset('storage/app/product').'/'.$item['image'] ?? '',
                         asset('public/assets/admin/img/100x100/2.png'),
                         'product/'
                     ) }}"

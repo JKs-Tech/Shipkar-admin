@@ -112,12 +112,12 @@
 
                                     src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                         $parcel_category['image'] ?? '',
-                                        asset('storage/app/public/parcel_category').'/'.$parcel_category['image'] ?? '',
-                                        asset('/public/assets/admin/img/400x400/img2.jpg'),
+                                        asset('storage/app/parcel_category').'/'.$parcel_category['image'] ?? '',
+                                        asset('/assets/admin/img/400x400/img2.jpg'),
                                         'parcel_category/'
                                     ) }}"
 
-                                    data-onerror-image="{{asset('/public/assets/admin/img/400x400/img2.jpg')}}" />
+                                    data-onerror-image="{{asset('/assets/admin/img/400x400/img2.jpg')}}" />
                                 </div>
                                 <div class="custom-file">
                                     <input type="file" name="image" id="customFileEg1" class="custom-file-input"
@@ -188,7 +188,7 @@
 
             $('#reset_btn').click(function(){
                 $('#module_id').val("{{$parcel_category->module_id}}").trigger('change');
-                $('#viewer').attr('src', "{{asset('storage/app/public/parcel_category')}}/{{$parcel_category['image']}}");
+                $('#viewer').attr('src', "{{asset('storage/app/parcel_category')}}/{{$parcel_category['image']}}");
             })
         </script>
 @endpush

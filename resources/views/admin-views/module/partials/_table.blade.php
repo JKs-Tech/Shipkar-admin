@@ -17,8 +17,8 @@
             <input type="checkbox" class="toggle-switch-input dynamic-checkbox"
                    data-id="status-{{$module->id}}"
                    data-type="status"
-                   data-image-on='{{asset('/public/assets/admin/img/modal')}}/module-on.png'
-                   data-image-off="{{asset('/public/assets/admin/img/modal')}}/module-off.png"
+                   data-image-on='{{asset('/assets/admin/img/modal')}}/module-on.png'
+                   data-image-off="{{asset('/assets/admin/img/modal')}}/module-off.png"
                    data-title-on="{{translate('Want_to_activate_this')}} <strong>{{translate('Business_Module?')}}</strong>','{{translate('Want_to_deactivate_this')}} <strong>{{translate('Business_Module?')}}</strong>"
                    data-title-off="<p>{{translate('If_you_activate_this_business_module,_all_its_features_and_functionalities_will_be_available_and_accessible_to_all_users.')}}</p>"
                    data-text-on="<p>{{translate('If_you_deactivate_this_business_module,_all_its_features_and_functionalities_will_be_disabled_and_hidden_from_users.')}}</p>"

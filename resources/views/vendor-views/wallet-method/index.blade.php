@@ -14,7 +14,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/public/assets/admin/img/image_90.png')}}" alt="public">
+                            <img src="{{asset('/assets/admin/img/image_90.png')}}" alt="public">
                         </div>
                         <span>
                             {{translate('messages.disbursement_method_setup')}}

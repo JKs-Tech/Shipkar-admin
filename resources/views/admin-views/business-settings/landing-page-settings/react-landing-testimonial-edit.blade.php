@@ -67,10 +67,10 @@
                                             <div class="img">
                                                 <img  src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                     $review->reviewer_image ?? '',
-                                                    asset('storage/app/public/reviewer_image').'/'.$review->reviewer_image ?? '',
-                                                    asset('/public/assets/admin/img/aspect-1.png'),
+                                                    asset('storage/app/reviewer_image').'/'.$review->reviewer_image ?? '',
+                                                    asset('/assets/admin/img/aspect-1.png'),
                                                     'reviewer_image/'
-                                                ) }}" data-onerror-image="{{asset("/public/assets/admin/img/aspect-1.png")}}" class="img__aspect-1 min-w-187px max-w-187px onerror-image" alt="">
+                                                ) }}" data-onerror-image="{{asset("/assets/admin/img/aspect-1.png")}}" class="img__aspect-1 min-w-187px max-w-187px onerror-image" alt="">
                                             </div>
                                             <input type="file"  name="reviewer_image" hidden="">
                                             @if (isset($review->reviewer_image))

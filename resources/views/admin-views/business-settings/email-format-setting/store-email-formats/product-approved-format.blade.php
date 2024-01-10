@@ -40,8 +40,8 @@
                                 <input type="checkbox" class="status toggle-switch-input dynamic-checkbox"
                                        data-id="mail-status"
                                        data-type="status"
-                                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/place-order-on.png'
-                                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/place-order-off.png"
+                                       data-image-on='{{asset('/assets/admin/img/modal')}}/place-order-on.png'
+                                       data-image-off="{{asset('/assets/admin/img/modal')}}/place-order-off.png"
                                        data-title-on="{{translate('Want_to_enable_product_approval_mail?')}}"
                                        data-title-off="{{translate('Want_to_disable_product_approval_mai?')}}"
                                        data-text-on="<p>{{translate('If_enabled,_Stores_will_receive_a_confirmation_email_when_the_Admin_approves_their_product.')}}</p>"

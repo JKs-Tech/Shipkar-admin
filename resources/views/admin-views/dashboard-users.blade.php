@@ -14,7 +14,7 @@
             <div class="row align-items-center py-2">
                 <div class="col-sm mb-2 mb-sm-0">
                     <div class="d-flex align-items-center">
-                        <img src="{{asset('/public/assets/admin/img/new-img/users.svg')}}" alt="img">
+                        <img src="{{asset('/assets/admin/img/new-img/users.svg')}}" alt="img">
                         <div class="w-0 flex-grow pl-3">
                             <h1 class="page-header-title mb-0">{{ translate('messages.User Overview') }}</h1>
                             <p class="page-header-text m-0">{{translate('Hello,_here_you_can_manage_your_users_by_zone.')}}</p>
@@ -46,7 +46,7 @@
                             +{{$total_customers >= 4 ? $total_customers - 2 : $total_customers}}
                         </div>
                         @foreach ($customers as $key => $customer)
-                            <img src="{{\App\CentralLogics\Helpers::onerror_image_helper($customer['image'], asset('storage/app/public/profile/').'/'.$customer['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'profile/') }}"
+                            <img src="{{\App\CentralLogics\Helpers::onerror_image_helper($customer['image'], asset('storage/app/profile/').'/'.$customer['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'profile/') }}"
                                  class="onerror-image" data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}" alt="new-img">
                         @endforeach
                     </div>
@@ -62,7 +62,7 @@
                             +{{$total_deliveryman >= 4 ? $total_deliveryman - 2 :  $total_deliveryman}}
                         </div>
                         @foreach ($delivery_man as $key => $dm)
-                            <img src="{{\App\CentralLogics\Helpers::onerror_image_helper($dm['image'], asset('storage/app/public/delivery-man/').'/'.$dm['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'delivery-man/') }}"
+                            <img src="{{\App\CentralLogics\Helpers::onerror_image_helper($dm['image'], asset('storage/app/delivery-man/').'/'.$dm['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'delivery-man/') }}"
                                  class="onerror-image" data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}"
                              alt="new-img">
                         @endforeach
@@ -82,7 +82,7 @@
                         @if ($key == 2)
                             @break
                         @endif
-                        <img src="{{\App\CentralLogics\Helpers::onerror_image_helper($item['image'], asset('storage/app/public/delivery-man/').'/'.$item['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'delivery-man/') }}"
+                        <img src="{{\App\CentralLogics\Helpers::onerror_image_helper($item['image'], asset('storage/app/delivery-man/').'/'.$item['image'], asset('public/assets/admin/img/160x160/img2.jpg'), 'delivery-man/') }}"
                              class="onerror-image" data-onerror-image="{{asset('public/assets/admin/img/160x160/img2.jpg')}}" alt="new-img">
                         @endforeach
                     </div>
@@ -102,7 +102,7 @@
                             <div class="col-md-12 col-sm-6">
                                 <div class="__customer-statistics-card">
                                     <div class="title">
-                                        <img src="{{asset('/public/assets/admin/img/new-img/customer/active.svg')}}" alt="new-img">
+                                        <img src="{{asset('/assets/admin/img/new-img/customer/active.svg')}}" alt="new-img">
                                         <h4>{{$active_customers}}</h4>
                                     </div>
                                     <h4 class="subtitle text-capitalize">{{translate('messages.active_customer')}}</h4>
@@ -111,7 +111,7 @@
                             <div class="col-md-12 col-sm-6">
                                 <div class="__customer-statistics-card" style="--clr:#006AB4">
                                     <div class="title">
-                                        <img src="{{asset('/public/assets/admin/img/new-img/customer/newly.svg')}}" alt="new-img">
+                                        <img src="{{asset('/assets/admin/img/new-img/customer/newly.svg')}}" alt="new-img">
                                         <h4>{{$newly_joined}}</h4>
                                     </div>
                                     <h4 class="subtitle text-capitalize">{{translate('messages.newly_joined')}}</h4>
@@ -120,7 +120,7 @@
                             <div class="col-md-12 col-sm-6">
                                 <div class="__customer-statistics-card" style="--clr:#FF5A54">
                                     <div class="title">
-                                        <img src="{{asset('/public/assets/admin/img/new-img/customer/blocked.svg')}}" alt="new-img">
+                                        <img src="{{asset('/assets/admin/img/new-img/customer/blocked.svg')}}" alt="new-img">
                                         <h4>{{$blocked_customers}}</h4>
                                     </div>
                                     <h4 class="subtitle text-capitalize">{{translate('messages.blocked_customer')}}</h4>
@@ -154,7 +154,7 @@
                     <div class="px-2">
                         <div class="d-flex align-items-center justify-content-between">
                             <h5 class="subtitle text-capitalize">{{translate('messages.customer_satisfaction')}}</h5>
-                            <img src="{{asset('/public/assets/admin/img/new-img/satisfactions.png')}}" alt="new-img">
+                            <img src="{{asset('/assets/admin/img/new-img/satisfactions.png')}}" alt="new-img">
                         </div>
                         <div class="px-sm-2">
                             <h4 class="review-count">{{$reviews}}</h4>
@@ -321,7 +321,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="__customer-statistics-card h-100">
                             <div class="title">
-                                <img src="{{asset('/public/assets/admin/img/new-img/deliveryman/active.svg')}}" alt="new-img">
+                                <img src="{{asset('/assets/admin/img/new-img/deliveryman/active.svg')}}" alt="new-img">
                                 <h4>{{$active_deliveryman}}</h4>
                             </div>
                             <h4 class="subtitle text-capitalize">{{translate('messages.active_delivery_man')}}</h4>
@@ -330,7 +330,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="__customer-statistics-card h-100" style="--clr:#006AB4">
                             <div class="title">
-                                <img src="{{asset('/public/assets/admin/img/new-img/deliveryman/newly.svg')}}" alt="new-img">
+                                <img src="{{asset('/assets/admin/img/new-img/deliveryman/newly.svg')}}" alt="new-img">
                                 <h4>{{$newly_joined_deliveryman}}</h4>
                             </div>
                             <h4 class="subtitle text-capitalize">{{translate('messages.newly_joined_delivery_man')}}</h4>
@@ -339,7 +339,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="__customer-statistics-card h-100" style="--clr:#FF5A54">
                             <div class="title">
-                                <img src="{{asset('/public/assets/admin/img/new-img/deliveryman/in-active.svg')}}" alt="new-img">
+                                <img src="{{asset('/assets/admin/img/new-img/deliveryman/in-active.svg')}}" alt="new-img">
                                 <h4>{{$inactive_deliveryman}}</h4>
                             </div>
                             <h4 class="subtitle text-capitalize">{{translate('messages.inactive_deliveryman')}}</h4>
@@ -385,7 +385,7 @@
 
 @push('script_2')
     <!-- Apex Charts -->
-    <script src="{{asset('/public/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/apex-charts/apexcharts.js')}}"></script>
     <!-- Apex Charts -->
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key={{\App\Models\BusinessSetting::where('key', 'map_api_key')->first()->value}}&callback=initialize&libraries=drawing,places&v=3.49"></script>
@@ -447,7 +447,7 @@
             map.fitBounds(dmbounds);
             for (let i = 0; i < deliveryMan.length; i++) {
                 if (deliveryMan[i].lat) {
-                    let contentString = "<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{ asset('storage/app/public/delivery-man') }}/"+deliveryMan[i].image+"'></div><div style='float:right; padding: 10px;'><b>"+deliveryMan[i].name+"</b><br/> "+deliveryMan[i].location+"</div>";
+                    let contentString = "<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{ asset('storage/app/delivery-man') }}/"+deliveryMan[i].image+"'></div><div style='float:right; padding: 10px;'><b>"+deliveryMan[i].name+"</b><br/> "+deliveryMan[i].location+"</div>";
                     let point = new google.maps.LatLng(deliveryMan[i].lat, deliveryMan[i].lng);
                     dmbounds.extend(point);
                     map.fitBounds(dmbounds);
@@ -461,7 +461,7 @@
                     google.maps.event.addListener(marker, 'click', (function(marker, i) {
                         return function() {
                             infowindow.setContent(
-                                "<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{ asset('storage/app/public/delivery-man') }}/" +
+                                "<div style='float:left'><img style='max-height:40px;wide:auto;' src='{{ asset('storage/app/delivery-man') }}/" +
                                 deliveryMan[i].image +
                                 "'></div><div style='float:right; padding: 10px;'><b>" + deliveryMan[i]
                                 .name + "</b><br/> " + deliveryMan[i].location + "</b><br/> " + 'Assigned Order: ' + deliveryMan[i].assigned_order_count + "</div>"

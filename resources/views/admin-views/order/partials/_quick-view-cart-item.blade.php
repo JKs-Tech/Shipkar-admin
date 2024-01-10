@@ -12,7 +12,7 @@
             <img class="img-responsive initial--20 onerror-image"
             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                 $product['image'],
-                asset($item_type == 'item' ? 'storage/app/public/product/' : 'storage/app/public/campaign/') . $product['image'],
+                asset($item_type == 'item' ? 'storage/app/product/' : 'storage/app/campaign/') . $product['image'],
                 asset('public/assets/admin/img/160x160/img2.jpg'),
                 $item_type == 'item' ? 'product/' : 'campaign/'
             ) }}"

@@ -22,7 +22,7 @@
             <div class="cursor-pointer text-primary d-flex align-items-center gap-3 font-weight-bolder"  data-toggle="modal" data-target="#settingModal">
                 {{ translate('How_the_Setting_Works') }}
                 <div class="ripple-animation ml-2">
-                    <img src="{{asset('/public/assets/admin/img/info.svg')}}" class="svg" alt="">
+                    <img src="{{asset('/assets/admin/img/info.svg')}}" class="svg" alt="">
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
                             <div class="mt-5 card px-3 py-2 d--none" id="progress-bar">
                                 <div class="d-flex flex-wrap align-items-center gap-3">
                                     <div class="">
-                                        <img width="24" src="{{asset('/public/assets/admin/img/zip.png')}}" alt="">
+                                        <img width="24" src="{{asset('/assets/admin/img/zip.png')}}" alt="">
                                     </div>
                                     <div class="flex-grow-1 text-start">
                                         <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
@@ -234,7 +234,7 @@
                         <div class="aspect-ration-3:2 border border-color-primary-light radius-10">
                             <img class="img-fit radius-10 onerror-image"
                             data-onerror-image="{{asset('public/assets/admin/img/placeholder.png')}}"
-                                src="{{asset($addon.'/public/addon.png')}}">
+                                src="{{asset($addon.'/addon.png')}}">
                         </div>
                     </div>
                 </div>

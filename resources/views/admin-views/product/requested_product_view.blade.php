@@ -30,7 +30,7 @@
                             <img class="avatar avatar-xxl avatar-4by3 onerror-image"
                             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                 $product['image'] ?? '',
-                                asset('storage/app/public/product').'/'.$product['image'] ?? '',
+                                asset('storage/app/product').'/'.$product['image'] ?? '',
                                 asset('public/assets/admin/img/160x160/img2.jpg'),
                                 'product/'
                             ) }}" 

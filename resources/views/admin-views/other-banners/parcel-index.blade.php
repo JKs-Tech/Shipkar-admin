@@ -40,7 +40,7 @@
                                         <div class="col-12">
                                             <label class="__upload-img aspect-4-1 m-auto d-block">
                                                 <div class="img">
-                                                    <img class="onerror-image"    src="{{asset('/public/assets/admin/img/upload-placeholder.png')}}" data-onerror-image="{{asset('/public/assets/admin/img/upload-placeholder.png')}}" alt="">
+                                                    <img class="onerror-image"    src="{{asset('/assets/admin/img/upload-placeholder.png')}}" data-onerror-image="{{asset('/assets/admin/img/upload-placeholder.png')}}" alt="">
 
 
 
@@ -96,18 +96,18 @@
                                                     <td>
                                                         <img src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                                             $banner->value ?? '',
-                                                            asset('storage/app/public/promotional_banner').'/'.$banner->value ?? '',
-                                                            asset('/public/assets/admin/img/upload-3.png'),
+                                                            asset('storage/app/promotional_banner').'/'.$banner->value ?? '',
+                                                            asset('/assets/admin/img/upload-3.png'),
                                                             'promotional_banner/'
-                                                        ) }}"  data-onerror-image="{{asset('/public/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
+                                                        ) }}"  data-onerror-image="{{asset('/assets/admin/img/upload-3.png')}}" class="__size-105 onerror-image" alt="">
                                                     </td>
                                                     <td>
                                                         <label class="toggle-switch toggle-switch-sm">
                                                             <input type="checkbox" class="toggle-switch-input dynamic-checkbox"
                                                                    data-id="status-{{$banner->id}}"
                                                                    data-type="status"
-                                                                   data-image-on="{{asset('/public/assets/admin/img/modal')}}/promotional-on.png"
-                                                                   data-image-off="{{asset('/public/assets/admin/img/modal')}}/promotional-off.png"
+                                                                   data-image-on="{{asset('/assets/admin/img/modal')}}/promotional-on.png"
+                                                                   data-image-off="{{asset('/assets/admin/img/modal')}}/promotional-off.png"
                                                                    data-title-on="{{translate('By Turning ONN Promotional Banner Section')}}"
                                                                    data-title-off="{{translate('By Turning OFF Promotional Banner Section')}}"
                                                                    data-text-on="<p>{{translate('Promotional banner will be enabled. You will be able to see promotional activity')}}</p>"
@@ -145,7 +145,7 @@
                                 </div>
                                 @if(count($banners) === 0)
                                 <div class="empty--data">
-                                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                                     <h5>
                                         {{translate('no_data_found')}}
                                     </h5>
@@ -164,7 +164,7 @@
     <script src="{{asset('public/assets/admin')}}/js/view-pages/other-banners.js"></script>
         <script>
             $('#reset_btn').click(function(){
-                $('#viewer').attr('src','{{asset('/public/assets/admin/img/upload-placeholder.png')}}');
+                $('#viewer').attr('src','{{asset('/assets/admin/img/upload-placeholder.png')}}');
             })
         </script>
 @endpush

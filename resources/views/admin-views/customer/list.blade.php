@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title mr-3">
                 <span class="page-header-icon">
-                    <img src="{{asset('/public/assets/admin/img/people.png')}}" class="w--26" alt="">
+                    <img src="{{asset('/assets/admin/img/people.png')}}" class="w--26" alt="">
                 </span>
                 <span>
                      {{ translate('messages.customers') }} <span class="badge badge-soft-dark ml-2" id="count">{{ $customers->total() }}</span>
@@ -265,7 +265,7 @@
             </div>
             @if(count($customers) === 0)
             <div class="empty--data">
-                <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                 <h5>
                     {{translate('no_data_found')}}
                 </h5>

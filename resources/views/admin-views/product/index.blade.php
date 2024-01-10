@@ -191,7 +191,7 @@
                                             for="sub-categories">{{ translate('messages.sub_category') }}<span
                                                 class="input-label-secondary"
                                                 title="{{ translate('messages.category_required_warning') }}"><img
-                                                    src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                                    src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                                     alt="{{ translate('messages.category_required_warning') }}"></span></label>
                                         <select name="sub_category_id" class="js-data-example-ajax form-control" data-placeholder="{{ translate('messages.select_sub_category') }}"
                                             id="sub-categories">
@@ -287,7 +287,7 @@
                                     for="exampleFormControlSelect1">{{ translate('messages.addon') }}<span
                                         class="input-label-secondary"
                                         title="{{ translate('messages.addon') }}"><img
-                                            src="{{ asset('/public/assets/admin/img/info-circle.svg') }}"
+                                            src="{{ asset('/assets/admin/img/info-circle.svg') }}"
                                             alt="{{ translate('messages.store_required_warning') }}"></span></label>
                                 <select name="addon_ids[]" class="form-control js-select2-custom"
                                     multiple="multiple" id="add_on">
@@ -395,7 +395,7 @@
                             <!-- Empty Variation -->
                             <div id="empty-variation">
                                 <div class="text-center">
-                                    <img src="{{asset('/public/assets/admin/img/variation.png')}}" alt="">
+                                    <img src="{{asset('/assets/admin/img/variation.png')}}" alt="">
                                     <div>{{translate('No variation added')}}</div>
                                 </div>
                             </div>

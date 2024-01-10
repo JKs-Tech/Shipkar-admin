@@ -7,7 +7,7 @@
             <img class="avatar avatar-lg mr-3 onerror-image"
             src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                 $food['image'] ?? '',
-                asset('storage/app/public/product').'/'.$food['image'] ?? '',
+                asset('storage/app/product').'/'.$food['image'] ?? '',
                 asset('public/assets/admin/img/160x160/img2.jpg'),
                 'product/'
             ) }}" 

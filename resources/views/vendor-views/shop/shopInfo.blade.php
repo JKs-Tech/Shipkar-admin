@@ -9,7 +9,7 @@
     <div class="page-header">
         <div class="d-flex flex-wrap justify-content-between">
             <h2 class="page-header-title text-capitalize my-2">
-                <img class="w--26" src="{{asset('/public/assets/admin/img/store.png')}}" alt="public">
+                <img class="w--26" src="{{asset('/assets/admin/img/store.png')}}" alt="public">
                 <span>
                     {{translate('messages.my_store_info')}}
                 </span>
@@ -23,7 +23,7 @@
         <div class="card-body p-0">
             @if($shop->cover_photo)
             <div>
-                <img class="my-restaurant-img onerror-image" src="{{\App\CentralLogics\Helpers::onerror_image_helper($shop->cover_photo, asset('storage/app/public/store/cover/').'/'.$shop->cover_photo, asset('public/assets/admin/img/900x400/img1.jpg'), 'store/cover/') }}"
+                <img class="my-restaurant-img onerror-image" src="{{\App\CentralLogics\Helpers::onerror_image_helper($shop->cover_photo, asset('storage/app/store/cover/').'/'.$shop->cover_photo, asset('public/assets/admin/img/900x400/img1.jpg'), 'store/cover/') }}"
                 data-onerror-image="{{asset('public/assets/admin/img/900x400/img1.jpg')}}">
             </div>
             @endif
@@ -37,7 +37,7 @@
                 </div>
                 @else
                     <div class="my-resturant--avatar onerror-image">
-                        <img src="{{\App\CentralLogics\Helpers::onerror_image_helper($shop->logo, asset('storage/app/public/store/').'/'.$shop->logo, asset('public/assets/admin/img/160x160/img1.jpg'), 'store/') }}"
+                        <img src="{{\App\CentralLogics\Helpers::onerror_image_helper($shop->logo, asset('storage/app/store/').'/'.$shop->logo, asset('public/assets/admin/img/160x160/img1.jpg'), 'store/') }}"
                         class="border" data-onerror-image="{{asset('public/assets/admin/img/160x160/img1.jpg')}}" alt="">
                     </div>
                 @endif
@@ -66,14 +66,14 @@
         <div class="card-header">
             <h5 class="card-title toggle-switch toggle-switch-sm d-flex justify-content-between">
                 <span class="card-header-icon mr-1"><i class="tio-dashboard"></i></span>
-                <span>{{translate('Announcement')}}</span><span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('This_feature_is_for_sharing_important_information_or_announcements_related_to_the_store.')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.This_feature_is_for_sharing_important_information_or_announcements_related_to_the_store')}}"></span>
+                <span>{{translate('Announcement')}}</span><span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{translate('This_feature_is_for_sharing_important_information_or_announcements_related_to_the_store.')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{translate('messages.This_feature_is_for_sharing_important_information_or_announcements_related_to_the_store')}}"></span>
             </h5>
             <label class="toggle-switch toggle-switch-sm" for="announcement_status">
                 <input class="toggle-switch-input dynamic-checkbox" type="checkbox" id="announcement_status"
                        data-id="announcement_status"
                        data-type="status"
-                       data-image-on='{{asset('/public/assets/admin/img/modal')}}/digital-payment-on.png'
-                       data-image-off="{{asset('/public/assets/admin/img/modal')}}/digital-payment-off.png"
+                       data-image-on='{{asset('/assets/admin/img/modal')}}/digital-payment-on.png'
+                       data-image-off="{{asset('/assets/admin/img/modal')}}/digital-payment-off.png"
                        data-title-on="{{translate('Do_you_want_to_enable_the_announcement')}}"
                        data-title-off="{{translate('Do_you_want_to_disable_the_announcement')}}"
                        data-text-on="<p>{{translate('User_will_able_to_see_the_Announcement_on_the_store_page.')}}</p>"

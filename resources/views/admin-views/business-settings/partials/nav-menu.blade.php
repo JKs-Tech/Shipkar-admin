@@ -40,7 +40,7 @@
         <div class="blinkings active">
             <i class="tio-info-outined"></i>
             <div class="business-notes">
-                <h6><img src="{{asset('/public/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
+                <h6><img src="{{asset('/assets/admin/img/notes.png')}}" alt=""> {{translate('Note')}}</h6>
                 <div>
                     @if (Request::is('admin/business-settings/business-setup/refund-settings'))
                     {{ translate('messages.*If_the_Admin_enables_the_‘Refund_Request_Mode’,_customers_can_request_a_refund.') }}

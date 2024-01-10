@@ -14,7 +14,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/public/assets/admin/img/image_90.png')}}" alt="public">
+                            <img src="{{asset('/assets/admin/img/image_90.png')}}" alt="public">
                         </div>
                         <span>
                             {{translate('messages.store_wallet')}}
@@ -81,7 +81,7 @@
                 </table>
                 @if(count($account_transaction) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                        <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>
@@ -116,7 +116,7 @@
                                     <div class="d-flex gap-3 align-items-center">
                                         <input type="radio" required id="{{$item['gateway'] }}" name="payment_gateway" value="{{$item['gateway'] }}">
                                         <label for="{{$item['gateway'] }}" class="d-flex align-items-center gap-3 mb-0">
-                                            <img height="24" src="{{ asset('storage/app/public/payment_modules/gateway_image/'. $item['gateway_image']) }}" alt="">
+                                            <img height="24" src="{{ asset('storage/app/payment_modules/gateway_image/'. $item['gateway_image']) }}" alt="">
                                             {{ $item['gateway_title'] }}
                                         </label>
                                     </div>

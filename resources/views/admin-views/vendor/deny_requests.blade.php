@@ -99,7 +99,7 @@
 
                                         src="{{ \App\CentralLogics\Helpers::onerror_image_helper(
                                             $store['logo'] ?? '',
-                                            asset('storage/app/public/store').'/'.$store['logo'] ?? '',
+                                            asset('storage/app/store').'/'.$store['logo'] ?? '',
                                             asset('public/assets/admin/img/160x160/img1.jpg'),
                                             'store/'
                                         ) }}" >
@@ -161,7 +161,7 @@
                 </div>
                 @if(count($stores) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
+                    <img src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

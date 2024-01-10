@@ -509,8 +509,8 @@
                                     <input type="checkbox" name="web_app_url_status" id="apple-dm-status"
                                            data-id="apple-dm-status"
                                            data-type="status"
-                                           data-image-on="{{ asset('/public/assets/admin/img/modal/apple-on.png') }}"
-                                           data-image-off="{{ asset('/public/assets/admin/img/modal/apple-off.png') }}"
+                                           data-image-on="{{ asset('/assets/admin/img/modal/apple-on.png') }}"
+                                           data-image-off="{{ asset('/assets/admin/img/modal/apple-off.png') }}"
                                            data-title-on="{{ translate('Browse Web Button Enabled for Landing Page') }}"
                                            data-title-off="{{ translate('Browse Web Button Disabled for Landing Page') }}"
                                            data-text-on="<p>{{ translate('Browse Web button is enabled now everyone can use or see the button') }}</p>"
@@ -541,7 +541,7 @@
                             <div class="mb-3">
                                 <h3 class="modal-title mb-3">{{translate('Referral & Earning')}}</h3>
                             </div>
-                            <img src="{{asset('/public/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
+                            <img src="{{asset('/assets/admin/img/zone-instruction.png')}}" alt="admin/img" class="w-100">
                         </div>
                     </div>
                 </div>
